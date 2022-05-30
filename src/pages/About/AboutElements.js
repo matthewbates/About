@@ -26,7 +26,6 @@ export const AboutContainer = styled.div`
   .about-card {
     max-width: 500px;
     border-radius: 12px;
-    background-color: light-blue;
   }
   .title {
     padding-bottom: 20px;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CONSTANTS from "../../utils/constants";
 
 export const StyledHeader = styled.nav`
   z-index: 1;
@@ -8,10 +9,10 @@ export const StyledHeader = styled.nav`
   align-items: center;
   justify-content: space-between;
   /* width: ${({ width }) => width || "90%"}; */
-  background-color: white;
+  background-color: ${CONSTANTS.colors.white};
   position: ${({ position }) => position || "relative"};
-  border-bottom: 2px solid white;
-  box-shadow: black 0px 2px 5px;
+  border-bottom: 2px solid ${CONSTANTS.colors.offWhite};
+  box-shadow: ${CONSTANTS.colors.boxShadowBlack} 0px 6px 5px;
   .icon-container {
     display: flex;
     align-items: center;

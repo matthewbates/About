@@ -15,6 +15,12 @@ export default function RightNav({ open, closeDrawer }) {
       "https://drive.google.com/file/d/1qYi2dwSUK6IfIsdeftnkp3V4xoASUgmn/view?usp=sharing"
     );
   }
+
+  // interface RightNavProps {
+  //   open: boolean;
+  //   closeDrawer: () => void;
+  // }
+
   return (
     <>
       <UlStyle open={open}>

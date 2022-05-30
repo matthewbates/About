@@ -21,3 +21,5 @@ const CONSTANTS = {
     aboutCardBoxShadow2: "rgba(0, 0, 0, 0.22)",
   },
 };
+
+export default CONSTANTS;

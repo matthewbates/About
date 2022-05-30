@@ -1,15 +1,17 @@
 import styled from "styled-components";
+import CONSTANTS from "../../utils/constants";
 
 export const CardContainer = styled.div`
   .content {
     /* Pre-animation */
-    opacity: 0;
+    /* opacity: 0; */
     transform: scale(85%);
     transition: 1s;
     /* Styles */
     padding: 40px;
-    border: 1px solid white;
-    box-shadow: 0px 19px 38px, 0px 15px 12px;
+    border: 1px solid red;
+    box-shadow: ${CONSTANTS.colors.aboutCardBoxShadow1} 0px 19px 38px,
+      ${CONSTANTS.colors.aboutCardBoxShadow1} 0px 15px 12px;
     @media (max-width: 969px) {
       padding: 30px;
     }

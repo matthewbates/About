@@ -1,13 +1,15 @@
 import styled from "styled-components";
+import CONSTANTS from "../../utils/constants";
 
 export const UlStyle = styled.ul`
   width: 250px;
   height: 100vh;
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
   flex-flow: column nowrap;
   transition: transform 0.4s ease-in-out;
   background: linear-gradient(to bottom right, #333333, #121212);
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+
 `;
 
 export const AuthorImg = styled.img`

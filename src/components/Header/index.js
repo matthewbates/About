@@ -54,7 +54,7 @@ export default function Header() {
       <Burger
         open={open}
         handleOnClick={handleOnClick}
-        className="nav-burger"
+        classes="nav-burger"
       />
       <div
         // fix marginTop inline
