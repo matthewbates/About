@@ -11,7 +11,7 @@ export const UlStyle = styled.ul`
 `;
 
 export const AuthorImg = styled.img`
-margin-top: 3.5rem;
+  margin-top: 3.5rem;
   margin-left: 1.6rem;
   width: 160px;
   height: 160px;
@@ -29,4 +29,10 @@ export const IconContainer = styled.div`
   color: white;
   margin-left: 1.5rem;
   line-height: 25px;
+`;
+
+export const BtnLink = styled.button`
+  align-items: center;
+  line-height: 25px;
+  margin-left: 3rem;
 `;

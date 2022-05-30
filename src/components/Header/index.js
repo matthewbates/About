@@ -1,20 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { StyledHeader } from "./HeaderElements";
 import { headerIconData } from "./data";
 import HeaderIcon from "../HeaderIcon";
 import Burger from "../Burger";
 import RightNav from "../RightNav";
+import gsap from "gsap";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
-  function handleOnClick() {
-    setOpen(!open);
-  }
+  const handleOnClick = () => setOpen((open) => !open);
+  const closeDrawer = () => setTimeout(() => setOpen(false), 650);
 
-  function closeDrawer() {
-    setTimeout(() => setOpen(false, 660));
-  }
+  useEffect(() => {
+    gsap.from(".nav-icon", {
+      y: 100,
+      delay: 0.5,
+      opacity: 0,
+      duration: 2,
+      ease: "back",
+      stagger: 0.25,
+    });
+  }, []);
 
   return (
     <StyledHeader>
@@ -50,8 +57,14 @@ export default function Header() {
         className="nav-burger"
       />
       <div
-      // fix marginTop inline
-        style={{ marginTop: "-20px", top: 0, right: 0, position: "fixed", zIndex: open ? 1 : -1 }}
+        // fix marginTop inline
+        style={{
+          marginTop: "-20px",
+          top: 0,
+          right: 0,
+          position: "fixed",
+          zIndex: open ? 1 : -1,
+        }}
       >
         <RightNav open={open} closeDrawer={closeDrawer} />
       </div>

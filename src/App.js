@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Loader from "./components/Loader/Loader";
+import About from "./pages/About";
+import Home from "./pages/Home";
 
 export default function App() {
   const [loadingScreen, setLoadingScreen] = useState(true);
@@ -10,5 +12,17 @@ export default function App() {
     return () => clearInterval(timer);
   }, []);
 
-  return <div className="app">{loadingScreen ? <Loader /> : <Header />}</div>;
+  return (
+    <div className="app">
+      {loadingScreen ? (
+        <Loader />
+      ) : (
+        <>
+          <Header />
+          <Home />
+          <About />
+        </>
+      )}
+    </div>
+  );
 }
