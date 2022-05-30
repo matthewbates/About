@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-import {
-  StyledHeader,
-  MediumIcon,
-  GitHubIcon,
-  LinkedInIcon,
-  CodeWarsIcon,
-} from "./HeaderElements";
+import { StyledHeader } from "./HeaderElements";
 import { headerIconData } from "./data";
 import HeaderIcon from "../HeaderIcon";
-import Medium from "../../assets/icons/medium.png";
+import Burger from "../Burger";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  function handleOnClick() {
+    setOpen(!open);
+  }
 
   return (
     <StyledHeader>
@@ -41,6 +39,11 @@ export default function Header() {
           style={headerIconData[3].style}
         />
       </div>
+      <Burger
+        open={open}
+        handleOnClick={handleOnClick}
+        className="nav-burger"
+      />
     </StyledHeader>
   );
 }
