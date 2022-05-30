@@ -7,9 +7,13 @@ export const StyledHeader = styled.nav`
   padding: 0 20px;
   align-items: center;
   justify-content: space-between;
-  /* width: ${({ width }) => width || "100%"}; */
+  /* width: ${({ width }) => width || "90%"}; */
   background-color: white;
   position: ${({ position }) => position || "relative"};
   border-bottom: 2px solid white;
   box-shadow: black 0px 2px 5px;
+  .icon-container {
+    display: flex;
+    align-items: center;
+  }
 `;

@@ -3,12 +3,17 @@ import { StyledHeader } from "./HeaderElements";
 import { headerIconData } from "./data";
 import HeaderIcon from "../HeaderIcon";
 import Burger from "../Burger";
+import RightNav from "../RightNav";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   function handleOnClick() {
     setOpen(!open);
+  }
+
+  function closeDrawer() {
+    setTimeout(() => setOpen(false, 660));
   }
 
   return (
@@ -44,6 +49,12 @@ export default function Header() {
         handleOnClick={handleOnClick}
         className="nav-burger"
       />
+      <div
+      // fix marginTop inline
+        style={{ marginTop: "-20px", top: 0, right: 0, position: "fixed", zIndex: open ? 1 : -1 }}
+      >
+        <RightNav open={open} closeDrawer={closeDrawer} />
+      </div>
     </StyledHeader>
   );
 }
