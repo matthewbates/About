@@ -6,13 +6,13 @@ import { languages, learning } from "./data";
 export default function About() {
   return (
     <AboutContainer id="About">
-      <div classes="about-card">
+      <Card classes="about-card">
         <div className="header">
-          <h3 className="title">ABOUT</h3>
-          <h4 className="subtitle">
+          <h2 className="title">ABOUT</h2>
+          <h3 className="subtitle">
             Hi there! I am a software developer & content creator residing in
             Manitou Springs, CO
-          </h4>
+          </h3>
         </div>
 
         <div className="section-img">
@@ -20,7 +20,7 @@ export default function About() {
             return <img key={index} src={language.icon} alt={language.name} />;
           })}
         </div>
-        <h4 className="subtitle">I'm currently learning:</h4>
+        <h3 className="subtitle">I'm currently learning:</h3>
         <img src={learning[0].icon} alt={learning[0].name} />
         <img src={learning[1].icon} alt={learning[1].name} />
         <div className="section">
@@ -30,7 +30,7 @@ export default function About() {
             Elasticsearch, TypeScript, Node.js, Esri, & MongoDB.
           </h4>
         </div>
-      </div>
+      </Card>
     </AboutContainer>
   );
 }

@@ -10,6 +10,7 @@ export const CardContainer = styled.div`
     /* Styles */
     padding: 40px;
     border: 1px solid ${CONSTANTS.colors.white};
+    border-radius: 15px;
     box-shadow: ${CONSTANTS.colors.aboutCardBoxShadow1} 0px 19px 38px,
       ${CONSTANTS.colors.aboutCardBoxShadow1} 0px 15px 12px;
     @media (max-width: 969px) {
