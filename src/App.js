@@ -4,6 +4,7 @@ import Loader from "./components/Loader/Loader";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import ContactForm from "./pages/ContactForm";
 
 export default function App() {
   const [loadingScreen, setLoadingScreen] = useState(true);
@@ -15,16 +16,17 @@ export default function App() {
 
   return (
     <div className="app">
-      {loadingScreen ? (
+      {/* {loadingScreen ? (
         <Loader />
-      ) : (
-        <>
-          <Header />
-          <Home />
-          <About />
-          <Projects />
-        </>
-      )}
+      ) : ( */}
+      <>
+        <Header />
+        <Home />
+        <About />
+        <Projects />
+        <ContactForm />
+      </>
+      {/* )} */}
     </div>
   );
 }

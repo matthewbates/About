@@ -18,6 +18,14 @@ export const AuthorImg = styled.img`
   width: 160px;
   height: 160px;
   border-radius: 50%;
+
+  @media screen and (max-width: 390px) {
+    margin-top: 3.8rem;
+  }
+/* 
+  @media screen and (max-width: 820px) {
+    margin-top: 8rem;
+  } */
 `;
 
 export const AuthorName = styled.h1`
