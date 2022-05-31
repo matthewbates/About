@@ -9,11 +9,12 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   background-size: cover;
+  margin-top: -4rem;
 
   .text-container {
     padding: 50px;
     text-align: left;
-    margin-left: 250px;
+    /* margin-left: 250px; */
     border-radius: 12px;
     border: 1px solid black;
     align-items: center;
@@ -21,7 +22,7 @@ export const HomeContainer = styled.div`
   .subtitle {
     transition: 3s;
     letter-spacing: 0.2rem;
-    margin: 50px 0px;
+    /* margin: 50px 0px; */
   }
   @media (max-width: 768px) {
     background-size: cover;

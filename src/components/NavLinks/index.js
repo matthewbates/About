@@ -1,23 +1,23 @@
 import React from "react";
-import { Link } from "react-scroll";
-import { LinksContainer } from "./NavLinkElements";
+// import { Link } from "react-scroll";
+import { LinksContainer, LinkScroll } from "./NavLinkElements";
 
 export default function NavLinks({ handleOnClick, title }) {
   return (
     <LinksContainer>
       <span>
-        <Link
+        <LinkScroll
           to={title}
           spy={true}
           offset={0}
           smooth={true}
-          duration={500}
+          duration={700}
           onClick={handleOnClick}
           //   className={classes}
           activeClass="active"
         >
           {title}
-        </Link>
+        </LinkScroll>
       </span>
     </LinksContainer>
   );

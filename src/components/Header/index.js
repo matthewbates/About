@@ -5,11 +5,12 @@ import HeaderIcon from "../HeaderIcon";
 import Burger from "../Burger";
 import RightNav from "../RightNav";
 import gsap from "gsap";
+import { width } from "@mui/system";
 
-export default function Header() {
+export default function Header({ width, position }) {
   const [open, setOpen] = useState(false);
 
-  const handleOnClick = () => setOpen((open) => !open);
+  const handleOnClick = () => setOpen(!open);
   const closeDrawer = () => setTimeout(() => setOpen(false), 650);
 
   useEffect(() => {
@@ -24,8 +25,8 @@ export default function Header() {
   }, []);
 
   return (
-    <StyledHeader>
-      <div style={{ display: "flex", alignItems: "center" }}>
+    <StyledHeader width={width} position={position}>
+      <div className="icon-container">
         <HeaderIcon
           className="nav-icon"
           url={headerIconData[0].url}
@@ -51,11 +52,7 @@ export default function Header() {
           style={headerIconData[3].style}
         />
       </div>
-      <Burger
-        open={open}
-        handleOnClick={handleOnClick}
-        classes="nav-burger"
-      />
+      <Burger open={open} handleOnClick={handleOnClick} classes="nav-burger" />
       <div
         // fix marginTop inline
         style={{
@@ -71,3 +68,8 @@ export default function Header() {
     </StyledHeader>
   );
 }
+
+Header.defaultProps = {
+  width: "100%",
+  position: "fixed",
+};

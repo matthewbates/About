@@ -13,47 +13,63 @@ export const AboutContainer = styled.div`
   min-height: 100vh;
   padding-top: 30px;
   padding-bottom: 30px;
+
   @media (min-width: 969px) {
     padding-left: 100px;
     padding-right: 100px;
   }
+
   @media (max-width: 969px) {
     flex-direction: column;
     display: flex;
     align-items: center;
     text-align: center;
   }
+
   .about-card {
     max-width: 500px;
     border-radius: 12px;
   }
+
   .title {
     padding-bottom: 20px;
   }
+
   .subtitle {
     min-width: 300px;
   }
+
   .section {
     min-width: 325px;
   }
+
   .header {
     max-width: 600;
     margin-bottom: 30px;
     min-width: 325px;
   }
+
   .section-img {
-    @media (max-width: 700px) {
-      padding-bottom: 20px;
-    }
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    @media (max-width: 700px) {
+      padding-bottom: 20px;
+    }
   }
+
   img {
     margin: 10px;
-    height: 40px;
+    height: 50px;
+
+    &:hover {
+      -webkit-transform: rotateY(360deg);
+      transition: 2s ease-out;
+    }
   }
+
   .nodejs {
     height: 80px;
   }

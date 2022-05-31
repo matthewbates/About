@@ -1,10 +1,7 @@
 import React from "react";
-import JavaScript from "../../assets/stack/javascript.png";
-import NodeJS from "../../assets/stack/nodejs.png";
-import ReactJS from "../../assets/stack/react.png";
-import Redux from "../../assets/stack/redux.png";
 import { AboutContainer } from "./AboutElements";
 import Card from "../../components/Card";
+import { languages, learning } from "./data";
 
 export default function About() {
   return (
@@ -13,18 +10,19 @@ export default function About() {
         <div className="header">
           <h3 className="title">ABOUT</h3>
           <h4 className="subtitle">
-            Hello! I am a remote software developer enjoying the mountains of
-            Colorado.
+            Hi there! I am a software developer & content creator residing in
+            Manitou Springs, CO
           </h4>
         </div>
 
         <div className="section-img">
-          <img src={JavaScript} alt="javascript" />
-          <img src={NodeJS} alt="nodejs" />
-          <img src={ReactJS} alt="react" />
-          <img src={Redux} alt="redux" />
+          {languages.map((language, index) => {
+            return <img key={index} src={language.icon} alt={language.name} />;
+          })}
         </div>
-
+        <h4 className="subtitle">I'm currently learning:</h4>
+        <img src={learning[0].icon} alt={learning[0].name} />
+        <img src={learning[1].icon} alt={learning[1].name} />
         <div className="section">
           <h4>
             Currently utilizing JavaScript & Python for web development. My most

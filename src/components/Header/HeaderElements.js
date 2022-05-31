@@ -2,17 +2,29 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const StyledHeader = styled.nav`
+  margin-top: 3.5rem;
   z-index: 1;
   height: 65px;
   display: flex;
   padding: 0 20px;
   align-items: center;
   justify-content: space-between;
-  /* width: ${({ width }) => width || "90%"}; */
+  width: 95%;
+  
+  /* is this doing anything? */
+  /* width: ${({ width }) => width || "80%"}; */
+  
   background-color: ${CONSTANTS.colors.white};
   position: ${({ position }) => position || "relative"};
   border-bottom: 2px solid ${CONSTANTS.colors.offWhite};
-  box-shadow: ${CONSTANTS.colors.boxShadowBlack} 0px 6px 5px;
+  
+  /* take this off? */
+  /* box-shadow: ${CONSTANTS.colors.boxShadowBlack} 0px 2px 5px; */
+
+  @media screen and (max-width: 768px) {
+    width: 87%;
+  }
+
   .icon-container {
     display: flex;
     align-items: center;

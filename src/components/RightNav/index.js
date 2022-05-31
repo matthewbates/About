@@ -4,6 +4,9 @@ import {
   AuthorImg,
   AuthorName,
   IconContainer,
+  ChimneyIcon,
+  PhoneIcon,
+  EmailIcon,
   BtnLink,
 } from "./RightNavElements";
 import Author from "../../assets/author.png";
@@ -16,30 +19,25 @@ export default function RightNav({ open, closeDrawer }) {
     );
   }
 
-  // interface RightNavProps {
-  //   open: boolean;
-  //   closeDrawer: () => void;
-  // }
-
   return (
-    <>
-      <UlStyle open={open}>
-        <AuthorImg src={Author} alt="author image" />
-        <AuthorName>Matthew Bates</AuthorName>
-        <IconContainer>
-          <i className="fa-solid fa-house-chimney"></i> Manitou Springs, CO
-          <br />
-          <i className="fa-solid fa-phone"></i> (713) 504-4436
-          <br />
-          <i className="fa-solid fa-envelope"></i> mhcb@tutanota.com
-          <NavLinks closeDrawer={closeDrawer} title={"Home"} />
-          <NavLinks closeDrawer={closeDrawer} title={"About"} />
-          <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
-          <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
-          <br />
-          <BtnLink onClick={handleOnClick}>View CV</BtnLink>
-        </IconContainer>
-      </UlStyle>
-    </>
+    <UlStyle open={open}>
+      <AuthorImg src={Author} alt="author image" />
+      <AuthorName>Matthew Bates</AuthorName>
+      <IconContainer>
+        <ChimneyIcon className="fa-solid fa-house-chimney"></ChimneyIcon>{" "}
+        Manitou Springs, CO
+        <br />
+        <PhoneIcon className="fa-solid fa-phone"></PhoneIcon> (713) 504-4436
+        <br />
+        <EmailIcon className="fa-solid fa-envelope"></EmailIcon>{" "}
+        mhcb@tutanota.com
+        <NavLinks closeDrawer={closeDrawer} title={"Home"} />
+        <NavLinks closeDrawer={closeDrawer} title={"About"} />
+        <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
+        <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
+        <br />
+        <BtnLink onClick={handleOnClick}>View CV</BtnLink>
+      </IconContainer>
+    </UlStyle>
   );
 }
