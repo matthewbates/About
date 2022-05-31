@@ -4,12 +4,12 @@ import CONSTANTS from "../../utils/constants";
 export const CardContainer = styled.div`
   .content {
     /* Pre-animation */
-    /* opacity: 0; */
+    /* opacity: 50; */
     transform: scale(85%);
     transition: 1s;
     /* Styles */
     padding: 40px;
-    border: 1px solid red;
+    border: 1px solid ${CONSTANTS.colors.white};
     box-shadow: ${CONSTANTS.colors.aboutCardBoxShadow1} 0px 19px 38px,
       ${CONSTANTS.colors.aboutCardBoxShadow1} 0px 15px 12px;
     @media (max-width: 969px) {

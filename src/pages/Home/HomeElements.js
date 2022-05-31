@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const HomeContainer = styled.div`
-  height: 100vh;
+  height: 108vh;
   display: flex;
   text-align: center;
   align-items: center;

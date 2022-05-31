@@ -11,7 +11,7 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   color: ${CONSTANTS.colors.white};
-  background-color: ${CONSTANTS.colors.jet};
+  background-color: grey;
   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
     min-height: 100vh;
   }
