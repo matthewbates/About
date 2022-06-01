@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const StyledHeader = styled.nav`
-  background-color: transparent;
+  background-color: #faf9f6;
   margin-top: 3.5rem;
   z-index: 1;
   height: 65px;
@@ -10,7 +10,7 @@ export const StyledHeader = styled.nav`
   padding: 0 20px;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  width: 96%;
 
   /* is this doing anything? */
   /* width: ${({ width }) => width || "80%"}; */
@@ -23,11 +23,15 @@ export const StyledHeader = styled.nav`
   /* box-shadow: ${CONSTANTS.colors.boxShadowBlack} 0px 2px 5px; */
 
   @media screen and (max-width: 820px) {
-    width: 88%;
+    width: 93%;
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 86%;
   }
 
   @media screen and (max-width: 280px) {
-    width: 84%;
+    width: 80%;
   }
 
   .icon-container {

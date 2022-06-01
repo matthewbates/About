@@ -16,7 +16,7 @@ export const ProjectInfoContainer = styled.div`
       margin: 2% 2% 0% 2%;
     }
     a {
-      font-size: small;
+      /* font-size: small; */
       transition: 0.2s;
       font-style: italic;
       text-decoration: none;
@@ -24,7 +24,6 @@ export const ProjectInfoContainer = styled.div`
     }
     a:hover {
       transition: 0.2s;
-      color: dodgerblue;
       font-weight: bolder;
       text-decoration: underline;
     }

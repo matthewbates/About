@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  background-color: gainsboro;
+  background-color: #363636;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,14 +33,17 @@ export const AboutContainer = styled.div`
 
   .title {
     padding-bottom: 20px;
+    color: #f1f2f2;
   }
 
   .subtitle {
     min-width: 300px;
+    color: #f1f2f2;
   }
 
   .section {
     min-width: 325px;
+    color: #f1f2f2;
   }
 
   .header {

@@ -6,21 +6,21 @@ import {
   FormContainerDiv,
   FormContainerText,
   FormContainerDivRight,
+  FormH1,
 } from "./ContactFormElements";
 
 export default function ContactForm() {
   return (
     <FormSection id="Contact" data-aos="fade-left">
       <FormContainer>
-        <FormContainerDiv>
+        {/* <FormContainerDiv>
           <h2>Contact Me</h2>
           <FormContainerText>
-            Thanks for getting here. If you think I can contribute to your team,
-            do not hesitate to write me. otherwise I would love to receive your
-            comments and suggestions to continue growing professionally.
+            If you think I can contribute to your team, or maybe you'd just want to collaborate, don't hesitate to send me a message!
           </FormContainerText>
-        </FormContainerDiv>
+        </FormContainerDiv> */}
         <FormContainerDivRight>
+          <FormH1>Contact</FormH1>
           <Contact />
         </FormContainerDivRight>
       </FormContainer>

@@ -24,11 +24,12 @@ export default function About() {
         <img src={learning[0].icon} alt={learning[0].name} />
         <img src={learning[1].icon} alt={learning[1].name} />
         <div className="section">
-          <h4>
-            Currently utilizing JavaScript & Python for web development. My most
-            recent applications have included React, MaterialUI, Redux,
-            Elasticsearch, TypeScript, Node.js, Esri, & MongoDB.
-          </h4>
+          <h3>
+            Even before my transition into tech, it was wildly apparent I had a
+            passion for enterprise software technology. Making things more
+            accessable through software development & setting new standards that
+            could be used worldwide is what drove me to get into the field.
+          </h3>
         </div>
       </Card>
     </AboutContainer>

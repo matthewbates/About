@@ -5,58 +5,74 @@ import {
   TextArea,
   Submit,
   Form,
+  FormIcon,
+  FormSpan,
+  ArrowForward,
+  ArrowRight,
 } from "./ContactElements";
-import Message from "../../pages/ContactForm/Message";
+import emailjs from "email-js";
+import swal from "sweetalert2";
 
-const FORM_ENDPOINT = "";
+const templateParams = {
+  user_email: "user_email_value",
+  user_name: "user_name_value",
+  user_message: "user_message_value",
+};
+
+const SERVICE_ID = "service_7j2rpfd";
+const TEMPLATE_ID = "template_bl3e1rq";
+const USER_ID = "pxTQ3Ga0lBOJ4vGzM";
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
+  const [hover, setHover] = useState(false);
 
   function handleOnSubmit(e) {
     e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        swal.fire(
+          "Message Sent",
+          "Matthew will get back to you as soon as he can!",
+          "success"
+        );
+      },
+      (error) => {
+        console.log(error.text);
+        swal.fire("Ooops, something went wrong", error.text, "error");
+      }
+    );
+    e.target.reset();
+  }
+
+  function toggleHover() {
+    setHover(!hover);
   }
 
   return (
-    // need route for smooth scroll here id="Contact"
     <>
-      <Form onSubmit={handleOnSubmit}>
-        <TextInput
-          type="text"
-          name="name"
-          placeholder="Your name..."
-          // onChange={handleChange}
-          // value={form.name}
-          // required
-          // onBlur={handleBlur}
-        />
-        {/* {errors.name && <p style={styles}>{errors.name}</p>} */}
-        <EmailInput
-          type="email"
-          name="email"
-          placeholder="Your email..."
-          // onChange={handleChange}
-          // value={form.email}
-          // required
-          // onBlur={handleBlur}
-        />
-        {/* {errors.email && <p style={styles}>{errors.email}</p>} */}
+      <Form id="myForm" onSubmit={handleOnSubmit}>
+        <FormIcon className="fa-solid fa-user" />
+        <FormSpan> Name</FormSpan>
+        <TextInput type="text" name="user_name" />
+        <FormIcon className="fa-solid fa-at"></FormIcon>
+        <FormSpan> Email</FormSpan>
+        <EmailInput type="email" name="user_email" />
+        <FormIcon className="fa-solid fa-message" />
+        <FormSpan> Message</FormSpan>
+        <TextArea name="comments" cols="50" rows="10"></TextArea>
 
-        <TextArea
-          name="comments"
-          cols="50"
-          rows="5"
-          placeholder="Your message..."
-          // onChange={handleChange}
-          // value={form.comments}
-          // required
-          // onBlur={handleBlur}
-        ></TextArea>
-        {/* {errors.comments && <p style={styles}>{errors.comments}</p>} */}
-
-        <Submit onClick={() => console.log("hello")}>Send</Submit>
+        <Submit
+          type="submit"
+          onClick={() => console.log("hello")}
+          onMouseEnter={toggleHover}
+          onMouseLeave={toggleHover}
+          primary="true"
+        >
+          Send {hover ? <ArrowForward /> : <ArrowRight />}
+        </Submit>
       </Form>
-      <Message />
     </>
   );
 }

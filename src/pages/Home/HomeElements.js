@@ -2,6 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const HomeContainer = styled.div`
+  background-color: #faf9f6;
   height: 108vh;
   display: flex;
   text-align: center;
@@ -24,7 +25,7 @@ export const HomeContainer = styled.div`
     letter-spacing: 0.2rem;
     /* margin: 50px 0px; */
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     background-size: cover;
     /* justify-content: flex-start; */
     background-size: cover;
@@ -40,5 +41,17 @@ export const HomeContainer = styled.div`
     .subtitle {
       margin: 5px 0px 0px 0px;
     }
+  }
+`;
+
+export const HomeSubtitle = styled.h3`
+  .subtitle {
+    transition: 3s;
+    letter-spacing: 0.2rem;
+    /* margin: 50px 0px; */
+  }
+
+  @media screen and (max-width: 1100px) {
+    margin: 5px 0px 0px 0px;
   }
 `;

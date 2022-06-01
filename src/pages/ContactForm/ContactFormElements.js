@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
+
 export const FormSection = styled.section`
+  background-color: #363636;
   display: flex;
   justify-content: center;
   border-top: 1px solid #fff;
@@ -8,6 +10,7 @@ export const FormSection = styled.section`
 `;
 
 export const FormContainer = styled.div`
+  color: #f1f2f2;
   display: flex;
   flex-wrap: wrap;
   width: 70%;
@@ -21,7 +24,6 @@ export const FormContainer = styled.div`
 
   @media screen and (max-width: 1007px) {
     width: 80%;
-    
   }
 
   @media screen and (max-width: 700px) {
@@ -65,4 +67,9 @@ export const FormContainerDivRight = styled.div`
     width: 100%;
     margin: 3% 0;
   }
+`;
+
+export const FormH1 = styled.h1`
+  text-align: center;
+  text-decoration: underline;
 `;

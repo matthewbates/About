@@ -1,6 +1,7 @@
 import React from "react";
-import { CardContainer } from "./CardElements";
+import { CardContainer, CardContent } from "./CardElements";
 import { useInView } from "react-intersection-observer";
+import classnames from "classnames";
 
 export default function Card({ classes, children, styleOverrides }) {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
@@ -9,7 +10,7 @@ export default function Card({ classes, children, styleOverrides }) {
     <CardContainer styleOverrides={styleOverrides}>
       <div
         ref={ref}
-        className={({ animate: inView }, classes, "content")}
+        className={classnames({ animate: inView }, classes, "content")}
       >
         {children}
       </div>

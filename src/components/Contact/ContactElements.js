@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 import CONSTANTS from "../../utils/constants";
 
 // export const ContactContainer = styled.div`
@@ -8,11 +9,13 @@ import CONSTANTS from "../../utils/constants";
 export const Form = styled.form`
   align-items: center;
   margin-right: 1.4rem;
+  justify-content: center;
 `;
 
 export const TextInput = styled.input`
-  color: black;
-  /* border: thin solid #dedede; */
+  color: #f1f2f2;
+  background-color: #363636;
+  border: thin solid #f1f2f2;
   border-radius: 0.25rem;
   padding: 0.75rem;
   margin-bottom: 0.5rem;
@@ -21,12 +24,12 @@ export const TextInput = styled.input`
   width: 100%;
   font-size: 1rem;
   line-height: 1;
-  /* background-color: transparent; */
 `;
 
 export const EmailInput = styled.input`
-  color: black;
-  /* border: thin solid #dedede; */
+  color: #f1f2f2;
+  background-color: #363636;
+  border: thin solid #f1f2f2;
   border-radius: 0.25rem;
   padding: 0.75rem;
   margin-bottom: 0.5rem;
@@ -35,12 +38,12 @@ export const EmailInput = styled.input`
   width: 100%;
   font-size: 1rem;
   line-height: 1;
-  background-color: transparent;
 `;
 
 export const TextArea = styled.textarea`
-  /* border: thin solid #dedede; */
+  color: #f1f2f2;
   border-radius: 0.25rem;
+  border: thin solid #f1f2f2;
   padding: 0.75rem;
   margin-bottom: 0.5rem;
   outline: none;
@@ -54,19 +57,35 @@ export const TextArea = styled.textarea`
 export const Submit = styled.button`
   /* border: thin solid #fff; */
   /* margin-left: 2rem; */
-  border-radius: 0.25rem;
+  border-radius: 50px;
   padding: 1rem;
   /* margin: 0 0.5rem 0 0; */
   /* display: inline-block; */
+  justify-content: center;
   font-size: 1rem;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
   line-height: 1;
-  text-transform: none;
-  text-decoration: none;
-  text-align: center;
-  align-items: center;
-  vertical-align: middle;
   cursor: pointer;
   font-weight: bold;
-  width: 50%;
+  width: 108%;
+  background: ${({ primary }) => (primary ? "#f1f2f2" : "#414042")};
+`;
+
+export const FormIcon = styled.i`
+  size: 1rem;
+  color: #f1f2f2;
+`;
+
+export const FormSpan = styled.span`
+  color: #f1f2f2;
+`;
+
+export const ArrowForward = styled(MdArrowForward)`
+  margin-left: 8px;
+  font-size: 20px;
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  margin-left: 8px;
+  font-size: 20px;
 `;
