@@ -39,11 +39,12 @@ export const projectData = [
     title: "SkiBum",
     github: "https://github.com/matthewbates/SkiBum",
   },
-  // {
-  //   img: pokedex,
-  //   link: "https://vimeo.com/695844138/aef213f1d9",
-  //   techStack:
-  //   title: "Pokedex",
-  //   github: "https://github.com/matthewbates/Pokedex",
-  // },
+   {
+     img: pokedex,
+     link: "https://vimeo.com/695844138/aef213f1d9",
+     techStack: "JavaScript · HTML · CSS",
+     style: "img flourish",
+     title: "Pokedex",
+     github: "https://github.com/matthewbates/Pokedex",
+   },
 ];

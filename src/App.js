@@ -1,32 +1,36 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
-import Loader from "./components/Loader/Loader";
+import Loader from "./components/Loader";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ContactForm from "./pages/ContactForm";
+import { FaArrowCircleUp } from "react-icons/fa";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   const [loadingScreen, setLoadingScreen] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoadingScreen(false), 3500);
-    return () => clearInterval(timer);
+    setTimeout(() => {
+      setLoadingScreen(false);
+    }, 5000);
   }, []);
 
   return (
     <div className="app">
-      {/* {loadingScreen ? (
+      {loadingScreen ? (
         <Loader />
-      ) : ( */}
-      <>
-        <Header />
-        <Home />
-        <About />
-        <Projects />
-        <ContactForm />
-      </>
-      {/* )} */}
+      ) : (
+        <>
+          <Header />
+          <Home />
+          <About />
+          <Projects />
+          <ContactForm />
+          {/* <ScrollToTop /> */}
+        </>
+      )}
     </div>
   );
 }

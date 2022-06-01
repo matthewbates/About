@@ -1,6 +1,6 @@
 import React from "react";
 import { HomeContainer, HomeH1 } from "./HomeElements";
-import { BtnLink } from "../../components/Button";
+import { BtnLink } from "../../components/LinkButton";
 import Card from "../../components/Card";
 import { saveAs } from "file-saver";
 import Resume from "../../assets/Resume/Resume.pdf";

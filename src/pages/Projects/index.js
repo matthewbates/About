@@ -1,12 +1,12 @@
 import React from "react";
-import { ProjectContainer } from "./ProjectElements";
+import { ProjectContainer, ProjectH1 } from "./ProjectElements";
 import { projectData } from "./data";
 import ProjectItem from "../../components/ProjectItem";
 
 export default function Projects() {
   return (
     <ProjectContainer id="Projects">
-      <h3>Recent Projects</h3>
+      <ProjectH1>Recent Projects</ProjectH1>
       {projectData.map(({ img, link, techStack, style, title, github }) => (
         <ProjectItem
           key={img}

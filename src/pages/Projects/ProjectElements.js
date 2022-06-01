@@ -18,3 +18,7 @@ export const ProjectContainer = styled.div`
     margin-top: 50px;
   }
 `;
+
+export const ProjectH1 = styled.h1`
+  text-decoration: underline;
+`;
