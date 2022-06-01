@@ -1,6 +1,8 @@
-<a href="https://matthewbates.dev" rel="nofollow">
-  <strong>www.matthewbates.dev</strong>
-</a>
+<h1>
+  <a href="https://matthewbates.dev" rel="nofollow" target="_blank">
+    <strong>www.matthewbates.dev</strong>
+  </a>
+</h1>
 
 <h1>You've arrived at my <i>new & improved</i> portfolio!</h1>
 
