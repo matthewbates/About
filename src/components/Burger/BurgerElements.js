@@ -8,11 +8,6 @@ export const StyledBurger = styled.div`
   flex-flow: column nowrap;
   justify-content: space-around;
 
-  .nav-burger {
-    position: fixed;
-    top: 15px;
-    right: 20px;
-  }
   div {
     width: 2rem;
     height: 0.25rem;
@@ -24,8 +19,6 @@ export const StyledBurger = styled.div`
       transform: ${({ open }) => (open ? "rotate(405deg)" : "rotate(0)")};
     }
     &:nth-child(2) {
-      /* transform: ${({ open }) =>
-        open ? "translateX(100%)" : "translateX(0)"}; */
       opacity: ${({ open }) => (open ? 0 : 1)};
       transition: 0.1s;
     }

@@ -16,17 +16,16 @@ export const ProjectInfoContainer = styled.div`
       margin: 2% 2% 0% 2%;
     }
     a {
-      /* font-size: small; */
       transition: 0.2s;
       font-style: italic;
       text-decoration: none;
       color: ${CONSTANTS.colors.white};
     }
-    a:hover {
+    /* a:hover {
       transition: 0.2s;
       font-weight: bolder;
       text-decoration: underline;
-    }
+    } */
   }
   .p_margin {
     text-align: center;

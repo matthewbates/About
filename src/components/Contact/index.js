@@ -3,14 +3,14 @@ import {
   TextInput,
   EmailInput,
   TextArea,
-  Submit,
+  SubmitBtn,
   Form,
   FormIcon,
   FormSpan,
   ArrowForward,
   ArrowRight,
 } from "./ContactElements";
-import emailjs from "email-js";
+import emailjs from "emailjs-com";
 import swal from "sweetalert2";
 
 const templateParams = {
@@ -30,8 +30,8 @@ export default function Contact() {
   function handleOnSubmit(e) {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
-      (result) => {
-        console.log(result.text);
+      (r) => {
+        console.log(r.text);
         swal.fire(
           "Message Sent",
           "Matthew will get back to you as soon as he can!",
@@ -55,23 +55,23 @@ export default function Contact() {
       <Form id="myForm" onSubmit={handleOnSubmit}>
         <FormIcon className="fa-solid fa-user" />
         <FormSpan> Name</FormSpan>
-        <TextInput type="text" name="user_name" />
+        <TextInput type="text" name="user_name" required />
         <FormIcon className="fa-solid fa-at"></FormIcon>
         <FormSpan> Email</FormSpan>
-        <EmailInput type="email" name="user_email" />
+        <EmailInput type="email" name="user_email" required />
         <FormIcon className="fa-solid fa-message" />
         <FormSpan> Message</FormSpan>
-        <TextArea name="comments" cols="50" rows="10"></TextArea>
-
-        <Submit
+        <TextArea name="comments" cols="50" rows="10" required></TextArea>
+        <button
           type="submit"
-          onClick={() => console.log("hello")}
+          className="submit-button"
           onMouseEnter={toggleHover}
           onMouseLeave={toggleHover}
           primary="true"
         >
-          Send {hover ? <ArrowForward /> : <ArrowRight />}
-        </Submit>
+          SEND
+          {hover ? <ArrowRight /> : <ArrowForward />}
+        </button>
       </Form>
     </>
   );

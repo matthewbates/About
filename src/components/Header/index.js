@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { StyledHeader } from "./HeaderElements";
+import { StyledHeader, StyledContainer } from "./HeaderElements";
 import { headerIconData } from "./data";
 import HeaderIcon from "../HeaderIcon";
 import Burger from "../Burger";
 import RightNav from "../RightNav";
 import gsap from "gsap";
-import { width } from "@mui/system";
 
 export default function Header({ width, position }) {
   const [open, setOpen] = useState(false);
@@ -26,7 +25,7 @@ export default function Header({ width, position }) {
 
   return (
     <StyledHeader width={width} position={position}>
-      <div className="icon-container">
+      <StyledContainer>
         <HeaderIcon
           className="nav-icon"
           url={headerIconData[0].url}
@@ -51,8 +50,11 @@ export default function Header({ width, position }) {
           img={headerIconData[3].img}
           style={headerIconData[3].style}
         />
-      </div>
-      <Burger open={open} handleOnClick={handleOnClick} classes="nav-burger" />
+      </StyledContainer>
+      <Burger
+        open={open}
+        handleOnClick={handleOnClick}
+      />
       <div
         // fix marginTop inline
         style={{

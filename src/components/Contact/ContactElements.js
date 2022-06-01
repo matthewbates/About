@@ -10,6 +10,18 @@ export const Form = styled.form`
   align-items: center;
   margin-right: 1.4rem;
   justify-content: center;
+
+  .submit-button {
+    /* margin-left: 14rem; */
+    background-color: #363636;
+    color: #f1f2f2;
+    border-radius: 50px;
+    padding: 0.5rem;
+    align-items: center;
+    line-height: 1;
+    font-weight: bold;
+    /* width: 108%; */
+  }
 `;
 
 export const TextInput = styled.input`
@@ -54,7 +66,7 @@ export const TextArea = styled.textarea`
   background-color: transparent;
 `;
 
-export const Submit = styled.button`
+export const SubmitBtn = styled.button`
   /* border: thin solid #fff; */
   /* margin-left: 2rem; */
   border-radius: 50px;
@@ -82,10 +94,10 @@ export const FormSpan = styled.span`
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
-  font-size: 20px;
+  /* font-size: 20px; */
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
-  font-size: 20px;
+  /* font-size: 20px; */
 `;
