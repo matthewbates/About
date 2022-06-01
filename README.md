@@ -1,10 +1,9 @@
-<div>
-<a href="https://www.matthewbates.dev">
-</div>
+<a href="https://matthewbates.dev" rel="nofollow">
+  <strong>www.matthewbates.dev</strong>
+</a>
 
 <h1>You've arrived at my <i>new & improved</i> portfolio!</h1>
 
-<h3>Still under construction 👷🏼</h3>
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
