@@ -7,7 +7,7 @@ export const LinksContainer = styled.li`
   cursor: pointer;
   /* this removes the <li> dots */
   list-style-type: none;
-  line-height: 45px;
+  line-height: 55px;
 `;
 
 export const LinkScroll = styled(Link)`

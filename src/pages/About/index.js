@@ -25,7 +25,12 @@ export default function About() {
         <img src={learning[1].icon} alt={learning[1].name} />
         <div className="section">
           <h3>
-            Technology has always intrigued me, whether it's building a new application or learning a new language/framework. I constantly strive to make things more accessable through software development; while user design & experience is one of them, my long-term goal is to create applications for the betterment of not only my community, but the world.
+            Technology has always intrigued me, whether it's building a new
+            application or learning a new language/framework. I constantly
+            strive to make things more accessable through software development;
+            while user design & experience is one of them, my long-term goal is
+            to create applications for the betterment of not only my community,
+            but the world.
           </h3>
         </div>
       </Card>

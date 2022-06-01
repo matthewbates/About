@@ -20,12 +20,8 @@ export const AuthorImg = styled.img`
   border-radius: 50%;
 
   @media screen and (max-width: 390px) {
-    margin-top: 3.8rem;
+    margin-top: 3rem;
   }
-/* 
-  @media screen and (max-width: 820px) {
-    margin-top: 8rem;
-  } */
 `;
 
 export const AuthorName = styled.h1`
@@ -49,10 +45,4 @@ export const PhoneIcon = styled.i`
 
 export const EmailIcon = styled.i`
   margin-left: 0.1rem;
-`;
-
-export const BtnLink = styled.button`
-  align-items: center;
-  line-height: 25px;
-  margin-left: 3rem;
 `;

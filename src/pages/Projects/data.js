@@ -8,9 +8,9 @@ export const projectData = [
   {
     img: persephoneGraes,
     link: "https://vimeo.com/manage/videos/714324026/f34294a10c",
-    techStack: "JavaScript · React · CSS",
+    techStack: "JavaScript · React · Styled Components · CSS",
     style: "img flourish",
-    title: "Persephone Graes",
+    title: "Persephone Graes Cafe & Juice Bar",
     github: "https://github.com/matthewbates/persephone-graes",
   },
   {

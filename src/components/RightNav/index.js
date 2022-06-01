@@ -7,7 +7,6 @@ import {
   ChimneyIcon,
   PhoneIcon,
   EmailIcon,
-  BtnLink,
 } from "./RightNavElements";
 import Author from "../../assets/author.png";
 import NavLinks from "../NavLinks";
@@ -35,8 +34,6 @@ export default function RightNav({ open, closeDrawer }) {
         <NavLinks closeDrawer={closeDrawer} title={"About"} />
         <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
         <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
-        <br />
-        <BtnLink onClick={handleOnClick}>View CV</BtnLink>
       </IconContainer>
     </UlStyle>
   );
