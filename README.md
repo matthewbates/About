@@ -1,5 +1,5 @@
 <div>
-<a href="https://matthewbates.dev">
+<a href="https://www.matthewbates.dev">
 </div>
 
 <h1>You've arrived at my <i>new & improved</i> portfolio!</h1>
