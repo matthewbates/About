@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ContactForm from "./pages/ContactForm";
 import { FaArrowCircleUp } from "react-icons/fa";
-import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   const [loadingScreen, setLoadingScreen] = useState(true);
