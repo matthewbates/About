@@ -1,7 +1,7 @@
 <h1>You've arrived at my <i>new & improved</i> portfolio!</h1>
 
 <h1>
-  <a href="https://matthewbates.dev" rel="nofollow" target="_blank">
+  <a href="https://matthewbates.dev" rel="noopener noreferrer" target="_blank">
     <strong>www.matthewbates.dev</strong>
   </a>
 </h1>
