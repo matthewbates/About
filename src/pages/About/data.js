@@ -59,3 +59,14 @@ export const learning = [
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
   },
 ];
+
+export const about = [
+  {
+    aboutOne:
+      "Hi there! I am a software developer & content creator residing in Manitou Springs, CO",
+  },
+  {
+    aboutTwo:
+      "Technology has always intrigued me, whether it's building a new application or learning a new language/framework. I constantly strive to make things more accessable through software development; while user design & experience is one of them, my long-term goal is to create applications for the betterment of not only my community, but the world.",
+  },
+];

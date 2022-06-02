@@ -12,14 +12,6 @@ export const HomeContainer = styled.div`
   background-size: cover;
   margin-top: -4rem;
 
-  .text-container {
-    padding: 50px;
-    text-align: left;
-    /* margin-left: 250px; */
-    border-radius: 12px;
-    border: 1px solid black;
-    align-items: center;
-  }
   .subtitle {
     transition: 3s;
     letter-spacing: 0.2rem;

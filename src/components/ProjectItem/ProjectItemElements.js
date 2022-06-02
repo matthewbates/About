@@ -11,7 +11,7 @@ export const ProjectListContainer = styled.div`
     opacity: 0;
     transform: scale(85%);
     transition: 1s;
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
       flex-direction: column;
       display: flex;
       align-items: center;

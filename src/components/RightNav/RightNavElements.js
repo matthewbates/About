@@ -8,12 +8,12 @@ export const UlStyle = styled.ul`
   padding-top: 3.5rem;
   flex-flow: column nowrap;
   transition: transform 0.4s ease-in-out;
-  background: linear-gradient(to bottom right, #333333, #121212);
+  background: ${CONSTANTS.colors.batman};
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
 `;
 
 export const AuthorImg = styled.img`
-  margin-top: 3.5rem;
+  margin-top: 3.2rem;
   margin-left: 1.6rem;
   width: 160px;
   height: 160px;

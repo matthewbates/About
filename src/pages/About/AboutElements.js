@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import CONSTANTS from "../../utils/constants";
 
 export const AboutContainer = styled.div`
-  background-color: #363636;
+  background: ${CONSTANTS.colors.indigo};
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -19,9 +20,9 @@ export const AboutContainer = styled.div`
     padding-right: 100px;
   }
 
-  @media (max-width: 969px) {
-    flex-direction: column;
+  @media (max-width: 768px) {
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
@@ -30,50 +31,51 @@ export const AboutContainer = styled.div`
     max-width: 500px;
     border-radius: 12px;
   }
+`;
 
-  .title {
+export const AboutHeader = styled.div`
+  max-width: 600;
+  margin-bottom: 30px;
+  min-width: 325px;
+`;
+
+export const AboutH1 = styled.h1`
+  padding-bottom: 20px;
+  color: #f1f2f2;
+  text-decoration: underline;
+`;
+
+export const SkillsImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 700px) {
     padding-bottom: 20px;
-    color: #f1f2f2;
   }
+`;
 
-  .subtitle {
-    min-width: 300px;
-    color: #f1f2f2;
+export const AboutSection = styled.h3`
+  min-width: 325px;
+  color: #f1f2f2;
+`;
+
+export const SkillsImage = styled.img`
+  margin: 10px;
+  height: 80px;
+
+  &:hover {
+    -webkit-transform: rotateY(360deg);
+    transition: 2s ease-out;
   }
+`;
 
-  .section {
-    min-width: 325px;
-    color: #f1f2f2;
-  }
+export const SkillsH3 = styled.h3`
+  color: ${CONSTANTS.colors.persephoneWhite};
+  line-height: 2rem;
 
-  .header {
-    max-width: 600;
-    margin-bottom: 30px;
-    min-width: 325px;
-  }
-
-  .section-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    @media (max-width: 700px) {
-      padding-bottom: 20px;
-    }
-  }
-
-  img {
-    margin: 10px;
-    height: 50px;
-
-    &:hover {
-      -webkit-transform: rotateY(360deg);
-      transition: 2s ease-out;
-    }
-  }
-
-  .nodejs {
-    height: 80px;
+  @media screen and (max-width: 768px) {
+    line-height: 1.6rem;
   }
 `;

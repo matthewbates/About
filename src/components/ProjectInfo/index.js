@@ -3,7 +3,6 @@ import { ProjectInfoContainer } from "./ProjectInfoElements";
 import Card from "../Card";
 
 export default function ProjectInfo({ title, github, techStack }) {
-  console.log(github);
   return (
     <ProjectInfoContainer>
       <Card classes="app-text">

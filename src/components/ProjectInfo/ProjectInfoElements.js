@@ -8,7 +8,7 @@ export const ProjectInfoContainer = styled.div`
     text-align: center;
     border-radius: 12px;
     margin: 0% 10% 0% 2%;
-    border: 1px solid ${CONSTANTS.colors.offWhite};
+    border: 1px solid; 
     background-color: ${CONSTANTS.colors.projectInfoBackgroundColor};
     box-shadow: ${CONSTANTS.colors.boxShadowProjectInfo} 0px 22px 70px 4px;
     @media (max-width: 900px) {
