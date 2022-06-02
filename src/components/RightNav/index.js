@@ -8,14 +8,15 @@ import {
   PhoneIcon,
   EmailIcon,
 } from "./RightNavElements";
+import { BtnLink } from "../LinkButton";
+import Resume from "../../assets/Resume.pdf";
 import Author from "../../assets/author.png";
 import NavLinks from "../NavLinks";
+import { saveAs } from "file-saver";
 
 export default function RightNav({ open, closeDrawer }) {
-  function handleOnClick() {
-    window.open(
-      "https://drive.google.com/file/d/1qYi2dwSUK6IfIsdeftnkp3V4xoASUgmn/view?usp=sharing"
-    );
+  function downloadResume() {
+    saveAs(Resume, "matthewbates-resume.pdf");
   }
 
   return (
@@ -34,6 +35,9 @@ export default function RightNav({ open, closeDrawer }) {
         <NavLinks closeDrawer={closeDrawer} title={"About"} />
         <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
         <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
+        <BtnLink onClick={downloadResume}>
+          Download CV
+        </BtnLink>
       </IconContainer>
     </UlStyle>
   );
