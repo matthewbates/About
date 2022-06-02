@@ -19,8 +19,8 @@ export default function About() {
           <AboutH1>Skills</AboutH1>
         </AboutHeader>
         <SkillsImageContainer>
-          {languages.map(({ language, icon, name }) => {
-            return <SkillsImage key={language} src={icon} alt={name} />;
+          {languages.map((item, index) => {
+            return <SkillsImage key={index} src={item.icon} alt={item.name} />;
           })}
         </SkillsImageContainer>
         <AboutSection>I'm currently learning:</AboutSection>
