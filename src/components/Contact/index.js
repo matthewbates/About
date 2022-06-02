@@ -61,7 +61,7 @@ export default function Contact() {
         <EmailInput type="email" name="user_email" required />
         <FormIcon className="fa-solid fa-message" />
         <FormSpan> Message</FormSpan>
-        <TextArea name="comments" cols="50" rows="10" required></TextArea>
+        <TextArea name="user_message" cols="50" rows="10" required></TextArea>
         <button
           type="submit"
           className="submit-button"
