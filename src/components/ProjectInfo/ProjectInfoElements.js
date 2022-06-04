@@ -21,11 +21,7 @@ export const ProjectInfoContainer = styled.div`
       text-decoration: none;
       color: ${CONSTANTS.colors.white};
     }
-    /* a:hover {
-      transition: 0.2s;
-      font-weight: bolder;
-      text-decoration: underline;
-    } */
+
   }
   .p_margin {
     text-align: center;

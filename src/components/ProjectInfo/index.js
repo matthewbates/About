@@ -1,6 +1,8 @@
 import React from "react";
 import { ProjectInfoContainer } from "./ProjectInfoElements";
 import Card from "../Card";
+import CONSTANTS from "../../utils/constants"
+
 
 export default function ProjectInfo({ title, github, techStack }) {
   return (

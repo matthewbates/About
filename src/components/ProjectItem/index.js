@@ -12,13 +12,13 @@ export default function ProjectItem({
   github,
   techStack,
 }) {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: false });
 
   return (
     <ProjectListContainer>
       <div ref={ref} className={inView ? "listItem animate" : "listItem"}>
-        <ProjectImage img={img} link={link} style={style} />
         <ProjectInfo title={title} github={github} techStack={techStack} />
+        <ProjectImage img={img} link={link} style={style} />
       </div>
     </ProjectListContainer>
   );

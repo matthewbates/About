@@ -2,47 +2,55 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 import { Link } from "react-scroll";
 
-export const UlStyle = styled.ul`
-  width: 250px;
+export const UlStyle = styled.aside`
+  width: 225px;
   height: 100vh;
   padding-top: 3.5rem;
   flex-flow: column nowrap;
   transition: transform 0.4s ease-in-out;
   background: ${CONSTANTS.colors.batman};
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+
+  /* @media screen and (max-width: 390px) {
+    width: 100px;
+  } */
 `;
 
 export const AuthorImg = styled.img`
-  margin-top: 3.2rem;
-  margin-left: 1.6rem;
-  width: 160px;
-  height: 160px;
+  margin-top: 2.8rem;
+  margin-left: 2.6rem;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
 
   @media screen and (max-width: 390px) {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 `;
 
 export const AuthorName = styled.h1`
+  color: ${CONSTANTS.colors.persephoneWhite};
   display: block;
   text-align: center;
-  color: #fff;
-  margin-right: 2.2rem;
+  align-items: center;
 `;
 
 export const IconContainer = styled.div`
-  color: white;
-  margin-left: 1.5rem;
-  line-height: 25px;
+  color: ${CONSTANTS.colors.persephoneWhite};
+  /* margin-left: 1.5rem;
+   */
+  text-align: center;
+  line-height: 30px;
 `;
 
-export const ChimneyIcon = styled.i``;
+export const ChimneyIcon = styled.i`
+  color: ${CONSTANTS.colors.persephoneWhite};
+`;
 
 export const PhoneIcon = styled.i`
-  margin-left: 1.3rem;
+  color: ${CONSTANTS.colors.persephoneWhite};
 `;
 
 export const EmailIcon = styled.i`
-  margin-left: 0.1rem;
+  color: ${CONSTANTS.colors.persephoneWhite};
 `;

@@ -5,13 +5,13 @@ export const ProjectListContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin: 40px 0px 40px;
+    margin: 40px 15px;
     justify-content: center;
     /* Pre-animation */
     opacity: 0;
     transform: scale(85%);
     transition: 1s;
-    @media (max-width: 768px) {
+    @media (max-width: 690px) {
       flex-direction: column;
       display: flex;
       align-items: center;

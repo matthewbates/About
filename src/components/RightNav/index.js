@@ -14,7 +14,7 @@ import Author from "../../assets/author.png";
 import NavLinks from "../NavLinks";
 import { saveAs } from "file-saver";
 
-export default function RightNav({ open, closeDrawer }) {
+export default function RightNav({ open, closeDrawer, close }) {
   function downloadResume() {
     saveAs(Resume, "matthewbates-resume.pdf");
   }
@@ -35,9 +35,7 @@ export default function RightNav({ open, closeDrawer }) {
         <NavLinks closeDrawer={closeDrawer} title={"About"} />
         <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
         <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
-        <BtnLink onClick={downloadResume}>
-          Download CV
-        </BtnLink>
+        <button onClick={downloadResume}>Download CV</button>
       </IconContainer>
     </UlStyle>
   );

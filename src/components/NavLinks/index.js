@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-scroll";
 import { LinksContainer, LinkScroll } from "./NavLinkElements";
 
-export default function NavLinks({ handleOnClick, title, classes }) {
+export default function NavLinks({ handleOnClick, title, classes, closeDrawer }) {
   return (
     <LinksContainer>
       <span>
@@ -12,7 +12,8 @@ export default function NavLinks({ handleOnClick, title, classes }) {
           offset={0}
           smooth={true}
           duration={700}
-          onClick={handleOnClick}
+          // onClick={handleOnClick}
+          onClick={closeDrawer}
           className={classes}
           activeClass="active"
         >

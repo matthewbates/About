@@ -3,7 +3,7 @@ import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const BtnLink = styled.button`
   font-family: "Iskoola Pota";
-  border-radius: 50px;
+  border-radius: 35px;
   background: ${({ primary }) => (primary ? "#414042" : "#010606")};
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
   color: ${({ dark }) => (dark ? "#414042" : "#f1f2f2")};
@@ -13,6 +13,7 @@ export const BtnLink = styled.button`
   align-items: center;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+
 
   &:hover {
     transition: all 0.2s ease-in-out;
