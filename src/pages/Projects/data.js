@@ -17,7 +17,7 @@ export const projectData = [
     img: mountainBuddy,
     link: "https://vimeo.com/695889451/21156ef4dd",
     techStack:
-      "JavaScript · React · Ruby · Rails · PostgreSQL · MDBootstrap · Google Login · Google Maps API · OpenWeatherMap API",
+      "JavaScript · React · Ruby on Rails · PostgreSQL · MDBootstrap · Google Login · Google Maps API · OpenWeatherMap API",
     style: "img flourish",
     title: "Mountain Buddy",
     github: "https://github.com/matthewbates/Mountain-Buddy",
@@ -26,7 +26,7 @@ export const projectData = [
     img: breweryDiscovery,
     link: "https://vimeo.com/695879205/c181dc0706",
     techStack:
-      "JavaScript · Ruby · Rails · SQLite · Bootstrap · Google Maps API",
+      "JavaScript · Ruby on Rails · SQLite · Bootstrap · Google Maps API",
     style: "img",
     title: "Brewery Discovery",
     github: "https://github.com/matthewbates/Brewery-Discovery",
