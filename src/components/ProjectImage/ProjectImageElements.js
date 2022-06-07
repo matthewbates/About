@@ -6,11 +6,14 @@ export const StyledProjectImage = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0% 2% 0% 5%;
+  // how long it takes for hover effect to take effect
+  transition: 0.5s;
+
   @media (max-width: 900px) {
     margin: 0% 2% 0% 2%;
   }
   :hover {
-    filter: brightness(50%);
+    filter: brightness(40%);
   }
   .flourish {
     max-height: 400px;

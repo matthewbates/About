@@ -36,6 +36,20 @@ export const HomeContainer = styled.div`
   }
 `;
 
+export const HomeImage = styled.img`
+  /* width: 200px;
+  height: 200px;
+  border-radius: 50%; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+`;
+
 export const HomeSubtitle = styled.h3`
   .subtitle {
     transition: 3s;

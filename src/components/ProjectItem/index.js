@@ -18,7 +18,13 @@ export default function ProjectItem({
     <ProjectListContainer>
       <div ref={ref} className={inView ? "listItem animate" : "listItem"}>
         <ProjectInfo title={title} github={github} techStack={techStack} />
-        <ProjectImage img={img} link={link} style={style} />
+        <br />
+        <ProjectImage
+          img={img}
+          link={link}
+          style={style}
+          techStack={techStack}
+        />
       </div>
     </ProjectListContainer>
   );

@@ -27,10 +27,11 @@ export default function RightNav({ open, closeDrawer, close }) {
         <ChimneyIcon className="fa-solid fa-house-chimney"></ChimneyIcon>{" "}
         Manitou Springs, CO
         <br />
-        <PhoneIcon className="fa-solid fa-phone"></PhoneIcon> (713) 504-4436
+        <PhoneIcon className="fa-solid fa-phone"></PhoneIcon>{" "}
+        <a href="tel:PHONE_NUM" style={{ color: "#f1f2f2" }}>
+          (713) 504-4436
+        </a>
         <br />
-        <EmailIcon className="fa-solid fa-envelope"></EmailIcon>{" "}
-        mhcb@tutanota.com
         <NavLinks closeDrawer={closeDrawer} title={"Home"} />
         <NavLinks closeDrawer={closeDrawer} title={"About"} />
         <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
