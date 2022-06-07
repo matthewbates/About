@@ -2,7 +2,10 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const HomeContainer = styled.div`
-  background-color: #faf9f6;
+  /* background-color: #faf9f6;
+   */
+  background-color: ${CONSTANTS.colors.indigo};
+  color: ${CONSTANTS.colors.persephoneWhite};
   height: 108vh;
   display: flex;
   text-align: center;
@@ -13,6 +16,7 @@ export const HomeContainer = styled.div`
   margin-top: -4rem;
 
   .subtitle {
+    color: ${CONSTANTS.colors.persephoneWhite};
     transition: 3s;
     letter-spacing: 0.2rem;
     /* margin: 50px 0px; */

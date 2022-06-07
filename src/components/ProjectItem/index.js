@@ -17,13 +17,14 @@ export default function ProjectItem({
   return (
     <ProjectListContainer>
       <div ref={ref} className={inView ? "listItem animate" : "listItem"}>
-        <ProjectInfo title={title} github={github} techStack={techStack} />
+        {/* <ProjectInfo title={title} github={github} techStack={techStack} /> */}
         <br />
         <ProjectImage
           img={img}
           link={link}
           style={style}
           techStack={techStack}
+          github={github}
         />
       </div>
     </ProjectListContainer>

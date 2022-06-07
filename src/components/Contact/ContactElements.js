@@ -10,26 +10,27 @@ export const Form = styled.form`
   align-items: center;
   margin-right: 1.4rem;
   justify-content: center;
+  line-height: 20px;
 
   .submit-button {
-    /* margin-left: 14rem; */
-    background-color: #363636;
+    width: 30%;
+    background: transparent;
+    border: 2px solid ${CONSTANTS.colors.persephoneWhite};
     color: #f1f2f2;
-    border-radius: 50px;
-    padding: 0.5rem;
+    /* border-radius: 50px; */
+    /* padding: 0.5rem; */
     align-items: center;
-    line-height: 1;
+    /* line-height: 1; */
     font-weight: bold;
-    /* width: 108%; */
   }
 `;
 
 export const TextInput = styled.input`
   color: #f1f2f2;
-  background-color: #363636;
-  border: thin solid #f1f2f2;
+  background: transparent;
+  border: 2px solid ${CONSTANTS.colors.persephoneWhite};
   border-radius: 0.25rem;
-  padding: 0.75rem;
+  padding: 0.50rem;
   margin-bottom: 0.5rem;
   outline: none;
   display: block;
@@ -40,10 +41,10 @@ export const TextInput = styled.input`
 
 export const EmailInput = styled.input`
   color: #f1f2f2;
-  background-color: #363636;
-  border: thin solid #f1f2f2;
+  background: transparent;
+  border: 2px solid ${CONSTANTS.colors.persephoneWhite};
+  padding: 0.5rem;
   border-radius: 0.25rem;
-  padding: 0.75rem;
   margin-bottom: 0.5rem;
   outline: none;
   display: block;
@@ -54,16 +55,15 @@ export const EmailInput = styled.input`
 
 export const TextArea = styled.textarea`
   color: #f1f2f2;
-  border-radius: 0.25rem;
-  border: thin solid #f1f2f2;
-  padding: 0.75rem;
+  background: transparent;
+  border: 2px solid ${CONSTANTS.colors.persephoneWhite};
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
   outline: none;
   display: block;
   width: 100%;
   font-size: 1rem;
   line-height: 1;
-  background-color: transparent;
 `;
 
 export const SubmitBtn = styled.button`

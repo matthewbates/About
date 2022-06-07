@@ -7,7 +7,7 @@ export const CardContainer = styled.div`
     transform: scale(85%);
     transition: 1s;
     padding: 40px;
-    border: 2px solid #ffffff;
+    border: 2px solid ${CONSTANTS.colors.persephoneWhite};
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 20px 38px,
       rgba(0, 0, 0, 0.5) 0px 15px 12px;

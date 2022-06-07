@@ -70,7 +70,7 @@ export default function Contact() {
           primary="true"
         >
           SEND
-          {hover ? <ArrowRight /> : <ArrowForward />}
+          {hover ? <ArrowForward /> : <ArrowRight />}
         </button>
       </Form>
     </>

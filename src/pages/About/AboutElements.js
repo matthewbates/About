@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const AboutContainer = styled.div`
-  background: ${CONSTANTS.colors.indigo};
+  background: grey;
   display: flex;
   flex-direction: row;
   justify-content: center;

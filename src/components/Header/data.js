@@ -7,19 +7,23 @@ export const headerIconData = [
   {
     url: "https://www.linkedin.com/in/matthew-bates-71b7bb79/",
     img: LinkedIn,
-    style: { height: "35px", marginRight: "15px", marginTop: "1px" },
+    style: {
+      height: "38px",
+      marginRight: "15px",
+      marginTop: "1px",
+    },
   },
   {
     url: "https://www.medium.com/@matthewhcbates",
     img: Medium,
-    style: { height: "37px", marginRight: "15px" },
+    style: { height: "39px", marginRight: "15px" },
   },
   {
     url: "https://www.codewars.com/users/matthewhcbates",
     img: CodeWars,
     style: {
       padding: 3,
-      height: "30px",
+      height: "32.5px",
       marginTop: "1px",
       marginRight: "15px",
       borderRadius: "5px",
@@ -29,6 +33,6 @@ export const headerIconData = [
   {
     url: "https://www.github.com/matthewbates",
     img: GitHub,
-    style: { height: "39.4px", marginRight: "15px" },
+    style: { height: "45px", marginRight: "15px" },
   },
 ];

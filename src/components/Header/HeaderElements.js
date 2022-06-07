@@ -17,4 +17,5 @@ export const StyledHeader = styled.nav`
 export const StyledContainer = styled.div`
   display: flex;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.8);
 `;
