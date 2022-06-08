@@ -20,7 +20,7 @@ export const AuthorImg = styled.img`
   border-radius: 50%;
 
   @media screen and (max-width: 390px) {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 `;
 

@@ -24,4 +24,5 @@
 
 .main-container:hover .overlay {
   height: 100%;
+  background: blue;
 }

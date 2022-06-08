@@ -11,6 +11,7 @@ export const ProjectContainer = styled.div`
   justify-content: center;
   color: #ffffff;
   background-color: #363636;
+  
   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
     min-height: 100vh;
   }

@@ -39,11 +39,8 @@ export const StyledProjectImage = styled.div`
 
   .overlay {
     color: white;
-    object-position: center;
     font-weight: bold;
-    font-size: 2.5vw;
-    margin-top: 50px;
-    /* position: absolute; */
+    /* font-size: 2.5vw; */
     text-align: center;
     bottom: 0;
     left: 0;
@@ -53,5 +50,17 @@ export const StyledProjectImage = styled.div`
     width: 100%;
     height: 0;
     transition: 0.5s ease;
+    margin-top: 50px;
+  }
+
+  .overlay p {
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8vw;
+    margin: 30% 0 0 18%;
+    width: 70%;
+    letter-spacing: 5px;
+    line-height: 1.5rem;
   }
 `;

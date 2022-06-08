@@ -5,24 +5,19 @@ import "./project.css";
 export default function ProjectImage({ img, link, style, techStack, github }) {
   const [hover, setHover] = useState(false);
 
-  const handleMouseOver = () => {
-    setHover(true);
-  };
-
-  const handleMouseOut = () => {
-    setHover(false);
+  const handleToggle = () => {
+    setHover(!hover);
   };
 
   return (
     <>
       <StyledProjectImage>
-        {/* <a href={link} target="_blank" rel="noopener noreferrer"> */}
         <img
           src={img}
           className={style}
           alt="image"
-          onMouseEnter={handleMouseOver}
-          onMouseLeave={handleMouseOut}
+          onMouseEnter={handleToggle}
+          onMouseLeave={handleToggle}
         />
         <div className="overlay">
           <p>{techStack}</p>
@@ -34,13 +29,8 @@ export default function ProjectImage({ img, link, style, techStack, github }) {
             GitHub
           </a>
         </div>
-        {/* </a> */}
       </StyledProjectImage>
       <br />
     </>
   );
-}
-
-{
-  /* {hover ? techStack : null} */
 }

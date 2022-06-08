@@ -18,18 +18,18 @@ export default function App() {
 
   return (
     <div className="app">
-      {/* {loadingScreen ? (
+      {loadingScreen ? (
         <Loader />
-      ) : ( */}
-      <>
-        <Header />
-        <Home />
-        <About />
-        <Projects />
-        <ContactForm />
-        {/* <ScrollToTop /> */}
-      </>
-      {/* //  */}
+      ) : (
+        <>
+          <Header />
+          <Home />
+          <About />
+          <Projects />
+          <ContactForm />
+          {/* <ScrollToTop /> */}
+        </>
+      )}
     </div>
   );
 }
