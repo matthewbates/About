@@ -24,7 +24,6 @@ const TEMPLATE_ID = "template_bl3e1rq";
 const USER_ID = "pxTQ3Ga0lBOJ4vGzM";
 
 export default function Contact() {
-  const [loading, setLoading] = useState(false);
   const [hover, setHover] = useState(false);
 
   function handleOnSubmit(e) {

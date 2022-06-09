@@ -10,27 +10,33 @@ export default function ProjectImage({ img, link, style, techStack, github }) {
   };
 
   return (
-    <>
-      <StyledProjectImage>
-        <img
-          src={img}
-          className={style}
-          alt="image"
-          onMouseEnter={handleToggle}
-          onMouseLeave={handleToggle}
-        />
-        <div className="overlay">
-          <p>{techStack}</p>
-          <a href={link} target="_blank" rel="noopener noreferrer">
+    <StyledProjectImage>
+      <img
+        src={img}
+        className={style}
+        alt="image"
+        onMouseEnter={handleToggle}
+        onMouseLeave={handleToggle}
+      />
+      <div className="overlay">
+        <p>{techStack}</p>
+          <a
+            style={{ color: "white" }}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Demo
           </a>
-          <br />
-          <a href={github} target="_blank" rel="noopener noreferrer">
+          <a
+            style={{ color: "white" }}
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
-        </div>
-      </StyledProjectImage>
-      <br />
-    </>
+      </div>
+    </StyledProjectImage>
   );
 }

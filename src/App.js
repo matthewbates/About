@@ -8,17 +8,16 @@ import ContactForm from "./pages/ContactForm";
 import { FaArrowCircleUp } from "react-icons/fa";
 
 export default function App() {
-  const [loadingScreen, setLoadingScreen] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoadingScreen(false);
-    }, 5000);
+    const timer1 = setTimeout(() => setIsLoading(false), 3500);
+    return () => clearTimeout(timer1);
   }, []);
 
   return (
     <div className="app">
-      {loadingScreen ? (
+      {isLoading ? (
         <Loader />
       ) : (
         <>
@@ -27,7 +26,6 @@ export default function App() {
           <About />
           <Projects />
           <ContactForm />
-          {/* <ScrollToTop /> */}
         </>
       )}
     </div>

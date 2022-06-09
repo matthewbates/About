@@ -17,7 +17,7 @@ export const projectData = [
     img: mountainBuddy,
     link: "https://vimeo.com/695889451/21156ef4dd",
     techStack:
-      "JavaScript · React · Ruby on Rails · PostgreSQL · MDBootstrap · Google Login · Google Maps API · OpenWeatherMap API",
+      "JavaScript · React · Ruby on Rails · PostgreSQL · Google Login · Google Maps API · Weather API",
     style: "img flourish",
     title: "Mountain Buddy",
     github: "https://github.com/matthewbates/Mountain-Buddy",
@@ -39,12 +39,12 @@ export const projectData = [
     title: "SkiBum",
     github: "https://github.com/matthewbates/SkiBum",
   },
-   {
-     img: pokedex,
-     link: "https://vimeo.com/695844138/aef213f1d9",
-     techStack: "JavaScript · HTML · CSS",
-     style: "img flourish",
-     title: "Pokedex",
-     github: "https://github.com/matthewbates/Pokedex",
-   },
+  {
+    img: pokedex,
+    link: "https://vimeo.com/695844138/aef213f1d9",
+    techStack: "JavaScript · HTML · CSS",
+    style: "img flourish",
+    title: "Pokedex",
+    github: "https://github.com/matthewbates/Pokedex",
+  },
 ];
