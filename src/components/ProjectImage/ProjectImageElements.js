@@ -31,7 +31,7 @@ export const StyledProjectImage = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-    line-height: 25px;
+    line-height: 30px;
 
     @media screen and (max-width: 420px) {
       font-size: 12px;

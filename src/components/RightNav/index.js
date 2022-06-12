@@ -28,8 +28,8 @@ export default function RightNav({ open, closeDrawer, close }) {
         Manitou Springs, CO
         <br />
         <PhoneIcon className="fa-solid fa-phone"></PhoneIcon>{" "}
-        <a href="tel:PHONE_NUM" style={{ color: "#f1f2f2" }}>
-          (713) 504-4436
+        <a href="tel:+17135044436" style={{ color: "#f1f2f2" }}>
+          713-504-4436
         </a>
         <br />
         <NavLinks closeDrawer={closeDrawer} title={"Home"} />
