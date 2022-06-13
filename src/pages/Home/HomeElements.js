@@ -2,8 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const HomeContainer = styled.div`
-  /* background-color: #faf9f6;
-   */
   background-color: ${CONSTANTS.colors.indigo};
   color: ${CONSTANTS.colors.persephoneWhite};
   height: 108vh;
@@ -15,6 +13,11 @@ export const HomeContainer = styled.div`
   background-size: cover;
   margin-top: -4rem;
 
+  .h1 {
+    letter-spacing: 0.2rem;
+    font-size: 24px;
+  }
+
   .subtitle {
     color: ${CONSTANTS.colors.persephoneWhite};
     transition: 3s;
@@ -23,8 +26,7 @@ export const HomeContainer = styled.div`
   }
   @media (max-width: 1100px) {
     background-size: cover;
-    /* justify-content: flex-start; */
-    background-size: cover;
+
     .text-container {
       width: 100vw;
       height: auto;

@@ -17,8 +17,9 @@ export default function Home() {
               "Freelance web designer",
             ]}
             multiTextDelay={2500}
-            textStyle={{ fontSize: "0.9rem", textAlign: "center" }}
+            textStyle={{ fontSize: "1.2rem", textAlign: "center" }}
             cursorColor="#fff"
+            typeSpeed={80}
             multiTextLoop
           />
         </div>

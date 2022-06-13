@@ -3,7 +3,7 @@ import CONSTANTS from "../../utils/constants";
 
 export const CardContainer = styled.div`
   .content {
-    /* opacity: 50; */
+    font-size: 24px;
     transform: scale(85%);
     transition: 1s;
     padding: 40px;
@@ -18,6 +18,7 @@ export const CardContainer = styled.div`
 
     @media (max-width: 700px) {
       padding: 20px;
+      font-size: 18px;
     }
 
     .animate {
