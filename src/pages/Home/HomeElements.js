@@ -58,7 +58,6 @@ export const HomeSubtitle = styled.h3`
   .subtitle {
     transition: 3s;
     letter-spacing: 0.2rem;
-    /* margin: 50px 0px; */
   }
 
   @media screen and (max-width: 1100px) {

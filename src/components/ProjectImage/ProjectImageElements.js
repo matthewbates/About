@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CONSTANTS from "../../utils/constants";
 
 export const StyledProjectImage = styled.div`
   /* margin: 0% 2% 0% 5%; */
@@ -24,7 +25,7 @@ export const StyledProjectImage = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.8);
     font-family: "Quicksand", sans-serif;
     display: flex;
     flex-direction: column;
@@ -32,6 +33,7 @@ export const StyledProjectImage = styled.div`
     justify-content: center;
     text-align: center;
     line-height: 30px;
+    font-size: 18px;
 
     @media screen and (max-width: 420px) {
       font-size: 12px;
@@ -39,16 +41,5 @@ export const StyledProjectImage = styled.div`
       align-items: center;
       justify-content: center;
     }
-  }
-
-  .overlay p {
-    /* text-align: center;
-    align-items: center;
-    color: white;
-    font-size: 1.8vw;
-    margin: 30% 0 0 18%;
-    width: 70%;
-    letter-spacing: 5px;
-    line-height: 1.5rem; */
   }
 `;

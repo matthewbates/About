@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ContactForm from "./pages/ContactForm";
+import Footer from "./components/Footer";
 import { FaArrowCircleUp } from "react-icons/fa";
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           <About />
           <Projects />
           <ContactForm />
+          <Footer />
         </>
       )}
     </div>

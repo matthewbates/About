@@ -18,7 +18,7 @@ export default function About() {
     <AboutContainer id="About">
       <Card classes="about-card">
         <AboutHeader>
-          <AboutH1>ABOUT</AboutH1>
+          <AboutH1>About</AboutH1>
           <SkillsH3>{about[0].aboutOne}</SkillsH3>
         </AboutHeader>
         <SkillsH3>{about[1].aboutTwo}</SkillsH3>
