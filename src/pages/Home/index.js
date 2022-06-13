@@ -1,6 +1,7 @@
 import React from "react";
 import { HomeContainer, HomeImage, HomeH1 } from "./HomeElements";
 import Typed from "react-typed";
+import Typewriter from "typewriter-effect";
 import Author from "../../assets/author.png";
 import Card from "../../components/Card";
 
