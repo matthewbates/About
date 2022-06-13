@@ -3,7 +3,7 @@ import CONSTANTS from "../../utils/constants";
 
 export const CardContainer = styled.div`
   .content {
-    font-size: 24px;
+    font-size: 18px;
     transform: scale(85%);
     transition: 1s;
     padding: 40px;
