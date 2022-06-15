@@ -22,7 +22,7 @@ export default function Header({ width, position }) {
       opacity: 0,
       duration: 2,
       ease: "back",
-      stagger: 0.25,
+      stagger: 0.35,
     });
   }, []);
 

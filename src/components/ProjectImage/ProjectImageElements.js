@@ -2,7 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const StyledProjectImage = styled.div`
-  /* margin: 0% 2% 0% 5%; */
   position: relative;
 
   &:hover .overlay {
@@ -12,6 +11,7 @@ export const StyledProjectImage = styled.div`
   .flourish {
     max-height: 400px;
   }
+
   .img {
     display: block;
     width: 100%;
@@ -33,7 +33,7 @@ export const StyledProjectImage = styled.div`
     justify-content: center;
     text-align: center;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 16px;
 
     @media screen and (max-width: 420px) {
       font-size: 12px;
@@ -42,4 +42,15 @@ export const StyledProjectImage = styled.div`
       justify-content: center;
     }
   }
+`;
+
+export const ImageP = styled.p`
+  color: ${CONSTANTS.colors.persephoneWhite};
+  /* border: 2px solid blue;
+  box-shadow: 1px 1px 0 1px;
+  padding: 12px 15px 8px; */
+`;
+
+export const ImageA = styled.a`
+  color: ${CONSTANTS.colors.persephoneWhite};
 `;

@@ -9,8 +9,12 @@ export const projectData = [
     img: persephoneGraes,
     link: "https://vimeo.com/manage/videos/714324026/f34294a10c",
     techStack: "JavaScript · React · Styled Components · CSS",
-    style: "img flourish",
     title: "Persephone Graes Cafe & Juice Bar",
+    style: {
+      padding: "4px",
+      border: "1px solid white",
+      boxShadow: "3px 3px 4px",
+    },
     github: "https://github.com/matthewbates/persephone-graes",
   },
   {
@@ -18,8 +22,12 @@ export const projectData = [
     link: "https://vimeo.com/695889451/21156ef4dd",
     techStack:
       "JavaScript · React · Ruby on Rails · PostgreSQL · Google Login · Google Maps API · Weather API",
-    style: "img flourish",
     title: "Mountain Buddy",
+    style: {
+      padding: "4px",
+      border: "1px solid white",
+      boxShadow: "3px 3px 4px",
+    },
     github: "https://github.com/matthewbates/Mountain-Buddy",
   },
   {
@@ -27,24 +35,36 @@ export const projectData = [
     link: "https://vimeo.com/695879205/c181dc0706",
     techStack:
       "JavaScript · Ruby on Rails · SQLite · Bootstrap · Google Maps API",
-    style: "img",
     title: "Brewery Discovery",
+    style: {
+      padding: "4px",
+      border: "1px solid white",
+      boxShadow: "3px 3px 4px",
+    },
     github: "https://github.com/matthewbates/Brewery-Discovery",
   },
   {
     img: skiBum,
     link: "https://vimeo.com/695859712/81d9db0e0b",
     techStack: "JavaScript · React · Bootstrap · OpenWeatherMap API",
-    style: "img flourish",
     title: "SkiBum",
+    style: {
+      padding: "4px",
+      border: "1px solid white",
+      boxShadow: "3px 3px 4px",
+    },
     github: "https://github.com/matthewbates/SkiBum",
   },
   {
     img: pokedex,
     link: "https://vimeo.com/695844138/aef213f1d9",
     techStack: "JavaScript · HTML · CSS",
-    style: "img flourish",
     title: "Pokedex",
+    style: {
+      padding: "4px",
+      border: "1px solid white",
+      boxShadow: "3px 3px 4px",
+    },
     github: "https://github.com/matthewbates/Pokedex",
   },
 ];

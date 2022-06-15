@@ -12,7 +12,6 @@ export default function NavLinks({ handleOnClick, title, classes, closeDrawer })
           offset={0}
           smooth={true}
           duration={700}
-          // onClick={handleOnClick}
           onClick={closeDrawer}
           className={classes}
           activeClass="active"

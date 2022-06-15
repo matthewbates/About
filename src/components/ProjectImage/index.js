@@ -1,8 +1,20 @@
 import React, { useState } from "react";
-import { StyledProjectImage, ImageText } from "./ProjectImageElements";
+import {
+  StyledProjectImage,
+  ImageP,
+  ImageA,
+  ImageText,
+} from "./ProjectImageElements";
 import "./project.css";
 
-export default function ProjectImage({ img, link, style, techStack, github }) {
+export default function ProjectImage({
+  img,
+  link,
+  style,
+  techStack,
+  github,
+  title,
+}) {
   const [hover, setHover] = useState(false);
 
   const handleToggle = () => {
@@ -13,29 +25,19 @@ export default function ProjectImage({ img, link, style, techStack, github }) {
     <StyledProjectImage>
       <img
         src={img}
-        className={style}
+        className="img flourish"
         alt="image"
         onMouseEnter={handleToggle}
         onMouseLeave={handleToggle}
       />
       <div className="overlay">
-        <p>{techStack}</p>
-          <a
-            style={{ color: "white" }}
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Demo
-          </a>
-          <a
-            style={{ color: "white" }}
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
+        <ImageP style={style}>{techStack}</ImageP>
+        <ImageA href={link} target="_blank" rel="noopener noreferrer">
+          Demo
+        </ImageA>
+        <ImageA href={github} target="_blank" rel="noopener noreferrer">
+          GitHub
+        </ImageA>
       </div>
     </StyledProjectImage>
   );
