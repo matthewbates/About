@@ -24,6 +24,10 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: ${CONSTANTS.colors.persephoneWhite};
   font-size: 24px;
+
+  &:hover {
+    transform: scale(1, 1);
+  }
 `;
 
 export const FooterText = styled.div`
