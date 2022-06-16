@@ -3,6 +3,7 @@ import breweryDiscovery from "../../assets/images/breweryDiscovery.png";
 import skiBum from "../../assets/images/skiBum.png";
 import pokedex from "../../assets/images/pokedex.png";
 import persephoneGraes from "../../assets/images/persephoneGraes.png";
+import { blue } from "@mui/material/colors";
 
 export const projectData = [
   {
@@ -13,7 +14,7 @@ export const projectData = [
     style: {
       padding: "4px",
       border: "1px solid white",
-      boxShadow: "3px 3px 4px",
+      boxShadow: "4px 4px 2px 2px grey",
     },
     github: "https://github.com/matthewbates/persephone-graes",
   },
@@ -26,7 +27,9 @@ export const projectData = [
     style: {
       padding: "4px",
       border: "1px solid white",
-      boxShadow: "3px 3px 4px",
+      boxShadow: "4px 4px 3px 2px blue",
+      marginLeft: "4rem",
+      marginRight: "4rem",
     },
     github: "https://github.com/matthewbates/Mountain-Buddy",
   },
@@ -39,7 +42,9 @@ export const projectData = [
     style: {
       padding: "4px",
       border: "1px solid white",
-      boxShadow: "3px 3px 4px",
+      boxShadow: "4px 4px 3px 2px gold",
+      marginLeft: "4rem",
+      marginRight: "4rem",
     },
     github: "https://github.com/matthewbates/Brewery-Discovery",
   },
@@ -51,7 +56,9 @@ export const projectData = [
     style: {
       padding: "4px",
       border: "1px solid white",
-      boxShadow: "3px 3px 4px",
+      boxShadow: "4px 4px 3px 2px teal",
+      marginLeft: "2rem",
+      marginRight: "2rem",
     },
     github: "https://github.com/matthewbates/SkiBum",
   },
@@ -63,7 +70,7 @@ export const projectData = [
     style: {
       padding: "4px",
       border: "1px solid white",
-      boxShadow: "3px 3px 4px",
+      boxShadow: "4px 4px 3px 2px red",
     },
     github: "https://github.com/matthewbates/Pokedex",
   },
