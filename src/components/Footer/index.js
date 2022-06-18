@@ -6,6 +6,7 @@ import {
   SocialIconLink,
 } from "./FooterElements";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { RiFacebookCircleFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
@@ -17,6 +18,7 @@ export default function Footer() {
           target="_blank"
           reference="noopener noreferrer"
         >
+          {/* <i className="ri-facebook-box-line"></i> */}
           <FaFacebook />
         </SocialIconLink>
         <SocialIconLink>

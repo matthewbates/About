@@ -16,6 +16,7 @@ export default function ProjectItem({
 
   return (
     <ProjectListContainer>
+      {/* <div data-aos="fade-right"> */}
       <div ref={ref} className={inView ? "listItem animate" : "listItem"}>
         {/* <ProjectInfo title={title} github={github} techStack={techStack} /> */}
         <br />

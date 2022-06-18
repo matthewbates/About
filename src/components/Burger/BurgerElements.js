@@ -7,6 +7,7 @@ export const StyledBurger = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
+  cursor: pointer;
 
   div {
     width: 2rem;

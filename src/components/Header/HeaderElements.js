@@ -12,6 +12,10 @@ export const StyledHeader = styled.nav`
   justify-content: space-between;
   width: ${({ width }) => width || "90%"};
   position: ${({ position }) => position || "relative"};
+
+  &:hover {
+    background: transparent;
+  }
 `;
 
 export const StyledContainer = styled.div`
