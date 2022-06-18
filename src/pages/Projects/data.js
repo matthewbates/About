@@ -3,7 +3,6 @@ import breweryDiscovery from "../../assets/images/breweryDiscovery.png";
 import skiBum from "../../assets/images/skiBum.png";
 import pokedex from "../../assets/images/pokedex.png";
 import persephoneGraes from "../../assets/images/persephoneGraes.png";
-import { blue } from "@mui/material/colors";
 
 export const projectData = [
   {

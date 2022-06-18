@@ -3,7 +3,6 @@ import {
   TextInput,
   EmailInput,
   TextArea,
-  SubmitBtn,
   Form,
   FormIcon,
   FormSpan,
@@ -12,12 +11,6 @@ import {
 } from "./ContactElements";
 import emailjs from "emailjs-com";
 import swal from "sweetalert2";
-
-const templateParams = {
-  user_email: "user_email_value",
-  user_name: "user_name_value",
-  user_message: "user_message_value",
-};
 
 const SERVICE_ID = "service_7j2rpfd";
 const TEMPLATE_ID = "template_bl3e1rq";

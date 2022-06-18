@@ -7,14 +7,7 @@ import {
 } from "./ProjectImageElements";
 import "./project.css";
 
-export default function ProjectImage({
-  img,
-  link,
-  style,
-  techStack,
-  github,
-  title,
-}) {
+export default function ProjectImage({ img, link, style, techStack, github }) {
   const [hover, setHover] = useState(false);
 
   const handleToggle = () => {

@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ContactForm from "./pages/ContactForm";
 import Footer from "./components/Footer";
-import { FaArrowCircleUp } from "react-icons/fa";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
