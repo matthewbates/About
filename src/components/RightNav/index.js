@@ -6,7 +6,7 @@ import {
   IconContainer,
   ChimneyIcon,
   PhoneIcon,
-  EmailIcon,
+  RightNavButton,
 } from "./RightNavElements";
 import { BtnLink } from "../LinkButton";
 import Resume from "../../assets/Resume.pdf";
@@ -36,7 +36,7 @@ export default function RightNav({ open, closeDrawer, close }) {
         <NavLinks closeDrawer={closeDrawer} title={"About"} />
         <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
         <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
-        <button onClick={downloadResume}>Download CV</button>
+        <RightNavButton onClick={downloadResume}>Resume</RightNavButton>
       </IconContainer>
     </UlStyle>
   );
