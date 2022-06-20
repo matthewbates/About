@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const FooterContainer = styled.div`
-  background: grey;
+  background-color: #000;
   width: 100%;
   bottom: 0;
   display: flex;

@@ -3,6 +3,7 @@ import {
   TextInput,
   EmailInput,
   TextArea,
+  FormContainer,
   Form,
   FormIcon,
   FormSpan,
@@ -43,7 +44,7 @@ export default function Contact() {
   }
 
   return (
-    <>
+    <FormContainer>
       <Form id="myForm" onSubmit={handleOnSubmit}>
         <FormIcon className="fa-solid fa-user" />
         <FormSpan> Name</FormSpan>
@@ -65,6 +66,6 @@ export default function Contact() {
           {hover ? <ArrowForward /> : <ArrowRight />}
         </button>
       </Form>
-    </>
+    </FormContainer>
   );
 }

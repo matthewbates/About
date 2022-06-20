@@ -2,9 +2,14 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 import CONSTANTS from "../../utils/constants";
 
-// export const ContactContainer = styled.div`
-//   height: 100vh;
-// `;
+export const FormContainer = styled.div`
+  padding: 2rem 2rem;
+  border: 2.5px solid ${CONSTANTS.colors.persephoneWhite};
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem 1rem;
+  }
+`;
 
 export const Form = styled.form`
   align-items: center;
@@ -17,10 +22,7 @@ export const Form = styled.form`
     background: transparent;
     border: 2px solid ${CONSTANTS.colors.persephoneWhite};
     color: #f1f2f2;
-    /* border-radius: 50px; */
-    /* padding: 0.5rem; */
     align-items: center;
-    /* line-height: 1; */
     font-weight: bold;
   }
 `;
@@ -30,7 +32,7 @@ export const TextInput = styled.input`
   background: transparent;
   border: 2px solid ${CONSTANTS.colors.persephoneWhite};
   border-radius: 0.25rem;
-  padding: 0.50rem;
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
   outline: none;
   display: block;
@@ -67,19 +69,12 @@ export const TextArea = styled.textarea`
 `;
 
 export const SubmitBtn = styled.button`
-  /* border: thin solid #fff; */
-  /* margin-left: 2rem; */
   border-radius: 50px;
-  padding: 1rem;
-  /* margin: 0 0.5rem 0 0; */
-  /* display: inline-block; */
+  /* padding: 1rem; */
   justify-content: center;
   font-size: 1rem;
-  /* margin-left: 5rem; */
   line-height: 1;
-  cursor: pointer;
   font-weight: bold;
-  width: 108%;
   background: ${({ primary }) => (primary ? "#f1f2f2" : "#414042")};
 `;
 
