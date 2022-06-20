@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const HomeContainer = styled.div`
-  background-color: ${CONSTANTS.colors.indigo};
+  background-color: ${CONSTANTS.colors.navyBlue};
   color: ${CONSTANTS.colors.persephoneWhite};
   height: 108vh;
   display: flex;
@@ -43,9 +43,6 @@ export const HomeContainer = styled.div`
 `;
 
 export const HomeImage = styled.img`
-  /* width: 200px;
-  height: 200px;
-  border-radius: 50%; */
   position: absolute;
   top: 0;
   right: 0;

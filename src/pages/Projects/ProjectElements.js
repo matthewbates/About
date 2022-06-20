@@ -2,6 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ProjectContainer = styled.div`
+  background-color: ${CONSTANTS.colors.blue};
   display: flex;
   text-align: left;
   padding-top: 30px;
@@ -10,8 +11,7 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   color: #ffffff;
-  background-color: #363636;
-  
+
   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
     min-height: 100vh;
   }

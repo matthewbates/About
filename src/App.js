@@ -11,8 +11,8 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer1 = setTimeout(() => setIsLoading(false), 3500);
-    return () => clearTimeout(timer1);
+    const timer = setTimeout(() => setIsLoading(false), 3500);
+    return () => clearTimeout(timer);
   }, []);
 
   return (

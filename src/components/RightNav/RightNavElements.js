@@ -51,36 +51,23 @@ export const PhoneIcon = styled.i`
 export const RightNavButton = styled.button`
   appearance: button;
   background-color: #000;
-  background-image: none;
   border: 1px solid #000;
-  border-radius: 4px;
-  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  border-radius: 2px;
+  box-shadow: #fff 4px 4px 0 0,
+    ${CONSTANTS.colors.persephoneWhite} 4px 4px 0 1px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
-  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 15px;
-  overflow: visible;
-  padding: 12px 40px;
+  padding: 12px 30px;
   text-align: center;
   text-transform: none;
-  touch-action: manipulation;
   user-select: none;
   -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
 
   &:not([disabled]):active {
     box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
-  }
-
-  @media (min-width: 768px) {
-    .button-50 {
-      padding: 12px 50px;
-    }
   }
 `;

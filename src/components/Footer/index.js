@@ -5,12 +5,22 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./FooterElements";
+import FooterIcon from "../FooterIcon";
+import { footerIconData } from "./data";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { RiFacebookCircleFill } from "react-icons/ri";
+import { headerIconData } from "../Header/data";
 
+console.log(footerIconData[0].url);
 export default function Footer() {
   return (
     <FooterContainer>
+      {/* <FooterIcon
+        className="nav-icon"
+        url={footerIconData[0].url}
+        img={footerIconData[0].img}
+        style={footerIconData[0].style}
+      /> */}
       <SocialIcons>
         <SocialIconLink
           a
@@ -18,7 +28,6 @@ export default function Footer() {
           target="_blank"
           reference="noopener noreferrer"
         >
-          {/* <i className="ri-facebook-box-line"></i> */}
           <FaFacebook />
         </SocialIconLink>
         <SocialIconLink>

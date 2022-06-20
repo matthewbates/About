@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const FormSection = styled.section`
-  background: ${CONSTANTS.colors.batman};
+  background: ${CONSTANTS.colors.babyBlue};
   display: flex;
   justify-content: center;
   border-top: 1px solid #fff;
