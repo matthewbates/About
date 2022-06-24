@@ -52,7 +52,7 @@ export const RightNavButton = styled.button`
   appearance: button;
   background-color: #000;
   border: 1px solid #000;
-  border-radius: 2px;
+  border-radius: 20px;
   box-shadow: #fff 4px 4px 0 0,
     ${CONSTANTS.colors.persephoneWhite} 4px 4px 0 1px;
   box-sizing: border-box;
