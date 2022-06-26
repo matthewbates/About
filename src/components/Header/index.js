@@ -11,9 +11,13 @@ export default function Header({ width, position }) {
 
   const handleOnClick = () => setOpen(!open);
 
-  const closeDrawer = () => {
-    setTimeout(() => setOpen(false), 800);
-  };
+  // const closeDrawer = () => {
+  //   setTimeout(() => setOpen(false), 800);
+  // };
+
+function closeDrawer() {
+  setTimeout() => setOpen(false)
+}
 
   useEffect(() => {
     gsap.from(".nav-icon", {
