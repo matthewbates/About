@@ -15,9 +15,9 @@ export default function Header({ width, position }) {
   //   setTimeout(() => setOpen(false), 800);
   // };
 
-function closeDrawer() {
-  setTimeout() => setOpen(false)
-}
+  function closeDrawer() {
+    setTimeout(() => setOpen(false), 800);
+  }
 
   useEffect(() => {
     gsap.from(".nav-icon", {
