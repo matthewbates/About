@@ -49,9 +49,8 @@ export const PhoneIcon = styled.i`
 `;
 
 export const RightNavButton = styled.button`
-  appearance: button;
-  background-color: ${CONSTANTS.colors.persephoneWhite};
-  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
+  background-color: #000;
+  border: 1px solid #000;
   border-radius: 20px;
   box-shadow: ${CONSTANTS.colors.persephoneWhite} 4px 4px 0 0,
     ${CONSTANTS.colors.persephoneWhite} 4px 4px 0 1px;
@@ -67,8 +66,7 @@ export const RightNavButton = styled.button`
   -webkit-user-select: none;
 
   &:not([disabled]):active {
-    box-shadow: ${CONSTANTS.colors.persephoneWhite} 2px 2px 0 0,
-      #000 2px 2px 0 1px;
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
 `;
