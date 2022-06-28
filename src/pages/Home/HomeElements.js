@@ -42,6 +42,14 @@ export const HomeContainer = styled.div`
   }
 `;
 
+export const HomeMemoji = styled.img`
+  height: 300px;
+
+  @media screen and (max-width: 420px) {
+    height: 200px;
+  }
+`;
+
 export const HomeImage = styled.img`
   position: absolute;
   top: 0;

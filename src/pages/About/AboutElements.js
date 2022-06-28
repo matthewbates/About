@@ -63,7 +63,7 @@ export const AboutSection = styled.h3`
 
 export const SkillsImage = styled.img`
   margin: 10px;
-  height: 80px;
+  height: 60px;
   transform-style: preserve-3d;
   animation: flip 4s linear forwards infinite;
 
