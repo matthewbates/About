@@ -34,7 +34,7 @@ export default function Footer() {
           <FaInstagram target="_blank" reference="noopener noreferrer" />
         </SocialIconLink>
       </SocialIcons>
-      <FooterText>Matthew Bates © {new Date().getFullYear()}</FooterText>
+      <FooterText>© {new Date().getFullYear()} Matthew Bates</FooterText>
     </FooterContainer>
   );
 }
