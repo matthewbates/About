@@ -15,8 +15,6 @@ export const StyledHeader = styled.nav`
   justify-content: space-between;
   width: ${({ width }) => width || "94%"};
   position: ${({ position }) => position || "relative"};
-
-  @supports (-webkit-backgdrop-filter: none) or (backdrop-filter: none);
 `;
 
 export const StyledContainer = styled.div`

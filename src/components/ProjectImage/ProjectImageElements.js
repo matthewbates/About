@@ -44,6 +44,12 @@ export const StyledProjectImage = styled.div`
   }
 `;
 
+export const ImageH2 = styled.h2`
+  justify-content: space-between;
+  font-family: "Quicksand" sans-serif;
+  text-decoration: underline;
+`;
+
 export const ImageP = styled.p`
   color: ${CONSTANTS.colors.persephoneWhite};
   /* border: 2px solid blue;
