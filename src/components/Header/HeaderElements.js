@@ -5,7 +5,7 @@ export const StyledHeader = styled.nav`
   /* background-color: #faf9f6; */
   /* background-color: rgba(0, 0, 0, 0.15); */
   /* background-color: ${CONSTANTS.colors.persephoneWhite}; */
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   margin-top: 3.5rem;
   z-index: 1;
   height: 65px;
