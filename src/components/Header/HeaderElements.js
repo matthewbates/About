@@ -13,7 +13,7 @@ export const StyledHeader = styled.nav`
   padding: 0 20px;
   align-items: center;
   justify-content: space-between;
-  width: ${({ width }) => width || "94%"};
+  width: ${({ width }) => width || "90%"};
   position: ${({ position }) => position || "relative"};
 `;
 
