@@ -56,9 +56,8 @@ export default function Header({ width, position }) {
       </StyledContainer>
       <Burger open={open} handleOnClick={handleOnClick} />
       <div
-        // fix marginTop inline
         style={{
-          marginTop: "-20px",
+          // marginTop: "-20px",
           top: 0,
           right: 0,
           position: "fixed",

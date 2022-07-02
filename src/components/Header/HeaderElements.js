@@ -4,8 +4,7 @@ import CONSTANTS from "../../utils/constants";
 export const StyledHeader = styled.nav`
   /* background-color: #faf9f6; */
   /* background-color: rgba(0, 0, 0, 0.15); */
-  /* background-color: ${CONSTANTS.colors.persephoneWhite}; */
-  backdrop-filter: blur(10px);
+  background-color: ${CONSTANTS.colors.persephoneWhite};
   margin-top: 3.5rem;
   z-index: 1;
   height: 65px;
