@@ -11,7 +11,7 @@ export const projectData = [
     techStack: "JavaScript · React · Styled Components · CSS",
     title: "Persephone Graes Cafe & Juice Bar",
     style: {
-      padding: "4px",
+      padding: "2.5px",
       border: "1px solid white",
       boxShadow: "4px 4px 2px 2px grey",
     },
@@ -24,7 +24,7 @@ export const projectData = [
       "JavaScript · React · Ruby on Rails · PostgreSQL · Google Login · Google Maps API · Weather API",
     title: "Mountain Buddy",
     style: {
-      padding: "4px",
+      padding: "2.5px",
       border: "1px solid white",
       boxShadow: "4px 4px 3px 2px blue",
       marginLeft: "4rem",
@@ -39,7 +39,7 @@ export const projectData = [
       "JavaScript · Ruby on Rails · SQLite · Bootstrap · Google Maps API",
     title: "Brewery Discovery",
     style: {
-      padding: "4px",
+      padding: "2.5px",
       border: "1px solid white",
       boxShadow: "4px 4px 3px 2px gold",
       marginLeft: "4rem",
@@ -53,7 +53,7 @@ export const projectData = [
     techStack: "JavaScript · React · Bootstrap · OpenWeatherMap API",
     title: "SkiBum",
     style: {
-      padding: "4px",
+      padding: "2.5px",
       border: "1px solid white",
       boxShadow: "4px 4px 3px 2px teal",
       marginLeft: "2rem",
@@ -67,7 +67,7 @@ export const projectData = [
     techStack: "JavaScript · HTML · CSS",
     title: "Pokedex",
     style: {
-      padding: "4px",
+      padding: "2.5px",
       border: "1px solid white",
       boxShadow: "4px 4px 3px 2px red",
     },

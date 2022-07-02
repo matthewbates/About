@@ -63,6 +63,7 @@ export const ImageA = styled.a`
   text-decoration: none;
   letter-spacing: 2px;
   font-family: "Quicksand" sans-serif;
+  width: 70px;
 
   &:hover {
     font-style: italic;
