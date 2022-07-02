@@ -11,13 +11,9 @@ export default function Header({ width, position }) {
 
   const handleOnClick = () => setOpen(!open);
 
-  // const closeDrawer = () => {
-  //   setTimeout(() => setOpen(false), 800);
-  // };
-
-  function closeDrawer() {
+  const closeDrawer = () => {
     setTimeout(() => setOpen(false), 800);
-  }
+  };
 
   useEffect(() => {
     gsap.from(".nav-icon", {
@@ -60,6 +56,7 @@ export default function Header({ width, position }) {
       </StyledContainer>
       <Burger open={open} handleOnClick={handleOnClick} />
       <div
+        // fix marginTop inline
         style={{
           marginTop: "-20px",
           top: 0,
