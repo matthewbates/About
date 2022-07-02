@@ -13,6 +13,10 @@ export const HomeContainer = styled.div`
   background-size: cover;
   margin-top: -4rem;
 
+  .header-container {
+    margin-top: 5rem;
+  }
+
   .h1 {
     letter-spacing: 0.2rem;
     font-size: 24px;

@@ -8,7 +8,8 @@ import memoji from "../../assets/memoji.png";
 export default function Home() {
   return (
     <HomeContainer id="Home">
-      <Card>
+      {/* <Card> */}
+      <div className="header-container">
         <HomeMemoji src={memoji} />
         <h1>Hi, I'm Matthew</h1>
         <div className="subtitle-small subtitle">
@@ -25,7 +26,8 @@ export default function Home() {
             multiTextLoop
           />
         </div>
-      </Card>
+        {/* </Card> */}
+      </div>
     </HomeContainer>
   );
 }

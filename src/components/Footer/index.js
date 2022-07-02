@@ -11,7 +11,6 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { headerIconData } from "../Header/data";
 
-console.log(footerIconData[0].url);
 export default function Footer() {
   return (
     <FooterContainer>
