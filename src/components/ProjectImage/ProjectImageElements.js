@@ -44,7 +44,7 @@ export const StyledProjectImage = styled.div`
   }
 `;
 
-export const ImageH2 = styled.h2`
+export const ImageH3 = styled.h3`
   justify-content: space-between;
   font-family: "Quicksand" sans-serif;
   text-decoration: underline;
@@ -52,11 +52,23 @@ export const ImageH2 = styled.h2`
 
 export const ImageP = styled.p`
   color: ${CONSTANTS.colors.persephoneWhite};
-  /* border: 2px solid blue;
-  box-shadow: 1px 1px 0 1px;
-  padding: 12px 15px 8px; */
+
+  @media screen and (max-width: 390px) {
+    font-size: 8px;
+  }
 `;
 
 export const ImageA = styled.a`
   color: ${CONSTANTS.colors.persephoneWhite};
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: "Quicksand" sans-serif;
+
+  &:hover {
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 390px) {
+    font-size: 8px;
+  }
 `;

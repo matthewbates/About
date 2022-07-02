@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 import {
   StyledProjectImage,
-  ImageH2,
+  ImageH3,
   ImageP,
   ImageA,
   ImageText,
 } from "./ProjectImageElements";
 import "./project.css";
 
-export default function ProjectImage({ img, link, style, techStack, github, title }) {
+export default function ProjectImage({
+  img,
+  link,
+  style,
+  techStack,
+  github,
+  title,
+}) {
   const [hover, setHover] = useState(false);
 
   const handleToggle = () => {
@@ -25,16 +32,16 @@ export default function ProjectImage({ img, link, style, techStack, github, titl
         onMouseLeave={handleToggle}
       />
       <div className="overlay">
-        <ImageH2>{title}</ImageH2>
+        <ImageH3>{title}</ImageH3>
         <ImageP style={style}>{techStack}</ImageP>
-        {/* <span> */}
+        <span>
           <ImageA href={link} target="_blank" rel="noopener noreferrer">
-            Demo
+            Demo{" "}
           </ImageA>
           <ImageA href={github} target="_blank" rel="noopener noreferrer">
             GitHub
           </ImageA>
-        {/* </span> */}
+        </span>
       </div>
     </StyledProjectImage>
   );
