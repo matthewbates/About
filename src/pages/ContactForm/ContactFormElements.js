@@ -5,7 +5,7 @@ export const FormSection = styled.section`
   background: ${CONSTANTS.colors.babyBlue};
   display: flex;
   justify-content: center;
-  border-top: 1px solid #fff;
+  /* border-top: 1px solid #fff; */
   height: 100vh;
 `;
 

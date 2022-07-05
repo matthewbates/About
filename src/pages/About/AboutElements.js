@@ -64,21 +64,11 @@ export const AboutSection = styled.h3`
 export const SkillsImage = styled.img`
   margin: 10px;
   height: 60px;
-  transition: transform 0.5s ease-in-out;
-  /* transform-style: preserve-3d; */
-  /* animation: flip 4s linear forwards infinite; */
 
   &:hover {
     transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
   }
-  /* @keyframes flip {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(360deg);
-    }
-  } */
 `;
 
 export const SkillsH3 = styled.h3`
