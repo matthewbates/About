@@ -4,7 +4,7 @@ import CONSTANTS from "../../utils/constants";
 export const CardContainer = styled.div`
   .content {
     font-size: 18px;
-    transform: scale(85%);
+    transform: scale(80%);
     transition: 1s;
     padding: 40px;
     border: 2px solid ${CONSTANTS.colors.persephoneWhite};
