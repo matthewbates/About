@@ -7,8 +7,6 @@ import {
   Form,
   FormIcon,
   FormSpan,
-  ArrowForward,
-  ArrowRight,
 } from "./ContactElements";
 import emailjs from "emailjs-com";
 import swal from "sweetalert2";
@@ -16,6 +14,10 @@ import swal from "sweetalert2";
 const SERVICE_ID = "service_7j2rpfd";
 const TEMPLATE_ID = "template_bl3e1rq";
 const USER_ID = "pxTQ3Ga0lBOJ4vGzM";
+
+// const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+// const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+// const USER_ID = process.env.REACT_APP_USER_ID;
 
 export default function Contact() {
   const [hover, setHover] = useState(false);
@@ -63,7 +65,7 @@ export default function Contact() {
           primary="true"
         >
           SEND
-          {hover ? <ArrowForward /> : <ArrowRight />}
+          {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
         </button>
       </Form>
     </FormContainer>

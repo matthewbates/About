@@ -5,30 +5,23 @@ export const FormSection = styled.section`
   background: ${CONSTANTS.colors.babyBlue};
   display: flex;
   justify-content: center;
-  /* border-top: 1px solid #fff; */
   height: 100vh;
 `;
 
 export const FormContainer = styled.div`
   color: #f1f2f2;
   display: flex;
-  flex-wrap: wrap;
-  width: 70%;
+  width: 90%;
   justify-content: center;
   align-items: center;
-  margin: 3% 0;
+  margin-right: 6rem;
 
   @media screen and (max-width: 1200px) {
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 
   @media screen and (max-width: 1007px) {
     width: 80%;
-  }
-
-  @media screen and (max-width: 700px) {
-    width: 90%;
-    align-content: center;
   }
 `;
 
