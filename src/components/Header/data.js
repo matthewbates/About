@@ -2,6 +2,7 @@ import Medium from "../../assets/icons/medium.png";
 import GitHub from "../../assets/icons/github.png";
 import LinkedIn from "../../assets/icons/linkedin.png";
 import CodeWars from "../../assets/icons/codewars.png";
+import BuyMeACoffee from "../../assets/icons/buymeacoffee.png";
 
 export const headerIconData = [
   {
@@ -34,5 +35,10 @@ export const headerIconData = [
     url: "https://www.github.com/matthewbates",
     img: GitHub,
     style: { height: "45px", marginRight: "15px" },
+  },
+  {
+    url: "https://www.buymeacoffee.com/matthewhcbates",
+    img: BuyMeACoffee,
+    style: { height: "45px", marginRight: "15px", color: "black" },
   },
 ];

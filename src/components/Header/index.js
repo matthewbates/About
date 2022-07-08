@@ -53,6 +53,12 @@ export default function Header({ width, position }) {
           img={headerIconData[3].img}
           style={headerIconData[3].style}
         />
+        <HeaderIcon
+          className="nav-icon"
+          url={headerIconData[4].url}
+          img={headerIconData[4].img}
+          style={headerIconData[4].style}
+        />
       </StyledContainer>
       <Burger open={open} handleOnClick={handleOnClick} />
       <div
