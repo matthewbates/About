@@ -14,7 +14,7 @@ import Author from "../../assets/author.png";
 import NavLinks from "../NavLinks";
 import { saveAs } from "file-saver";
 
-export default function RightNav({ open, closeDrawer, close }) {
+export default function RightNav({ open, closeDrawer }) {
   function downloadResume() {
     saveAs(Resume, "matthewbates-resume.pdf");
   }

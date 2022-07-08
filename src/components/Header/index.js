@@ -57,7 +57,6 @@ export default function Header({ width, position }) {
       <Burger open={open} handleOnClick={handleOnClick} />
       <div
         style={{
-          // marginTop: "-20px",
           top: 0,
           right: 0,
           position: "fixed",

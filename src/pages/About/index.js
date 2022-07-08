@@ -10,13 +10,12 @@ import {
 } from "./AboutElements";
 import Card from "../../components/Card";
 import { languages, learning, about } from "./data";
-import { useInView } from "react-intersection-observer";
 
 export default function About() {
 
   return (
     <AboutContainer id="About">
-      <Card classes="about-card">
+      <Card>
         <AboutHeader>
           <AboutH1>About Me</AboutH1>
           <SkillsH3>{about[0].aboutOne}</SkillsH3>

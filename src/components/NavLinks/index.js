@@ -1,8 +1,12 @@
 import React from "react";
-// import { Link } from "react-scroll";
 import { LinksContainer, LinkScroll } from "./NavLinkElements";
 
-export default function NavLinks({ handleOnClick, title, classes, closeDrawer }) {
+export default function NavLinks({
+  handleOnClick,
+  title,
+  classes,
+  closeDrawer,
+}) {
   return (
     <LinksContainer>
       <span>

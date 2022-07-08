@@ -3,8 +3,6 @@ import Contact from "../../components/Contact";
 import {
   FormSection,
   FormContainer,
-  FormContainerDiv,
-  FormContainerText,
   FormContainerDivRight,
   FormH1,
 } from "./ContactFormElements";

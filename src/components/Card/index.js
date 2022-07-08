@@ -1,10 +1,10 @@
 import React from "react";
-import { CardContainer, CardContent } from "./CardElements";
+import { CardContainer } from "./CardElements";
 import { useInView } from "react-intersection-observer";
 import classnames from "classnames";
 
 export default function Card({ classes, children, styleOverrides }) {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
 
   return (
     <CardContainer styleOverrides={styleOverrides}>

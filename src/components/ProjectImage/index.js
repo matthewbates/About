@@ -4,7 +4,6 @@ import {
   ImageH3,
   ImageP,
   ImageA,
-  ImageText,
 } from "./ProjectImageElements";
 import "./project.css";
 
