@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
+import { Link } from "react-scroll";
 
 export const HomeContainer = styled.div`
   background-color: ${CONSTANTS.colors.navyBlue};
@@ -26,7 +27,6 @@ export const HomeContainer = styled.div`
     color: ${CONSTANTS.colors.persephoneWhite};
     transition: 3s;
     letter-spacing: 0.2rem;
-    /* margin: 50px 0px; */
   }
   @media (max-width: 1100px) {
     background-size: cover;
@@ -54,24 +54,13 @@ export const HomeMemoji = styled.img`
   }
 `;
 
-export const HomeImage = styled.img`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-`;
-
-export const HomeSubtitle = styled.h3`
-  .subtitle {
-    transition: 3s;
-    letter-spacing: 0.2rem;
-  }
-
-  @media screen and (max-width: 1100px) {
-    margin: 5px 0px 0px 0px;
-  }
+export const ScrollButton = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  cursor: pointer;
+  border: 2px solid ${CONSTANTS.colors.persephoneWhite};
+  padding: 6px 6px;
 `;

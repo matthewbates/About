@@ -1,8 +1,9 @@
 import React from "react";
-import { HomeContainer, HomeMemoji } from "./HomeElements";
+import { HomeContainer, HomeMemoji, ScrollButton } from "./HomeElements";
 import TypeWriterEffect from "react-typewriter-effect";
 import Card from "../../components/Card";
 import memoji from "../../assets/memoji.png";
+import { FaArrowDown } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -25,6 +26,15 @@ export default function Home() {
           />
         </div>
       </Card>
+      <ScrollButton
+        to="About"
+        spy={true}
+        offset={0}
+        smooth={true}
+        duration={700}
+      >
+        <FaArrowDown />
+      </ScrollButton>
     </HomeContainer>
   );
 }

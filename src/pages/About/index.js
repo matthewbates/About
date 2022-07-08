@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AboutContainer,
   AboutHeader,
@@ -12,6 +12,11 @@ import Card from "../../components/Card";
 import { languages, learning, about } from "./data";
 
 export default function About() {
+  const [hover, setHover] = useState(false);
+
+  function toggleHover() {
+    setHover(!hover);
+  }
 
   return (
     <AboutContainer id="About">
