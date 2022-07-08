@@ -2,7 +2,6 @@ const CONSTANTS = {
   colors: {
     persephoneWhite: "#F1F2F2",
     mint: "#82FF9E",
-    babyBlue: "#BFD7ED",
     navyBlue: "#003B73",
     blue: "#2E8BC0",
     babyBlue: "#68BBE3",

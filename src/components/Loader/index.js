@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-import Box from "@mui/material/Box";
-import { LoaderContainer, LoadingScreen } from "./LoaderElements";
-import ReactLoading from "react-loading";
+import { LoadingScreen } from "./LoaderElements";
 import gsap from "gsap";
 
 export default function Loader() {

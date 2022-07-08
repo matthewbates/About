@@ -8,7 +8,6 @@ import {
   PhoneIcon,
   RightNavButton,
 } from "./RightNavElements";
-import { BtnLink } from "../LinkButton";
 import Resume from "../../assets/Resume.pdf";
 import Author from "../../assets/author.png";
 import NavLinks from "../NavLinks";

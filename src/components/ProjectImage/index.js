@@ -26,7 +26,7 @@ export default function ProjectImage({
       <img
         src={img}
         className="img flourish"
-        alt="image"
+        alt="project"
         onMouseEnter={handleToggle}
         onMouseLeave={handleToggle}
       />

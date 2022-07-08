@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
-import { Link } from "react-scroll";
 
 export const UlStyle = styled.aside`
   width: 190px;

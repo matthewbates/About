@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeContainer, HomeMemoji, HomeImage, HomeH1 } from "./HomeElements";
+import { HomeContainer, HomeMemoji } from "./HomeElements";
 import TypeWriterEffect from "react-typewriter-effect";
 import Card from "../../components/Card";
 import memoji from "../../assets/memoji.png";
