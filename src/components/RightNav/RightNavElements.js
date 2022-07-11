@@ -29,6 +29,7 @@ export const AuthorName = styled.h1`
   display: block;
   text-align: center;
   align-items: center;
+  font-family: "Quicksand" sans-serif;
 `;
 
 export const IconContainer = styled.div`
