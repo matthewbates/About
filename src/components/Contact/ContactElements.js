@@ -41,6 +41,10 @@ export const TextInput = styled.input`
   width: 100%;
   font-size: 1rem;
   line-height: 1;
+
+  .highlightme {
+    background-color: white;
+  }
 `;
 
 export const EmailInput = styled.input`
