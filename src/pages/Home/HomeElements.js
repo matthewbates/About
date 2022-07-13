@@ -64,11 +64,17 @@ export const ScrollButton = styled(Link)`
     display: block;
     width: 22px;
     height: 22px;
-    border-bottom: 5px solid #06a8ff;
-    border-right: 5px solid #06a8ff;
+    border-bottom: 5px solid ${CONSTANTS.colors.persephoneWhite};
+    border-right: 5px solid ${CONSTANTS.colors.persephoneWhite};
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
+    &:nth-child(2) {
+      animation-delay: -0.2s;
+    }
+    &:nth-child(3) {
+      animation-delay: -0.4s;
+    }
   }
 
   @keyframes animate {
