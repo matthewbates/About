@@ -4,8 +4,10 @@ import {
   FooterText,
   SocialIcons,
   SocialIconLink,
+  ScrollButton,
 } from "./FooterElements";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -29,6 +31,15 @@ export default function Footer() {
         </SocialIconLink>
       </SocialIcons>
       <FooterText>© {new Date().getFullYear()} Matthew Bates</FooterText>
+      <ScrollButton
+        to="Home"
+        spy={true}
+        offset={0}
+        smooth={true}
+        duration={700}
+      >
+        <FaArrowUp className="arrow" />
+      </ScrollButton>
     </FooterContainer>
   );
 }

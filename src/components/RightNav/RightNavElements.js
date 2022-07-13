@@ -40,10 +40,6 @@ export const IconContainer = styled.div`
   line-height: 30px;
 `;
 
-export const ChimneyIcon = styled.i`
-  color: ${CONSTANTS.colors.persephoneWhite};
-`;
-
 export const PhoneIcon = styled.i`
   color: ${CONSTANTS.colors.persephoneWhite};
 `;

@@ -1,12 +1,18 @@
+import sql from "../../assets/stack/sql.png";
+
 export const languages = [
   {
     name: "JavaScript",
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
   },
   {
-    name: "NodeJS",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+    name: "SQL",
+    icon: sql,
   },
+  // {
+  //   name: "NodeJS",
+  //   icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+  // },
   {
     name: "React",
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",

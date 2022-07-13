@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 import CONSTANTS from "../../utils/constants";
 
 export const FooterContainer = styled.div`
@@ -15,9 +16,9 @@ export const FooterContainer = styled.div`
 `;
 
 export const SocialIcons = styled.div`
+  padding: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 60px;
 `;
 
@@ -29,4 +30,14 @@ export const SocialIconLink = styled.a`
 export const FooterText = styled.div`
   align-items: center;
   color: ${CONSTANTS.colors.persephoneWhite};
+`;
+
+export const ScrollButton = styled(Link)`
+  .arrow {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    border: 1px solid white;
+  }
 `;
