@@ -33,7 +33,9 @@ export default function Home() {
         smooth={true}
         duration={700}
       >
-        <FaArrowDown />
+        <div />
+        <div />
+        <div />
       </ScrollButton>
     </HomeContainer>
   );

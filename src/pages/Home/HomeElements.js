@@ -55,12 +55,33 @@ export const HomeMemoji = styled.img`
 `;
 
 export const ScrollButton = styled(Link)`
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: inherit;
   cursor: pointer;
-  border: 2px solid ${CONSTANTS.colors.persephoneWhite};
-  padding: 6px 6px;
+
+  div {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-bottom: 5px solid #06a8ff;
+    border-right: 5px solid #06a8ff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-15px, -15px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(15px, 15px);
+    }
+  }
 `;
