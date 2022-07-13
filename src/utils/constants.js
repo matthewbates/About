@@ -9,6 +9,8 @@ const CONSTANTS = {
     royalBlue: "#0074B7",
     blueGrotto: "#60A3D9",
     darkGrey: "#363636",
+    pewter: "#899499",
+    steel: "#71797E",
     indigo: "#014D7C",
     darkBlue: "#0E101C",
     batman: "linear-gradient(to bottom right, #333333, #121212);",
