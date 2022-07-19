@@ -39,5 +39,6 @@ export const ScrollButton = styled(Link)`
     margin-bottom: 10px;
     padding: 5px 5px;
     border: 1px solid white;
+    cursor: pointer;
   }
 `;
