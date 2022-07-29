@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ContactForm from "./pages/ContactForm";
 import Footer from "./components/Footer";
+import Skills from "./pages/Skills";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,7 @@ export default function App() {
           <Header />
           <Home />
           <About />
+          <Skills />
           <Projects />
           <ContactForm />
           <Footer />
