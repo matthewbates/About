@@ -89,6 +89,14 @@ export const skillsIcons = [
     },
   },
   {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+    style: { height: "38px" },
+    progress: {
+      value: "90",
+      max: "100",
+    },
+  },
+  {
     img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
     style: { height: "38px" },
     progress: {
