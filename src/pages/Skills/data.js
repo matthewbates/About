@@ -32,7 +32,6 @@ export const skills = [
 export const skillsIcons = [
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-    style: { height: "38px" },
     progress: {
       value: "90",
       max: "100",
@@ -40,7 +39,6 @@ export const skillsIcons = [
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-    style: { height: "38px" },
     progress: {
       value: "70",
       max: "100",
@@ -48,7 +46,6 @@ export const skillsIcons = [
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
-    style: { height: "38px" },
     progress: {
       value: "20",
       max: "100",
@@ -66,7 +63,6 @@ export const skillsIcons = [
   //   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg",
-    style: { height: "38px" },
     progress: {
       value: "70",
       max: "100",
@@ -74,7 +70,6 @@ export const skillsIcons = [
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg",
-    style: { height: "38px" },
     progress: {
       value: "60",
       max: "100",
@@ -82,7 +77,6 @@ export const skillsIcons = [
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-    style: { height: "38px" },
     progress: {
       value: "80",
       max: "100",
@@ -90,7 +84,6 @@ export const skillsIcons = [
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-    style: { height: "38px" },
     progress: {
       value: "90",
       max: "100",
@@ -98,7 +91,6 @@ export const skillsIcons = [
   },
   {
     img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-    style: { height: "38px" },
     progress: {
       value: "100",
       max: "100",

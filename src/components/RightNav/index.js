@@ -29,6 +29,7 @@ export default function RightNav({ open, closeDrawer }) {
         </a>
         <NavLinks closeDrawer={closeDrawer} title={"Home"} />
         <NavLinks closeDrawer={closeDrawer} title={"About"} />
+        <NavLinks closeDrawer={closeDrawer} title={"Skills"} />
         <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
         <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
         <br />
