@@ -29,36 +29,17 @@ export default function Header({ width, position }) {
   return (
     <StyledHeader width={width} position={position}>
       <StyledContainer>
-        <HeaderIcon
-          className="nav-icon"
-          url={headerIconData[0].url}
-          img={headerIconData[0].img}
-          style={headerIconData[0].style}
-        />
-        <HeaderIcon
-          className="nav-icon"
-          url={headerIconData[1].url}
-          img={headerIconData[1].img}
-          style={headerIconData[1].style}
-        />
-        <HeaderIcon
-          className="nav-icon"
-          url={headerIconData[2].url}
-          img={headerIconData[2].img}
-          style={headerIconData[2].style}
-        />
-        <HeaderIcon
-          className="nav-icon"
-          url={headerIconData[3].url}
-          img={headerIconData[3].img}
-          style={headerIconData[3].style}
-        />
-        <HeaderIcon
-          className="nav-icon"
-          url={headerIconData[4].url}
-          img={headerIconData[4].img}
-          style={headerIconData[4].style}
-        />
+        {headerIconData.map((item, index) => {
+          return (
+            <HeaderIcon
+              key={index}
+              className="nav-icon"
+              url={item.url}
+              img={item.img}
+              style={item.style}
+            />
+          );
+        })}
       </StyledContainer>
       <Burger open={open} handleOnClick={handleOnClick} />
       <div
