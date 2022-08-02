@@ -31,6 +31,7 @@ export const skills = [
 
 export const skillsIcons = [
   {
+    name: "JavaScript",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
     progress: {
       value: "90",
@@ -38,6 +39,7 @@ export const skillsIcons = [
     },
   },
   {
+    name: "React",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
     progress: {
       value: "70",
@@ -45,6 +47,7 @@ export const skillsIcons = [
     },
   },
   {
+    name: "Redux",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
     progress: {
       value: "20",
@@ -62,6 +65,7 @@ export const skillsIcons = [
   //     },
   //   },
   {
+    name: "Ruby",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg",
     progress: {
       value: "70",
@@ -69,6 +73,7 @@ export const skillsIcons = [
     },
   },
   {
+    name: "Rails",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg",
     progress: {
       value: "60",
@@ -76,6 +81,7 @@ export const skillsIcons = [
     },
   },
   {
+    name: "CSS",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
     progress: {
       value: "80",
@@ -83,6 +89,7 @@ export const skillsIcons = [
     },
   },
   {
+    name: "HTML",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
     progress: {
       value: "90",
@@ -90,10 +97,22 @@ export const skillsIcons = [
     },
   },
   {
+    name: "Postman",
     img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
     progress: {
       value: "100",
       max: "100",
     },
+  },
+];
+
+export const skillsLearning = [
+  {
+    name: "Go",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+  },
+  {
+    name: "Express",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
   },
 ];
