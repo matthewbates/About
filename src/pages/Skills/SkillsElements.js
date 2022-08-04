@@ -3,7 +3,6 @@ import CONSTANTS from "../../utils/constants";
 
 export const SkillsContainer = styled.section`
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   background-color: ${CONSTANTS.colors.blueGrotto};
 
@@ -33,6 +32,7 @@ export const SkillsDiv = styled.div`
 
 export const SkillsH1 = styled.h1`
   color: ${CONSTANTS.colors.persephoneWhite};
+  font-size: 2.5rem;
   grid-column-start: 1;
   grid-column-end: 6;
   text-align: center;
@@ -48,7 +48,7 @@ export const SkillsH1 = styled.h1`
 `;
 
 export const SkillsH2 = styled.h2`
-  font-family: Oxygen;
+  font-family: "Quicksand";
   font-size: 1.3rem;
 `;
 
