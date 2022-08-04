@@ -27,7 +27,7 @@ export default function About() {
         </AboutHeader>
         <SkillsH3>{about[1].aboutTwo}</SkillsH3>
       </Card>
-      <Card>
+      {/* <Card>
         <AboutHeader>
           <AboutH1>Skills</AboutH1>
         </AboutHeader>
@@ -39,7 +39,7 @@ export default function About() {
         <AboutSection>I'm currently learning:</AboutSection>
         <SkillsImage src={learning[0].icon} alt={learning[0].name} />
         <SkillsImage src={learning[1].icon} alt={learning[1].name} />
-      </Card>
+      </Card> */}
     </AboutContainer>
   );
 }

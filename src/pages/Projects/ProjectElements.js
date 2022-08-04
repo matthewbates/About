@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ProjectContainer = styled.div`
-  background-color: ${CONSTANTS.colors.blue};
+  background-color: ${CONSTANTS.colors.blueGrotto};
   display: flex;
   text-align: left;
   padding-top: 30px;

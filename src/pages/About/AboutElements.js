@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
   padding-left: 10px;
   padding-right: 10px;
   color: black;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 30px;
   padding-bottom: 30px;
 
