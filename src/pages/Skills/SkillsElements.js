@@ -2,10 +2,11 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const SkillsContainer = styled.section`
-  width: 100%;
   display: flex;
   background-color: ${CONSTANTS.colors.blue};
-
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   @media screen and (max-width: 1200px) {
     height: auto;
   }
