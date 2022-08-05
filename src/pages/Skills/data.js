@@ -23,16 +23,20 @@ export const skillsIcons = [
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
   },
   {
-    name: "SQL",
-    img: sql,
-  },
-  {
     name: "Ruby",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg",
   },
   {
     name: "Rails",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg",
+  },
+  {
+    name: "SQL",
+    img: sql,
+  },
+  {
+    name: "HTML",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
   },
   {
     name: "CSS",
@@ -50,10 +54,7 @@ export const skillsIcons = [
     name: "Bootstrap",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
   },
-  {
-    name: "HTML",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-  },
+
   {
     name: "Postman",
     img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
