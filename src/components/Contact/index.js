@@ -6,7 +6,7 @@ import {
   FormContainer,
   Form,
   FormIcon,
-  FormSpan,
+  FormLabel,
 } from "./ContactElements";
 import emailjs from "emailjs-com";
 import swal from "sweetalert2";
@@ -48,14 +48,14 @@ export default function Contact() {
   return (
     <FormContainer>
       <Form id="myForm" onSubmit={handleOnSubmit}>
-        <FormIcon className="fa-solid fa-user" />
-        <FormSpan> Name</FormSpan>
+        {/* <FormIcon className="fa-solid fa-user" /> */}
+        <FormLabel> Name</FormLabel>
         <TextInput type="text" name="user_name" required />
-        <FormIcon className="fa-solid fa-at"></FormIcon>
-        <FormSpan> Email</FormSpan>
+        {/* <FormIcon className="fa-solid fa-at"></FormIcon> */}
+        <FormLabel> Email</FormLabel>
         <EmailInput type="email" name="user_email" required />
-        <FormIcon className="fa-solid fa-message" />
-        <FormSpan> Message</FormSpan>
+        {/* <FormIcon className="fa-solid fa-message" /> */}
+        <FormLabel> Message</FormLabel>
         <TextArea name="user_message" cols="50" rows="10" required></TextArea>
         <button
           type="submit"

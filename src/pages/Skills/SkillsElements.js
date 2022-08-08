@@ -49,7 +49,7 @@ export const SkillsH1 = styled.h1`
 `;
 
 export const SkillsH2 = styled.h2`
-  font-family: "Quicksand";
+  font-family: "Quicksand" sans-serif;
   font-size: 1.3rem;
 `;
 
