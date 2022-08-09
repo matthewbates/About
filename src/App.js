@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
+import Audio from "./components/Audio";
 import Loader from "./components/Loader";
 import About from "./pages/About";
 import Home from "./pages/Home";
@@ -23,6 +24,7 @@ export default function App() {
       ) : (
         <>
           <Header />
+          {/* <Audio /> */}
           <Home />
           <About />
           <Skills />
