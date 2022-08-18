@@ -1,19 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { StyledHeader, StyledContainer } from "./HeaderElements";
 import { headerIconData } from "./data";
 import HeaderIcon from "../HeaderIcon";
 import Burger from "../Burger";
 import RightNav from "../RightNav";
+import NavLinks from "../NavLinks";
 import gsap from "gsap";
 
 export default function Header({ width, position }) {
   const [open, setOpen] = useState(false);
+  const [desktop, setDesktop] = useState(window.innerWidth < 768);
 
   const handleOnClick = () => setOpen(!open);
-
   const closeDrawer = () => {
     setTimeout(() => setOpen(false), 800);
   };
+  const updateMedia = () => setDesktop(window.innerWidth < 768);
 
   useEffect(() => {
     gsap.from(".nav-icon", {
@@ -24,6 +26,11 @@ export default function Header({ width, position }) {
       ease: "back",
       stagger: 0.35,
     });
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
   }, []);
 
   return (
@@ -40,18 +47,39 @@ export default function Header({ width, position }) {
             />
           );
         })}
+
+        {desktop ? (
+          <>
+            <Burger open={open} handleOnClick={handleOnClick} />
+            <div
+              style={{
+                top: 0,
+                right: 0,
+                position: "fixed",
+                zIndex: open ? 1 : -1,
+              }}
+            >
+              <RightNav open={open} closeDrawer={closeDrawer} />
+            </div>
+          </>
+        ) : (
+          <span
+            style={{
+              display: "flex",
+              backgroundColor: "black",
+              color: "black",
+              justifyContent: "space-between",
+              marginLeft: "5rem",
+            }}
+          >
+            <NavLinks closeDrawer={closeDrawer} title={"Home"} />
+            <NavLinks closeDrawer={closeDrawer} title={"About"} />
+            <NavLinks closeDrawer={closeDrawer} title={"Skills"} />
+            <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
+            <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
+          </span>
+        )}
       </StyledContainer>
-      <Burger open={open} handleOnClick={handleOnClick} />
-      <div
-        style={{
-          top: 0,
-          right: 0,
-          position: "fixed",
-          zIndex: open ? 1 : -1,
-        }}
-      >
-        <RightNav open={open} closeDrawer={closeDrawer} />
-      </div>
     </StyledHeader>
   );
 }

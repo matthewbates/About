@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const StyledBurger = styled.div`
+  display: flex;
+  position: fixed;
+  top: 15px;
+  right: 40px;
   z-index: 2;
   width: 2rem;
   height: 2rem;
-  display: flex;
+  /* display: flex; */
   flex-flow: column nowrap;
   justify-content: space-around;
   cursor: pointer;
