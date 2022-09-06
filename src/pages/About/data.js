@@ -82,6 +82,6 @@ export const about = [
   },
   {
     aboutTwo:
-      "I've always held an interest in technology. In mid-2021 I decided it was time to pivot my career and pursue software development full-time. Although my expertise resides in the production/deployment of front-end applications, I have full-stack development experience. Whether you're in the market to have a website built for your buisiness, or perhaps have your exisiting website  thoughtfully reimagined/optimized for mobile devices, I would love to connect!",
+      "I've always held an interest in technology. In mid-2021 I decided it was time to pivot my career and pursue software development full-time. Although my expertise resides in the production/deployment of front-end applications, I have full-stack development experience. Whether you're in the market to have a website built for your business, or perhaps have your existing website  thoughtfully reimagined/optimized for mobile devices, I would love to connect!",
   },
 ];
