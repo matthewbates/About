@@ -14,6 +14,8 @@ export default function ProjectImage({
   techStack,
   github,
   title,
+  target,
+  rel,
 }) {
   const [hover, setHover] = useState(false);
 
@@ -34,10 +36,10 @@ export default function ProjectImage({
         <ImageH3>{title}</ImageH3>
         <ImageP style={style}>{techStack}</ImageP>
         <span>
-          <ImageA href={link} target="_blank" rel="noopener noreferrer">
-            Demo{" "}
+          <ImageA href={link} target="_blank" rel={rel}>
+            Link{" "}
           </ImageA>
-          <ImageA href={github} target="_blank" rel="noopener noreferrer">
+          <ImageA href={github} target={target} rel={rel}>
             GitHub
           </ImageA>
         </span>

@@ -7,7 +7,7 @@ import persephoneGraes from "../../assets/images/persephoneGraes.png";
 export const projectData = [
   {
     img: persephoneGraes,
-    link: "https://vimeo.com/manage/videos/714324026/f34294a10c",
+    link: "https://www.persephonegraescafe.com",
     techStack: "JavaScript · React · Styled Components · CSS",
     title: "Persephone Graes Cafe & Juice Bar",
     style: {
@@ -16,6 +16,8 @@ export const projectData = [
       boxShadow: "4px 4px 2px 2px grey",
     },
     github: "https://github.com/matthewbates/persephone-graes",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
   {
     img: mountainBuddy,
@@ -31,6 +33,8 @@ export const projectData = [
       marginRight: "4rem",
     },
     github: "https://github.com/matthewbates/Mountain-Buddy",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
   {
     img: breweryDiscovery,
@@ -46,6 +50,8 @@ export const projectData = [
       marginRight: "4rem",
     },
     github: "https://github.com/matthewbates/Brewery-Discovery",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
   {
     img: skiBum,
@@ -60,6 +66,8 @@ export const projectData = [
       marginRight: "2rem",
     },
     github: "https://github.com/matthewbates/SkiBum",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
   {
     img: pokedex,
@@ -72,5 +80,7 @@ export const projectData = [
       boxShadow: "4px 4px 3px 2px red",
     },
     github: "https://github.com/matthewbates/Pokedex",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
 ];

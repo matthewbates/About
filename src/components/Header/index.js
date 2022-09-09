@@ -1,11 +1,12 @@
 import React, { Fragment, useState, useEffect } from "react";
-import { StyledHeader, StyledContainer } from "./HeaderElements";
+import { StyledHeader, StyledContainer, HeaderNav } from "./HeaderElements";
 import { headerIconData } from "./data";
 import HeaderIcon from "../HeaderIcon";
 import Burger from "../Burger";
 import RightNav from "../RightNav";
 import NavLinks from "../NavLinks";
 import gsap from "gsap";
+import HeaderNavLinks from "../HeaderNavLinks";
 
 export default function Header({ width, position }) {
   const [open, setOpen] = useState(false);
@@ -72,11 +73,11 @@ export default function Header({ width, position }) {
               marginLeft: "5rem",
             }}
           >
-            <NavLinks closeDrawer={closeDrawer} title={"Home"} />
-            <NavLinks closeDrawer={closeDrawer} title={"About"} />
-            <NavLinks closeDrawer={closeDrawer} title={"Skills"} />
-            <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
-            <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
+            <HeaderNavLinks title={"Home"} />
+            <HeaderNavLinks title={"About"} />
+            <HeaderNavLinks title={"Skills"} />
+            <HeaderNavLinks title={"Projects"} />
+            <HeaderNavLinks title={"Contact"} />
           </span>
         )}
       </StyledContainer>
