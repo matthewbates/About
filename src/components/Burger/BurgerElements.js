@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledBurger = styled.div`
-  display: flex;
+  display: none;
   position: fixed;
   top: 15px;
   right: 40px;
@@ -12,6 +12,10 @@ export const StyledBurger = styled.div`
   flex-flow: column nowrap;
   justify-content: space-around;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
 
   div {
     width: 2rem;

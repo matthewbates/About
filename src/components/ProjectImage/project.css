@@ -5,12 +5,6 @@
   background-size: 110%s;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -23,8 +17,4 @@
   transition: 0.5s ease;
   color: white;
   display: flex;
-}
-
-.main-container:hover .overlay {
-  height: 100%;
 }

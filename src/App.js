@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Header from "./components/Header";
+import Header from "./components/Navbar";
 import Audio from "./components/Audio";
 import Loader from "./components/Loader";
 import About from "./pages/About";
@@ -19,20 +19,17 @@ export default function App() {
 
   return (
     <div className="app">
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <Header />
-          {/* <Audio /> */}
-          <Home />
-          <About />
-          <Skills />
-          <Projects />
-          <ContactForm />
-          <Footer />
-        </>
-      )}
+      {/* <Loader /> */}
+      <>
+        <Header />
+        {/* <Audio /> */}
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <ContactForm />
+        <Footer />
+      </>
     </div>
   );
 }

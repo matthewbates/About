@@ -93,3 +93,7 @@ export const FormLabel = styled.label`
   font-size: 14px;
   font-weight: 200; ;
 `;
+
+export const FormBtn = styled.button`
+
+`

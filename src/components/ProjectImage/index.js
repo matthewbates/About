@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   StyledProjectImage,
   ImageH3,
@@ -17,21 +17,9 @@ export default function ProjectImage({
   target,
   rel,
 }) {
-  const [hover, setHover] = useState(false);
-
-  const handleToggle = () => {
-    setHover(!hover);
-  };
-
   return (
     <StyledProjectImage>
-      <img
-        src={img}
-        className="img flourish"
-        alt="project"
-        onMouseEnter={handleToggle}
-        onMouseLeave={handleToggle}
-      />
+      <img src={img} className="img flourish" alt="project" />
       <div className="overlay">
         <ImageH3>{title}</ImageH3>
         <ImageP style={style}>{techStack}</ImageP>
