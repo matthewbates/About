@@ -83,7 +83,7 @@ export const ScrollButton = styled(Link)`
 `;
 
 export const HomeH1 = styled.h1`
-  font-family: "Verdana";
+  font-family: "Poppins";
   font-size: 3em;
   font-weight: 700;
   color: ${CONSTANTS.colors.persephoneWhite};

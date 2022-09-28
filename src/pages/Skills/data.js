@@ -1,18 +1,10 @@
 // import sql from "../../assets/stack/sql.png";
 import sql from "../../assets/stack/sql.png";
 
-export const skillsIcons = [
+export const languagesAndFrameworks = [
   {
     name: "JavaScript",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-  },
-  {
-    name: "React",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-  },
-  {
-    name: "Redux",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
   },
   {
     name: "Node.js",
@@ -23,6 +15,10 @@ export const skillsIcons = [
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
   },
   {
+    name: "SQL",
+    img: sql,
+  },
+  {
     name: "Ruby",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg",
   },
@@ -30,10 +26,32 @@ export const skillsIcons = [
     name: "Rails",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg",
   },
+];
+
+export const libraries = [
   {
-    name: "SQL",
-    img: sql,
+    name: "React",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
   },
+  {
+    name: "Redux",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+  },
+  {
+    name: "Mocha",
+    img: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
+  },
+  {
+    name: "Git",
+    img: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+  },
+  {
+    name: "Postman",
+    img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+  },
+];
+
+export const frontendDevelopment = [
   {
     name: "HTML",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
@@ -53,21 +71,5 @@ export const skillsIcons = [
   {
     name: "Bootstrap",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
-  },
-
-  {
-    name: "Postman",
-    img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-  },
-  {
-    name: "Mocha",
-    img: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
-  },
-];
-
-export const skillsLearning = [
-  {
-    name: "Go",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
   },
 ];

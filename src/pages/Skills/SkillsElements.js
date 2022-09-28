@@ -2,76 +2,55 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const SkillsContainer = styled.section`
+  background: ${CONSTANTS.colors.royalBlue};
   display: flex;
-  background-color: ${CONSTANTS.colors.blue};
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+`;
+
+export const SkillsHeader = styled.h2`
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 300;
+  text-transform: uppercase;
+`;
+
+export const SkillsCard = styled.div`
+  border: 2px solid ${CONSTANTS.colors.persephoneWhite};
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 20px 38px, rgba(0, 0, 0, 0.5) 0px 15px 12px;
+  width: 60%;
+  border-radius: 20px;
+  background-color: transparent;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  @media screen and (max-width: 1200px) {
-    height: auto;
-  }
-`;
-
-export const SkillsDiv = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  width: 70%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 auto 2% auto;
-  gap: 40px;
-
-  @media screen and (max-width: 1200px) {
-    width: 90%;
-    margin: 2rem auto;
-  }
-
-  @media screen and (max-width: 700px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-`;
-
-export const SkillsH1 = styled.h1`
-  color: ${CONSTANTS.colors.persephoneWhite};
-  font-size: 2.5rem;
-  grid-column-start: 1;
-  grid-column-end: 6;
-  text-align: center;
-  text-decoration: underline;
-
-  @media screen and (max-width: 1007px) {
-    text-align: center;
-  }
-
-  @media screen and (max-width: 700px) {
-    grid-column-end: 3;
-  }
-`;
-
-export const SkillsH2 = styled.h2`
-  font-family: "Quicksand" sans-serif;
-  font-size: 1.3rem;
-`;
-
-export const SkillsArticle = styled.article`
-  width: auto;
-  text-align: center;
+  max-width: 420px;
 `;
 
 export const SkillsImage = styled.img`
-  width: 60%;
-  min-height: 120px;
-  min-width: 95px;
-  object-fit: contain;
+  padding: 1rem;
+  width: 65px;
+  height: 65px;
+  vertical-align: middle;
 
   &:hover {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in-out;
+    transform: scale(1.18);
+    transition: transform 0.3s ease-in-out;
   }
 `;
 
-export const SkillsProgress = styled.progress`
-  -webkit-appearance: none;
-  appearance: none;
-  box-shadow: 0 2px 5px;
+export const SkillsH3 = styled.h3`
+  font-family: "Lato";
+  color: ${CONSTANTS.colors.persephoneWhite};
 `;

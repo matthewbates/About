@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ProjectContainer = styled.div`
-  background-color: ${CONSTANTS.colors.blueGrotto};
+  background-color: ${CONSTANTS.colors.blue};
   display: flex;
   text-align: left;
   padding-top: 30px;
@@ -18,6 +18,18 @@ export const ProjectContainer = styled.div`
   .header {
     margin-top: 50px;
   }
+`;
+
+export const ProjectHeader = styled.h2`
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 300;
+  text-transform: uppercase;
 `;
 
 export const ProjectH1 = styled.h1`

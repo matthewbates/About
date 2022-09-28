@@ -4,14 +4,14 @@ import {
   AuthorImg,
   AuthorName,
   IconContainer,
-  ChimneyIcon,
-  PhoneIcon,
   RightNavButton,
+  RightNavA,
 } from "./RightNavElements";
 import Resume from "../../assets/Resume.pdf";
 import Author from "../../assets/author.png";
 import NavLinks from "../NavLinks";
 import { saveAs } from "file-saver";
+import { sidebarData } from "./data";
 
 export default function RightNav({ open, closeDrawer }) {
   function downloadResume() {
@@ -20,13 +20,18 @@ export default function RightNav({ open, closeDrawer }) {
 
   return (
     <UlStyle open={open}>
-      <AuthorImg src={Author} alt="author image" />
+      <AuthorImg src={Author} alt="image" />
       <AuthorName>Matthew Bates</AuthorName>
       <IconContainer>
-        {/* <PhoneIcon className="fa-solid fa-phone"></PhoneIcon>{" "} */}
-        <a href="tel:+17135044436" style={{ color: "#f1f2f2" }}>
-          713-504-4436
-        </a>
+        {sidebarData.map((item, index) => (
+          <RightNavA
+            key={index}
+            href={item.href}
+            style={{ color: "#F1F2F2", listStyle: "none" }}
+          >
+            {item.contact}
+          </RightNavA>
+        ))}
         <NavLinks closeDrawer={closeDrawer} title={"Home"} />
         <NavLinks closeDrawer={closeDrawer} title={"About"} />
         <NavLinks closeDrawer={closeDrawer} title={"Skills"} />

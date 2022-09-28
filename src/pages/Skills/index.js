@@ -1,31 +1,45 @@
 import React from "react";
 import Card from "../../components/Card";
-import { skillsIcons, skillsLearning } from "./data";
+import {
+  languagesAndFrameworks,
+  libraries,
+  frontendDevelopment,
+  sourceControl,
+} from "./data";
 import {
   SkillsContainer,
-  SkillsDiv,
-  SkillsH1,
-  SkillsH2,
-  SkillsArticle,
+  SkillsCard,
   SkillsImage,
+  SkillsH3,
+  SkillsHeader,
 } from "./SkillsElements";
 
 export default function Skills() {
   return (
-    <SkillsContainer id="Skills">
-      <Card>
-        <SkillsDiv>
-          <SkillsH1>Technologies</SkillsH1>
-          {skillsIcons.map((item, index) => {
-            return (
-              <SkillsArticle key={index}>
-                <SkillsImage src={item.img} alt="skills-icon" />
-                <SkillsH2>{item.name}</SkillsH2>
-              </SkillsArticle>
-            );
-          })}
-        </SkillsDiv>
-      </Card>
-    </SkillsContainer>
+    <>
+      {/* <SkillsHeader>Skills</SkillsHeader> */}
+      <SkillsContainer>
+        <SkillsCard>
+          <SkillsH3>Languages & Frameworks</SkillsH3>
+          {languagesAndFrameworks.map((item, index) => (
+            <>
+              <SkillsImage src={item.img} alt="" />
+            </>
+          ))}
+        </SkillsCard>
+        <SkillsCard>
+          <SkillsH3>Libraries & Source Control</SkillsH3>
+          {libraries.map((item, index) => (
+            <SkillsImage src={item.img} alt="" />
+          ))}
+        </SkillsCard>
+        <SkillsCard>
+          <SkillsH3>Data Markup & Extensions</SkillsH3>
+          {frontendDevelopment.map((item, index) => (
+            <SkillsImage src={item.img} alt="" />
+          ))}
+        </SkillsCard>
+      </SkillsContainer>
+    </>
   );
 }

@@ -6,7 +6,7 @@ import {
   FormContainer,
   Form,
   FormLabel,
-  FormBtn,
+  FormButton,
 } from "./ContactElements";
 import emailjs from "emailjs-com";
 import swal from "sweetalert2";
@@ -41,17 +41,33 @@ export default function Contact() {
 
   return (
     <FormContainer>
-      <Form id="myForm" onSubmit={handleOnSubmit}>
-        <FormLabel> Name</FormLabel>
-        <TextInput type="text" name="user_name" required />
-        <FormLabel> Email</FormLabel>
+      <Form onSubmit={handleOnSubmit}>
+        <FormLabel className="required">Full Name</FormLabel>
+        <TextInput type="text" name="user_full_name" required />
+        <FormLabel className="required">Email Address</FormLabel>
         <EmailInput type="email" name="user_email" required />
-        <FormLabel> Message</FormLabel>
+        <FormLabel>Phone</FormLabel>
+        <TextInput type="text" name="user_phone_number" required />
+        <FormLabel>Message</FormLabel>
         <TextArea name="user_message" cols="50" rows="10" required></TextArea>
-        <FormBtn type="submit" className="submit-button" primary="true">
+
+        <FormButton type="submit" className="submit-button" primary="true">
           Submit
-        </FormBtn>
+        </FormButton>
       </Form>
     </FormContainer>
+    // <FormContainer>
+    //   <Form id="myForm" onSubmit={handleOnSubmit}>
+    //     <FormLabel> Name</FormLabel>
+    //     <TextInput type="text" name="user_name" required />
+    //     <FormLabel> Email</FormLabel>
+    //     <EmailInput type="email" name="user_email" required />
+    //     <FormLabel> Message</FormLabel>
+    //     <TextArea name="user_message" cols="50" rows="10" required></TextArea>
+    //     <FormBtn type="submit" className="submit-button" primary="true">
+    //       Submit
+    //     </FormBtn>
+    //   </Form>
+    // </FormContainer>
   );
 }

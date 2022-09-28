@@ -40,20 +40,10 @@ export const AboutHeader = styled.div`
 `;
 
 export const AboutH1 = styled.h1`
-  padding-bottom: 20px;
+  font-size: 42px;
+  padding-bottom: 40px;
   color: #f1f2f2;
-  text-decoration: underline;
-`;
-
-export const SkillsImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
-  @media (max-width: 700px) {
-    padding-bottom: 20px;
-  }
+  font-family: "Lato";
 `;
 
 export const AboutSection = styled.h3`
@@ -61,19 +51,14 @@ export const AboutSection = styled.h3`
   color: #f1f2f2;
 `;
 
-export const SkillsImage = styled.img`
-  margin: 10px;
-  height: 60px;
-
-  &:hover {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in-out;
-  }
-`;
-
 export const SkillsH3 = styled.h3`
   color: ${CONSTANTS.colors.persephoneWhite};
+  text-align: justify;
   line-height: 2rem;
+  letter-spacing: 1px;
+  font-family: "Cormorant Garamond";
+  font-weight: bold;
+  font-size: 24px;
 
   @media screen and (max-width: 768px) {
     line-height: 1.6rem;

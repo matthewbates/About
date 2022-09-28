@@ -1,9 +1,7 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   StyledContainer,
   StyledWrapper,
-  HeaderNav,
-  HeaderLinksSpan,
   NavLinksWrapper,
 } from "./HeaderElements";
 import { navbarIconData, navbarLinks } from "./data";
@@ -16,13 +14,11 @@ import HeaderNavLinks from "../HeaderNavLinks";
 
 export default function Header({ width, position }) {
   const [open, setOpen] = useState(false);
-  // const [desktop, setDesktop] = useState(window.innerWidth < 768);
 
   const handleOnClick = () => setOpen(!open);
   const closeDrawer = () => {
     setTimeout(() => setOpen(false), 800);
   };
-  // const updateMedia = () => setDesktop(window.innerWidth < 768);
 
   useEffect(() => {
     gsap.from(".nav-icon", {
@@ -35,10 +31,15 @@ export default function Header({ width, position }) {
     });
   }, []);
 
-  // useEffect(() => {
-  //   window.addEventListener("resize", updateMedia);
-  //   return () => window.removeEventListener("resize", updateMedia);
-  // }, []);
+  useEffect(() => {
+    gsap.from(".links", {
+      x: 100,
+      delay: 2.2,
+      opacity: 0,
+      duration: 1.5,
+      stagger: 0.35,
+    });
+  }, []);
 
   return (
     <StyledContainer width={width} position={position}>
@@ -66,7 +67,7 @@ export default function Header({ width, position }) {
           <RightNav open={open} closeDrawer={closeDrawer} />
         </div>
       </>
-      <NavLinksWrapper>
+      <NavLinksWrapper className="links">
         {navbarLinks.map((item, index) => (
           <HeaderNavLinks key={index} title={item.to} />
         ))}

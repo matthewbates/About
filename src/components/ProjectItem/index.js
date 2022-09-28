@@ -11,7 +11,7 @@ export default function ProjectItem({
   techStack,
   title,
 }) {
-  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: false });
+  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
 
   return (
     <ProjectListContainer>

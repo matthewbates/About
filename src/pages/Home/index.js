@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
       </Card>
-      <ScrollButton
+      {/* <ScrollButton
         to="About"
         spy={true}
         offset={0}
@@ -36,7 +36,7 @@ export default function Home() {
         <div />
         <div />
         <div />
-      </ScrollButton>
+      </ScrollButton> */}
     </HomeContainer>
   );
 }
