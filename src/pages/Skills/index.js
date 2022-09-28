@@ -8,6 +8,7 @@ import {
 } from "./data";
 import {
   SkillsContainer,
+  SkillsWrapper,
   SkillsCard,
   SkillsImage,
   SkillsH3,
@@ -17,9 +18,9 @@ import {
 export default function Skills() {
   return (
     <>
-      {/* <SkillsHeader>Skills</SkillsHeader> */}
       <SkillsContainer>
-        <SkillsCard>
+        {/* <SkillsWrapper> */}
+        <SkillsCard style={{ marginTop: "4rem" }}>
           <SkillsH3>Languages & Frameworks</SkillsH3>
           {languagesAndFrameworks.map((item, index) => (
             <>
@@ -33,12 +34,13 @@ export default function Skills() {
             <SkillsImage src={item.img} alt="" />
           ))}
         </SkillsCard>
-        <SkillsCard>
+        <SkillsCard style={{ marginBottom: "4rem" }}>
           <SkillsH3>Data Markup & Extensions</SkillsH3>
           {frontendDevelopment.map((item, index) => (
             <SkillsImage src={item.img} alt="" />
           ))}
         </SkillsCard>
+        {/* </SkillsWrapper> */}
       </SkillsContainer>
     </>
   );

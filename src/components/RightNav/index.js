@@ -3,7 +3,7 @@ import {
   UlStyle,
   AuthorImg,
   AuthorName,
-  IconContainer,
+  RightNavBtn,
   RightNavButton,
   RightNavA,
 } from "./RightNavElements";
@@ -20,10 +20,13 @@ export default function RightNav({ open, closeDrawer }) {
 
   return (
     <UlStyle open={open}>
-      <AuthorImg src={Author} alt="image" />
-      <AuthorName>Matthew Bates</AuthorName>
-      <IconContainer>
-        {sidebarData.map((item, index) => (
+      <div style={{ textAlign: "center" }}>
+        <AuthorImg src={Author} alt="image" />
+        <AuthorName>Matthew Bates</AuthorName>
+      </div>
+
+      {sidebarData.map((item, index) => (
+        <div style={{ textAlign: "center" }}>
           <RightNavA
             key={index}
             href={item.href}
@@ -31,15 +34,16 @@ export default function RightNav({ open, closeDrawer }) {
           >
             {item.contact}
           </RightNavA>
-        ))}
-        <NavLinks closeDrawer={closeDrawer} title={"Home"} />
-        <NavLinks closeDrawer={closeDrawer} title={"About"} />
-        <NavLinks closeDrawer={closeDrawer} title={"Skills"} />
-        <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
-        <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
-        <br />
+        </div>
+      ))}
+      <NavLinks closeDrawer={closeDrawer} title={"Home"} />
+      <NavLinks closeDrawer={closeDrawer} title={"About"} />
+      <NavLinks closeDrawer={closeDrawer} title={"Skills"} />
+      <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
+      <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
+      <RightNavBtn>
         <RightNavButton onClick={downloadResume}>Resume</RightNavButton>
-      </IconContainer>
+      </RightNavBtn>
     </UlStyle>
   );
 }

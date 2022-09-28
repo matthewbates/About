@@ -9,23 +9,12 @@ export const BtnLink = styled.button`
   color: ${({ dark }) => (dark ? "#414042" : "#f1f2f2")};
   font-size: ${({ fontBig }) => (fontBig ? "18px" : "16px")};
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-
 
   &:hover {
     transition: all 0.2s ease-in-out;
   }
-`;
-
-export const ArrowForward = styled(MdArrowForward)`
-  margin-left: 8px;
-  font-size: 18px;
-`;
-
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: 8px;
-  font-size: 18px;
 `;

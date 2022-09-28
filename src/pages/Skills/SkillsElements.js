@@ -10,6 +10,11 @@ export const SkillsContainer = styled.section`
   text-align: center;
 `;
 
+export const SkillsWrapper = styled.div`
+  /* margin-top: 3rem;
+  margin-bottom: 3rem; */
+`;
+
 export const SkillsHeader = styled.h2`
   margin-top: 2rem;
   line-height: 3rem;
