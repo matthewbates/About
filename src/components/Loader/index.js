@@ -26,8 +26,18 @@ export default function Loader() {
   return (
     <LoadingScreen>
       <div className="loading-container">
-        <h1 className="loading-title">Loading</h1>
-        <h1 className="loading-number">100%</h1>
+        <h1
+          style={{ fontFamily: "Cormorant Garamond" }}
+          className="loading-title"
+        >
+          Loading
+        </h1>
+        <h1
+          style={{ fontFamily: "Cormorant Garamond" }}
+          className="loading-number"
+        >
+          100%
+        </h1>
       </div>
     </LoadingScreen>
   );
