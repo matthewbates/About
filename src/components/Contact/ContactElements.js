@@ -77,8 +77,8 @@ export const FormLabel = styled.label`
 `;
 
 export const FormButton = styled.button`
-  border: 1px solid ${CONSTANTS.colors.lightGrey};
-  background-color: transparent;
+  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
+  /* background-color: transparent; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -93,8 +93,7 @@ export const FormButton = styled.button`
   margin-top: 1rem;
 
   &:hover {
-    box-shadow: none;
-    background: ${CONSTANTS.colors.royalBlue};
+    background: transparent;
     color: ${CONSTANTS.colors.eggshellWhite};
     transition: 200ms ease-in;
   }

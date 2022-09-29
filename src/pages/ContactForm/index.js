@@ -4,7 +4,7 @@ import {
   FormSection,
   FormContainer,
   FormContainerDivRight,
-  FormH1,
+  FormH3,
 } from "./ContactFormElements";
 
 export default function ContactForm() {
@@ -12,7 +12,7 @@ export default function ContactForm() {
     <FormSection id="Contact" data-aos="fade-left">
       <FormContainer>
         <FormContainerDivRight>
-          <FormH1>Contact</FormH1>
+          <FormH3>Contact</FormH3>
           <Contact />
         </FormContainerDivRight>
       </FormContainer>

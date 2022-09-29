@@ -1,25 +1,18 @@
-import React from "react";
-import Card from "../../components/Card";
-import {
-  languagesAndFrameworks,
-  libraries,
-  frontendDevelopment,
-  sourceControl,
-} from "./data";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+
+import { languagesAndFrameworks, libraries, frontendDevelopment } from "./data";
 import {
   SkillsContainer,
-  SkillsWrapper,
   SkillsCard,
   SkillsImage,
   SkillsH3,
-  SkillsHeader,
 } from "./SkillsElements";
 
 export default function Skills() {
   return (
     <>
       <SkillsContainer>
-        {/* <SkillsWrapper> */}
         <SkillsCard style={{ marginTop: "4rem" }}>
           <SkillsH3>Languages & Frameworks</SkillsH3>
           {languagesAndFrameworks.map((item, index) => (
@@ -31,7 +24,7 @@ export default function Skills() {
         <SkillsCard>
           <SkillsH3>Libraries & Source Control</SkillsH3>
           {libraries.map((item, index) => (
-            <SkillsImage src={item.img} alt="" />
+            <SkillsImage key={index} src={item.img} alt="" />
           ))}
         </SkillsCard>
         <SkillsCard style={{ marginBottom: "4rem" }}>
@@ -40,7 +33,6 @@ export default function Skills() {
             <SkillsImage src={item.img} alt="" />
           ))}
         </SkillsCard>
-        {/* </SkillsWrapper> */}
       </SkillsContainer>
     </>
   );

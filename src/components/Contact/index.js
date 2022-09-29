@@ -56,18 +56,5 @@ export default function Contact() {
         </FormButton>
       </Form>
     </FormContainer>
-    // <FormContainer>
-    //   <Form id="myForm" onSubmit={handleOnSubmit}>
-    //     <FormLabel> Name</FormLabel>
-    //     <TextInput type="text" name="user_name" required />
-    //     <FormLabel> Email</FormLabel>
-    //     <EmailInput type="email" name="user_email" required />
-    //     <FormLabel> Message</FormLabel>
-    //     <TextArea name="user_message" cols="50" rows="10" required></TextArea>
-    //     <FormBtn type="submit" className="submit-button" primary="true">
-    //       Submit
-    //     </FormBtn>
-    //   </Form>
-    // </FormContainer>
   );
 }

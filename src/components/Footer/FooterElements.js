@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import CONSTANTS from "../../utils/constants";
 
 export const FooterContainer = styled.div`
-  background-color: #000;
+  background-color: ${CONSTANTS.colors.softBlack};
   width: 100%;
   bottom: 0;
   display: flex;
@@ -11,8 +11,8 @@ export const FooterContainer = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 `;
 
 export const SocialIcons = styled.div`

@@ -8,6 +8,7 @@ const CONSTANTS = {
     midnightBlue: "#145DA0",
     royalBlue: "#0074B7",
     blueGrotto: "#60A3D9",
+    softBlack: "#414A4C",
     darkGrey: "#363636",
     pewter: "#899499",
     steel: "#71797E",

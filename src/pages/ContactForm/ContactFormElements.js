@@ -5,7 +5,6 @@ export const FormSection = styled.section`
   background: ${CONSTANTS.colors.royalBlue};
   display: flex;
   justify-content: center;
-  height: 100vh;
 `;
 
 export const FormContainer = styled.div`
@@ -48,4 +47,16 @@ export const FormContainerDivRight = styled.div``;
 export const FormH1 = styled.h1`
   text-align: center;
   text-decoration: underline;
+`;
+
+export const FormH3 = styled.h3`
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 300;
+  text-transform: uppercase;
 `;
