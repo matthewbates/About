@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
+import React from "react";
 
 import { languagesAndFrameworks, libraries, frontendDevelopment } from "./data";
 import {
@@ -17,7 +16,7 @@ export default function Skills() {
           <SkillsH3>Languages & Frameworks</SkillsH3>
           {languagesAndFrameworks.map((item, index) => (
             <>
-              <SkillsImage src={item.img} alt="" />
+              <SkillsImage key={index} src={item.img} alt="" />
             </>
           ))}
         </SkillsCard>
@@ -30,7 +29,7 @@ export default function Skills() {
         <SkillsCard style={{ marginBottom: "4rem" }}>
           <SkillsH3>Data Markup & Extensions</SkillsH3>
           {frontendDevelopment.map((item, index) => (
-            <SkillsImage src={item.img} alt="" />
+            <SkillsImage key={index} src={item.img} alt="" />
           ))}
         </SkillsCard>
       </SkillsContainer>

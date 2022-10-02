@@ -27,7 +27,7 @@ export default function ProjectImage({
           <ImageA href={link} target="_blank" rel={rel}>
             Link{" "}
           </ImageA>
-          <ImageA href={github} target={target} rel={rel}>
+          <ImageA href={github} target="_blank" rel={rel}>
             GitHub
           </ImageA>
         </span>

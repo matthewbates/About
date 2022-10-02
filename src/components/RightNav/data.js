@@ -1,7 +1,7 @@
 export const sidebarData = [
   {
     title: "Phone",
-    href: "tel:+7193132700",
-    contact: "713 504 4436",
+    href: "tel:+7135044436",
+    contact: "(713) 504-4436",
   },
 ];

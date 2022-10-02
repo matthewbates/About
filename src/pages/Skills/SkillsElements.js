@@ -7,31 +7,14 @@ export const SkillsContainer = styled.section`
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  text-align: center;
-`;
-
-export const SkillsWrapper = styled.div`
-  /* margin-top: 3rem;
-  margin-bottom: 3rem; */
-`;
-
-export const SkillsHeader = styled.h2`
-  margin-top: 2rem;
-  line-height: 3rem;
-  font-weight: 400;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  font-family: "Lato";
-  font-weight: 300;
-  text-transform: uppercase;
 `;
 
 export const SkillsCard = styled.div`
   border: 2px solid ${CONSTANTS.colors.persephoneWhite};
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.7) 0px 20px 38px, rgba(0, 0, 0, 0.5) 0px 15px 12px;
-  width: 60%;
   border-radius: 20px;
   background-color: transparent;
   margin-left: 30px;
@@ -56,6 +39,6 @@ export const SkillsImage = styled.img`
 `;
 
 export const SkillsH3 = styled.h3`
-  font-family: "Lato";
+  font-family: "Poppins";
   color: ${CONSTANTS.colors.persephoneWhite};
 `;

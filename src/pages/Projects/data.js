@@ -10,6 +10,7 @@ export const projectData = [
     link: "https://www.persephonegraescafe.com",
     techStack: "JavaScript · React · Styled Components · CSS",
     title: "Persephone Graes Cafe & Juice Bar",
+    target: "_blank",
     style: {
       padding: "2.5px",
       border: "1px solid white",
@@ -25,6 +26,7 @@ export const projectData = [
     techStack:
       "JavaScript · React · Ruby on Rails · PostgreSQL · Google Login · Google Maps API · Weather API",
     title: "Mountain Buddy",
+    target: "_blank",
     style: {
       padding: "2.5px",
       border: "1px solid white",
@@ -42,6 +44,7 @@ export const projectData = [
     techStack:
       "JavaScript · Ruby on Rails · SQLite · Bootstrap · Google Maps API",
     title: "Brewery Discovery",
+    target: "_blank",
     style: {
       padding: "2.5px",
       border: "1px solid white",
@@ -58,6 +61,7 @@ export const projectData = [
     link: "https://vimeo.com/695859712/81d9db0e0b",
     techStack: "JavaScript · React · Bootstrap · OpenWeatherMap API",
     title: "SkiBum",
+    target: "_blank",
     style: {
       padding: "2.5px",
       border: "1px solid white",
@@ -74,6 +78,7 @@ export const projectData = [
     link: "https://vimeo.com/695844138/aef213f1d9",
     techStack: "JavaScript · HTML · CSS",
     title: "Pokedex",
+    target: "_blank",
     style: {
       padding: "2.5px",
       border: "1px solid white",
