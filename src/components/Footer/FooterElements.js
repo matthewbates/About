@@ -7,12 +7,16 @@ export const FooterContainer = styled.div`
   width: 100%;
   bottom: 0;
   display: flex;
-  text-align: center;
+`;
+
+export const FooterWrapper = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  text-align: center;
 `;
 
 export const SocialIcons = styled.div`

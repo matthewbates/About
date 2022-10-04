@@ -1,6 +1,7 @@
 import React from "react";
 import {
   TextInput,
+  FormH3,
   EmailInput,
   TextArea,
   FormContainer,
@@ -19,7 +20,7 @@ const USER_ID = "pxTQ3Ga0lBOJ4vGzM";
 // const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 // const USER_ID = process.env.REACT_APP_USER_ID;
 
-export default function Contact() {
+export default function Forms() {
   function handleOnSubmit(e) {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
@@ -42,14 +43,15 @@ export default function Contact() {
   return (
     <FormContainer>
       <Form onSubmit={handleOnSubmit}>
+        <FormH3>Contact</FormH3>
         <FormLabel className="required">Full Name</FormLabel>
         <TextInput type="text" name="user_full_name" required />
         <FormLabel className="required">Email Address</FormLabel>
         <EmailInput type="email" name="user_email" required />
         <FormLabel>Phone</FormLabel>
-        <TextInput type="text" name="user_phone_number" required />
-        <FormLabel>Message</FormLabel>
-        <TextArea name="user_message" cols="50" rows="10" required></TextArea>
+        <TextInput type="text" name="user_phone_number" />
+        <FormLabel className="required">Message</FormLabel>
+        <TextArea name="user_message" cols="50" rows="6" required></TextArea>
 
         <FormButton type="submit" className="submit-button" primary="true">
           Submit

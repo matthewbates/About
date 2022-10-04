@@ -3,12 +3,26 @@ import breweryDiscovery from "../../assets/images/breweryDiscovery.png";
 import skiBum from "../../assets/images/skiBum.png";
 import pokedex from "../../assets/images/pokedex.png";
 import persephoneGraes from "../../assets/images/persephoneGraes.png";
+import marsIndustries from "../../assets/images/marsIndustries.png";
 
 export const projectData = [
   {
+    img: marsIndustries,
+    link: "https://www.marsindustriesco.com",
+    techStack:
+      "JavaScript · React · Styled-Components · Node.js · Greensock · EmailJS",
+    title: "Mars Industries",
+    target: "_blank",
+    style: {
+      padding: "2.5px",
+      border: "1px solid orange",
+      boxShadow: "4px 4px 2px 2px orange",
+    },
+  },
+  {
     img: persephoneGraes,
     link: "https://www.persephonegraescafe.com",
-    techStack: "JavaScript · React · Styled Components · CSS",
+    techStack: "JavaScript · React · Styled-Components : Local Storage",
     title: "Persephone Graes Cafe & Juice Bar",
     target: "_blank",
     style: {
