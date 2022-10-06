@@ -28,7 +28,7 @@ export const IntroContainer = styled.div`
       border-left: none;
       border-right: none;
       border-radius: 0px;
-      /* margin: 50px 0px; */
+      margin: 50px 0px;
     }
     .subtitle {
       margin: 5px 0px 0px 0px;

@@ -16,7 +16,7 @@ export const UlStyle = styled.aside`
 `;
 
 export const AuthorImg = styled.img`
-  margin-top: 3rem;
+  margin-top: 2rem;
   width: 170px;
   height: 170px;
   border-radius: 50%;
