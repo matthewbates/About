@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 import { Link } from "react-scroll";
 
-export const HomeContainer = styled.div`
+export const IntroContainer = styled.div`
   background-color: ${CONSTANTS.colors.navyBlue};
   color: ${CONSTANTS.colors.persephoneWhite};
   height: 100vh;
@@ -36,7 +36,7 @@ export const HomeContainer = styled.div`
   }
 `;
 
-export const HomeMemoji = styled.img`
+export const IntroMemoji = styled.img`
   height: 300px;
 
   @media screen and (max-width: 420px) {
@@ -44,45 +44,7 @@ export const HomeMemoji = styled.img`
   }
 `;
 
-export const ScrollButton = styled(Link)`
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-
-  div {
-    display: block;
-    width: 22px;
-    height: 22px;
-    border-bottom: 5px solid ${CONSTANTS.colors.persephoneWhite};
-    border-right: 5px solid ${CONSTANTS.colors.persephoneWhite};
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-    &:nth-child(2) {
-      animation-delay: -0.2s;
-    }
-    &:nth-child(3) {
-      animation-delay: -0.4s;
-    }
-  }
-
-  @keyframes animate {
-    0% {
-      opacity: 0;
-      transform: rotate(45deg) translate(-15px, -15px);
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: rotate(45deg) translate(15px, 15px);
-    }
-  }
-`;
-
-export const HomeH1 = styled.h1`
+export const IntroH1 = styled.h1`
   font-family: "Poppins";
   font-size: 3em;
   font-weight: 700;

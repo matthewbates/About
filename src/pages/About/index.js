@@ -1,26 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   AboutContainer,
   AboutHeader,
   AboutWrapper,
-  SkillsH3,
+  AboutA,
   AboutH1,
   AboutP,
+  LinkRoute,
 } from "./AboutElements";
 import Card from "../../components/Card";
 import { about } from "./data";
 import ScrollEffect from "../../components/ScrollEffect";
-import { Link } from "react-router-dom";
 import sterling from "../../assets/sterling.jpg";
 import Sterling from "../Sterling";
+import { Link } from "react-scroll";
 
 export default function About() {
-  const [hover, setHover] = useState(false);
-
-  function toggleHover() {
-    setHover(!hover);
-  }
-
   return (
     <AboutContainer id="About">
       {/* <ScrollEffect> */}
@@ -29,8 +24,18 @@ export default function About() {
         <AboutH1>The skinny...</AboutH1>
         <span style={{ fontWeight: "bold" }}>
           <AboutP>
-            I'm a software developer living in Mantiou Springs, Colorado. I am
-            31 years old and I have been making websites for about 1.5 years.
+            I'm a software developer living in the small town of{" "}
+            <AboutA
+              href="https://www.manitouspringsgov.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "white" }}
+            >
+              Manitou Springs, Colorado
+            </AboutA>{" "}
+            with my Australian Shepherd,{" "}
+            <LinkRoute to="/sterling">Sterling</LinkRoute>. I am 31 years old
+            and I have been making websites for about 1.5 years.
           </AboutP>
         </span>
         <AboutP>
@@ -38,10 +43,18 @@ export default function About() {
           changing, my focus right now is React.js, Redux, Node, and Mocha.
         </AboutP>
         <AboutP>
-          I design, develop, and maintain mobile & tablet-optimized optimized{" "}
-          <a href="/websites" style={{ color: "white" }}>
+          I design, develop, and maintain mobile & tablet-optimized{" "}
+          <LinkRoute
+            to="/projects"
+            spy={true}
+            offset={0}
+            smooth={true}
+            duration={700}
+            activeClass="active"
+            style={{ color: "white" }}
+          >
             websites
-          </a>{" "}
+          </LinkRoute>{" "}
           for my clients, and I'm searching to get my foot in the door with a
           tech company as a front-end developer.
         </AboutP>
@@ -53,25 +66,22 @@ export default function About() {
           exciting & new technology. I'm always using technology to solve my
           life's probems and ambitions.
         </AboutP>
-        <AboutP>
+        {/* <AboutP>
           I live in a really cool town called Manitou Springs that sits at the
           foot of Pikes Peak with my Australian Shepherd,{" "}
-          <a style={{ color: "white" }} href="/sterling" target="_blank">
-            Sterling
-          </a>
-          .
-        </AboutP>
+          <LinkRoute to="/sterling">Sterling</LinkRoute>.
+        </AboutP> */}
         <AboutP style={{ marginBottom: "3rem" }}>
           I have a few hobbies. I enjoy backpacking, fly fishing, and
           skiing/snowboarding. I{" "}
-          <a
+          <AboutA
             href="https://www.medium.com/@matthewhcbates"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "white" }}
           >
             blog
-          </a>{" "}
+          </AboutA>{" "}
           regularly, as well. I am an avid griller and I have been known to make
           great tri-tip fajitas, steaks, as well as my personal twist on the
           jalepeno popper.

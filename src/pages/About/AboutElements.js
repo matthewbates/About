@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
+import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
   background: ${CONSTANTS.colors.midnightBlue};
@@ -59,5 +60,23 @@ export const AboutH1 = styled.span`
 
   @media screen and (max-width: 768px) {
     line-height: 1.6rem;
+  }
+`;
+
+export const AboutA = styled.a`
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const LinkRoute = styled(LinkR)`
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 `;
