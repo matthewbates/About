@@ -26,6 +26,7 @@ export const AuthorImg = styled.img`
 
 export const AuthorName = styled.h1`
   color: ${CONSTANTS.colors.persephoneWhite};
+  margin-top: 1rem;
   font-size: 25px;
   display: block;
   text-align: center;

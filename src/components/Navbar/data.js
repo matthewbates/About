@@ -11,21 +11,21 @@ export const navbarIconData = [
     style: {
       height: "32px",
       marginRight: "15px",
-      marginTop: "1px",
+      marginTop: "12px",
     },
   },
   {
     url: "https://www.medium.com/@matthewhcbates",
     img: Medium,
-    style: { height: "32px", marginRight: "15px" },
+    style: { height: "32px", marginRight: "15px", marginTop: "12px" },
   },
   {
     url: "https://www.codewars.com/users/matthewhcbates",
     img: CodeWars,
     style: {
       padding: 3,
-      height: "26px",
-      marginTop: "1px",
+      height: "32px",
+      marginTop: "12px",
       marginRight: "15px",
       borderRadius: "5px",
       backgroundColor: "#A8332A",
@@ -34,12 +34,12 @@ export const navbarIconData = [
   {
     url: "https://www.github.com/matthewbates",
     img: GitHub,
-    style: { height: "35px", marginRight: "15px" },
+    style: { height: "35px", marginRight: "15px", marginTop: "12px" },
   },
   {
     url: "https://www.buymeacoffee.com/matthewhcbates",
     img: BuyMeACoffee,
-    style: { height: "38px", color: "black" },
+    style: { height: "38px", color: "black", marginTop: "12px" },
   },
 ];
 
