@@ -14,9 +14,11 @@ export const projectData = [
     title: "Mars Industries",
     target: "_blank",
     style: {
-      padding: "2.5px",
+      padding: "4.5px",
       border: "1px solid orange",
       boxShadow: "4px 4px 2px 2px orange",
+      marginLeft: "3rem",
+      marginRight: "3rem",
     },
   },
   {
@@ -45,8 +47,8 @@ export const projectData = [
       padding: "2.5px",
       border: "1px solid white",
       boxShadow: "4px 4px 3px 2px blue",
-      marginLeft: "4rem",
-      marginRight: "4rem",
+      marginLeft: "3rem",
+      marginRight: "3rem",
     },
     github: "https://github.com/matthewbates/Mountain-Buddy",
     target: "_blank",
