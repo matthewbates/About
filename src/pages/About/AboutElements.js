@@ -4,44 +4,26 @@ import CONSTANTS from "../../utils/constants";
 export const AboutContainer = styled.div`
   background: ${CONSTANTS.colors.midnightBlue};
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
   color: black;
-  min-height: 80vh;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  @media (min-width: 969px) {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .about-card {
-    max-width: 500px;
-    border-radius: 12px;
-  }
 `;
 
-export const AboutHeader = styled.div`
-  max-width: 600;
-  margin-bottom: 30px;
-  min-width: 325px;
+export const AboutHeader = styled.h2`
+  font-weight: 400;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 300;
+  text-transform: uppercase;
+  color: ${CONSTANTS.colors.persephoneWhite};
 `;
 
 export const AboutH1 = styled.h1`
   font-size: 42px;
-  padding-bottom: 40px;
   color: #f1f2f2;
   font-family: "Lato";
 `;

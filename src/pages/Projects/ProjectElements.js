@@ -21,7 +21,7 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectHeader = styled.h2`
-  margin-top: 2rem;
+  margin-top: 3rem;
   line-height: 3rem;
   font-weight: 400;
   align-items: center;
@@ -30,6 +30,7 @@ export const ProjectHeader = styled.h2`
   font-family: "Lato";
   font-weight: 300;
   text-transform: uppercase;
+  color: ${CONSTANTS.colors.persephoneWhite};
 `;
 
 export const ProjectH1 = styled.h1`

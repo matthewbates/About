@@ -8,6 +8,7 @@ export const ContactContainer = styled.div`
 
 export const FormH3 = styled.h3`
   font-weight: 400;
+  color: ${CONSTANTS.colors.persephoneWhite};
   align-items: center;
   justify-content: center;
   text-align: center;

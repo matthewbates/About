@@ -3,12 +3,14 @@ import CONSTANTS from "../../utils/constants";
 
 export const SkillsContainer = styled.section`
   background: ${CONSTANTS.colors.royalBlue};
+`;
+
+export const SkillsWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  align-items: center;
 `;
 
 export const SkillsCard = styled.div`
@@ -17,10 +19,8 @@ export const SkillsCard = styled.div`
   box-shadow: rgba(0, 0, 0, 0.7) 0px 20px 38px, rgba(0, 0, 0, 0.5) 0px 15px 12px;
   border-radius: 20px;
   background-color: transparent;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
   max-width: 420px;
@@ -28,17 +28,30 @@ export const SkillsCard = styled.div`
 
 export const SkillsImage = styled.img`
   padding: 1rem;
-  width: 65px;
-  height: 65px;
-  vertical-align: middle;
+  width: 85px;
+  height: 85px;
 
   &:hover {
-    transform: scale(1.18);
-    transition: transform 0.3s ease-in-out;
+    transform: rotateX(360deg);
+    transition: transform 1.5s ease-in-out;
   }
 `;
 
 export const SkillsH3 = styled.h3`
   font-family: "Poppins";
+  color: ${CONSTANTS.colors.persephoneWhite};
+  margin-top: 2rem;
+`;
+
+export const SkillsHeader = styled.h2`
+  margin-top: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 300;
+  text-transform: uppercase;
   color: ${CONSTANTS.colors.persephoneWhite};
 `;
