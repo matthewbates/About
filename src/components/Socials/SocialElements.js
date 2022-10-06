@@ -3,6 +3,7 @@ import CONSTANTS from "../../utils/constants";
 
 export const SocialIcons = styled.div`
   display: flex;
+  margin-bottom: 0.5rem;
   align-items: center;
   text-align: center;
   justify-content: center;

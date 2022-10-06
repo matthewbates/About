@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 export const HomeContainer = styled.div`
   background-color: ${CONSTANTS.colors.navyBlue};
   color: ${CONSTANTS.colors.persephoneWhite};
-  height: 108vh;
+  height: 100vh;
   display: flex;
   text-align: center;
   align-items: center;

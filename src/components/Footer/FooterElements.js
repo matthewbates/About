@@ -19,12 +19,7 @@ export const FooterWrapper = styled.div`
   text-align: center;
 `;
 
-export const SocialIcons = styled.div`
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  width: 60px;
-`;
+export const SocialIcons = styled.div``;
 
 export const SocialIconLink = styled.a`
   color: ${CONSTANTS.colors.persephoneWhite};

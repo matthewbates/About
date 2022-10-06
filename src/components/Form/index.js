@@ -1,7 +1,7 @@
 import React from "react";
 import {
   TextInput,
-  FormH3,
+  FormHeader,
   EmailInput,
   TextArea,
   FormContainer,
@@ -43,7 +43,7 @@ export default function Forms() {
   return (
     <FormContainer>
       <Form onSubmit={handleOnSubmit}>
-        <FormH3>Contact</FormH3>
+        <FormHeader>Contact</FormHeader>
         <FormLabel className="required">Full Name</FormLabel>
         <TextInput type="text" name="user_full_name" required />
         <FormLabel className="required">Email Address</FormLabel>

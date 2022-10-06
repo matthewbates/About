@@ -14,8 +14,9 @@ export const Form = styled.form`
   }
 `;
 
-export const FormH3 = styled.h3`
-  margin-top: 4rem;
+export const FormHeader = styled.h2`
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   font-weight: 400;
   align-items: center;
   justify-content: center;
@@ -32,8 +33,8 @@ export const TextInput = styled.input`
   justify-content: center;
   color: ${CONSTANTS.colors.persephoneWhite};
   align-items: center;
-  width: 50%;
-  padding: 15px;
+  width: 45%;
+  padding: 10px;
   margin-bottom: 15px;
   font-size: 16px;
   background: transparent;
@@ -52,7 +53,7 @@ export const EmailInput = styled.input`
   justify-content: center;
   color: ${CONSTANTS.colors.softBlack};
   align-items: center;
-  width: 50%;
+  width: 45%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -73,7 +74,7 @@ export const TextArea = styled.textarea`
   justify-content: center;
   color: ${CONSTANTS.colors.persephoneWhite};
   align-items: center;
-  width: 50%;
+  width: 45%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -123,100 +124,3 @@ export const FormButton = styled.button`
     transition: 200ms ease-in;
   }
 `;
-
-// export const FormContainer = styled.div`
-//   /* padding: 2rem 2rem;
-//   border: 2.5px solid ${CONSTANTS.colors.persephoneWhite};
-//   text-align: center;
-
-//   @media screen and (max-width: 768px) {
-//     padding: 1rem 1rem;
-//   } */
-// `;
-
-// export const Form = styled.form`
-//   align-items: center;
-//   margin-right: 1.4rem;
-//   justify-content: center;
-//   line-height: 20px;
-
-//   .submit-button {
-//     justify-content: center;
-//     margin-left: 1rem;
-//     width: 100%;
-//     cursor: pointer;
-//     text-transform: uppercase;
-//     border: none;
-//     padding: 20px;
-//     font-weight: 900;
-//     font-size: 14px;
-//     letter-spacing: 5px;
-//     transition: transform 0.25s;
-
-//     &:hover {
-//       box-shadow: none;
-//       transform: scale(1.02);
-//     }
-//   }
-// `;
-
-// export const TextInput = styled.input`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   border-radius: 4px;
-//   border: 1px solid white;
-//   padding: 15px;
-//   margin-bottom: 10px;
-//   font-size: 14px;
-//   background-color: transparent;
-//   color: ${CONSTANTS.colors.white};
-//   resize: none;
-// `;
-
-// export const EmailInput = styled.input`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   border-radius: 4px;
-//   border: 1px solid white;
-//   padding: 15px;
-//   margin-bottom: 10px;
-//   font-size: 14px;
-//   background-color: transparent;
-//   color: ${CONSTANTS.colors.white};
-//   resize: none;
-// `;
-
-// export const TextArea = styled.textarea`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   border-radius: 4px;
-//   border: 1px solid white;
-//   padding: 15px;
-//   margin-bottom: 10px;
-//   font-size: 14px;
-//   background-color: transparent;
-//   color: ${CONSTANTS.colors.white};
-//   resize: none;
-// `;
-
-// export const FormIcon = styled.i`
-//   size: 1rem;
-//   color: #f1f2f2;
-// `;
-
-// export const FormLabel = styled.label`
-//   display: flex;
-//   line-height: 2;
-//   font-size: 14px;
-//   font-weight: 200; ;
-// `;
-
-// export const FormBtn = styled.button`
-
-// `

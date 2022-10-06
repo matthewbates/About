@@ -1,14 +1,21 @@
 import React from "react";
-import { HomeContainer, HomeH1, HomeMemoji, ScrollButton } from "./HomeElements";
+import { HomeContainer, HomeH1, HomeMemoji } from "./HomeElements";
 import TypeWriterEffect from "react-typewriter-effect";
 import Card from "../../components/Card";
 import memoji from "../../assets/memoji.png";
-import { FaArrowDown } from "react-icons/fa";
 
 export default function Home() {
   return (
     <HomeContainer id="Home">
-      <Card>
+      <Card
+        style={{
+          marginTop: "3rem",
+          background: "white",
+          justifyContent: "left",
+          textAlign: "left",
+          alignItems: "left",
+        }}
+      >
         <HomeMemoji src={memoji} />
         <HomeH1>Hi, I'm Matthew</HomeH1>
         <div className="subtitle-small subtitle">
@@ -26,17 +33,6 @@ export default function Home() {
           />
         </div>
       </Card>
-      {/* <ScrollButton
-        to="About"
-        spy={true}
-        offset={0}
-        smooth={true}
-        duration={700}
-      >
-        <div />
-        <div />
-        <div />
-      </ScrollButton> */}
     </HomeContainer>
   );
 }

@@ -21,7 +21,6 @@ export const ProjectContainer = styled.div`
 `;
 
 export const ProjectHeader = styled.h2`
-  margin-top: 3rem;
   line-height: 3rem;
   font-weight: 400;
   align-items: center;
