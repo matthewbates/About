@@ -19,7 +19,7 @@ export default function Backpacking() {
   return (
     <ImgContainer style={{ background: "black" }}>
       <ImgWrapper>
-        <ImgH1>Summit of Mt. Harvard, Colorado's 2nd tallest mountain</ImgH1>
+      <ImgH1>Summit of Mt. Harvard, Colorado's 2nd tallest mountain</ImgH1>
         <Img src={harvard} loading="lazy" />
         <ImgH3 onClick={routeChange}>Go Back</ImgH3>
       </ImgWrapper>

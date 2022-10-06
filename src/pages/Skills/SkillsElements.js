@@ -24,6 +24,10 @@ export const SkillsCard = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 420px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 320px;
+  }
 `;
 
 export const SkillsImage = styled.img`

@@ -3,9 +3,9 @@ import CONSTANTS from "../../utils/constants";
 import { Link } from "react-scroll";
 
 export const IntroContainer = styled.div`
-  background: #0049B7;
+  background: #0049b7;
   color: ${CONSTANTS.colors.persephoneWhite};
-  height: 100vh;
+  height: 110vh;
   display: flex;
   text-align: center;
   align-items: center;
@@ -28,7 +28,7 @@ export const IntroContainer = styled.div`
       border-left: none;
       border-right: none;
       border-radius: 0px;
-      margin: 50px 0px;
+      /* margin: 50px 0px; */
     }
     .subtitle {
       margin: 5px 0px 0px 0px;
@@ -37,17 +37,17 @@ export const IntroContainer = styled.div`
 `;
 
 export const IntroMemoji = styled.img`
-  height: 300px;
+  height: 400px;
 
   @media screen and (max-width: 420px) {
-    height: 200px;
+    height: 300px;
   }
 `;
 
 export const IntroH1 = styled.h1`
-  font-family: "Poppins";
-  font-size: 3em;
+  font-family: "Roboto";
   font-weight: 700;
+  font-size: 3rem;
   color: ${CONSTANTS.colors.persephoneWhite};
   text-shadow: 1px 1px 1px ${CONSTANTS.colors.steel},
     1px 2px 1px ${CONSTANTS.colors.steel}, 1px 3px 1px ${CONSTANTS.colors.steel},
@@ -59,6 +59,6 @@ export const IntroH1 = styled.h1`
     1px 30px 60px rgba(16, 16, 16, 0.4);
 
   @media screen and (max-width: 420px) {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 `;

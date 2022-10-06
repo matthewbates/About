@@ -42,7 +42,7 @@ export const AboutP = styled.p`
   margin-inline-end: 0px;
   font-family: "Space Mono";
   font-size: 20px;
-  color: ${CONSTANTS.colors.softBlack};
+  color: #000;
 `;
 
 export const AboutH1 = styled.span`

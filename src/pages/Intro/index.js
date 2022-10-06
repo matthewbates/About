@@ -18,11 +18,11 @@ export default function Home() {
       >
         <IntroMemoji src={memoji} />
         <IntroH1>Hi, I'm Matthew</IntroH1>
-        <div className="subtitle-small subtitle">
+        <div style={{ marginTop: "2rem" }} className="subtitle-small subtitle">
           <TypeWriterEffect
             multiText={[
+              "Front-end software developer",
               "A creative, passionate technologist",
-              "Full-stack software developer",
               "Freelance web designer",
             ]}
             multiTextDelay={2500}
