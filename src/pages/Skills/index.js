@@ -13,7 +13,7 @@ import {
 export default function Skills() {
   return (
     <>
-      <SkillsContainer>
+      <SkillsContainer id="Skills">
         <SkillsWrapper>
           <SkillsHeader>Skills</SkillsHeader>
           <SkillsCard style={{ marginTop: "4rem" }}>
