@@ -5,6 +5,7 @@ import Loader from "./components/Loader";
 import HomePage from "./pages/Home";
 import Projects from "./pages/Projects";
 import Sterling from "./pages/Sterling";
+import Backpacking from "./pages/Backpacking";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/sterling" element={<Sterling />} />
+            <Route path="/backpacking" element={<Backpacking />} />
           </Routes>
         </Router>
       )}

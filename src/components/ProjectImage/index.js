@@ -20,7 +20,7 @@ export default function ProjectImage({
   return (
     <StyledProjectImage>
       <img src={img} className="img flourish" alt="project" />
-      <div className="overlay">
+      <div style={{ gap: "1rem" }} className="overlay">
         <ImageH3>{title}</ImageH3>
         <ImageP style={style}>{techStack}</ImageP>
         <span>

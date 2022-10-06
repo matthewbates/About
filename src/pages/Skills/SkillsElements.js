@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const SkillsContainer = styled.section`
-  background: ${CONSTANTS.colors.royalBlue};
+  background: #f75990;
 `;
 
 export const SkillsWrapper = styled.div`
@@ -51,7 +51,6 @@ export const SkillsHeader = styled.h2`
   justify-content: center;
   text-align: center;
   font-family: "Lato";
-  font-weight: 300;
   text-transform: uppercase;
   color: ${CONSTANTS.colors.persephoneWhite};
 `;

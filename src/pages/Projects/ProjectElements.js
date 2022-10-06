@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ProjectContainer = styled.div`
-  background-color: ${CONSTANTS.colors.blue};
+  background: #00ddff;
   display: flex;
   text-align: left;
   padding-top: 30px;
@@ -27,9 +27,9 @@ export const ProjectHeader = styled.h2`
   justify-content: center;
   text-align: center;
   font-family: "Lato";
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
-  color: ${CONSTANTS.colors.persephoneWhite};
+  color: #000;
 `;
 
 export const ProjectH1 = styled.h1`

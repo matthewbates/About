@@ -5,11 +5,11 @@ import {
   ImgWrapper,
   ImgH3,
   Img,
-} from "./SterlingElements";
-import sterling from "../../assets/sterling.jpg";
+} from "./BackpackingElements";
+import harvard from "../../assets/harvard.jpg";
 import { useNavigate } from "react-router-dom";
 
-export default function Sterling() {
+export default function Backpacking() {
   let navigate = useNavigate();
   const routeChange = () => {
     let path = `/`;
@@ -19,8 +19,8 @@ export default function Sterling() {
   return (
     <ImgContainer style={{ background: "black" }}>
       <ImgWrapper>
-        <ImgH1>This is my buddy, sterling</ImgH1>
-        <Img src={sterling} loading="lazy" />
+        <ImgH1>Summit of Mt. Harvard, Colorado's 2nd tallest mountain</ImgH1>
+        <Img src={harvard} loading="lazy" />
         <ImgH3 onClick={routeChange}>Go Back</ImgH3>
       </ImgWrapper>
     </ImgContainer>

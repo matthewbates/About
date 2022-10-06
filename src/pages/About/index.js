@@ -39,15 +39,7 @@ export default function About() {
         </AboutP>
         <AboutP>
           I design, develop, and maintain mobile & tablet-optimized{" "}
-          <LinkRoute
-            to="/projects"
-            spy={true}
-            offset={0}
-            smooth={true}
-            duration={700}
-            activeClass="active"
-            style={{ color: "white" }}
-          >
+          <LinkRoute to="/projects" style={{ color: "white" }}>
             websites
           </LinkRoute>{" "}
           for my clients, and I'm searching to get my foot in the door with a
@@ -67,8 +59,11 @@ export default function About() {
           <LinkRoute to="/sterling">Sterling</LinkRoute>.
         </AboutP> */}
         <AboutP style={{ marginBottom: "3rem" }}>
-          I have a few hobbies. I enjoy backpacking, fly fishing, and
-          skiing/snowboarding. I{" "}
+          I have a few hobbies. I enjoy{" "}
+          <LinkRoute to="/backpacking" style={{ color: "white" }}>
+            backpacking
+          </LinkRoute>,{" "}
+          fly fishing, and skiing/snowboarding. I{" "}
           <AboutA
             href="https://www.medium.com/@matthewhcbates"
             target="_blank"

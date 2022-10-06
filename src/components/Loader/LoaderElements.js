@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const LoadingScreen = styled.div`
+  font-family: "Roboto";
+
   .loading-container {
     display: flex;
     justify-content: center;

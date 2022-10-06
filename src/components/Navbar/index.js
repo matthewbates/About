@@ -23,11 +23,11 @@ export default function Header({ width, position }) {
   useEffect(() => {
     gsap.from(".nav-icon", {
       y: 100,
-      delay: 0.5,
+      delay: 0.8,
       opacity: 0,
       duration: 2,
       ease: "back",
-      stagger: 0.35,
+      stagger: 0.25,
     });
   }, []);
 

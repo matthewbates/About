@@ -3,7 +3,8 @@ import CONSTANTS from "../../utils/constants";
 import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
-  background: ${CONSTANTS.colors.midnightBlue};
+  /* background: ${CONSTANTS.colors.persephoneWhite}; */
+  background: #ff1d58;
   height: 100%;
 `;
 
@@ -24,7 +25,6 @@ export const AboutHeader = styled.h2`
   justify-content: center;
   text-align: center;
   font-family: "Lato";
-  font-weight: 300;
   text-transform: uppercase;
   color: ${CONSTANTS.colors.persephoneWhite};
 `;
@@ -42,13 +42,13 @@ export const AboutP = styled.p`
   margin-inline-end: 0px;
   font-family: "Space Mono";
   font-size: 20px;
+  color: ${CONSTANTS.colors.softBlack};
 `;
 
 export const AboutH1 = styled.span`
-  color: ${CONSTANTS.colors.persephoneWhite};
   line-height: 2rem;
   letter-spacing: 1px;
-  font-family: "Radnika";
+  font-family: "Roboto";
   font-style: italic;
   font-weight: 900;
   margin-top: 3rem;
@@ -57,6 +57,7 @@ export const AboutH1 = styled.span`
   position: relative;
   text-align: left;
   float: left;
+  color: ${CONSTANTS.colors.persephoneWhite};
 
   @media screen and (max-width: 768px) {
     line-height: 1.6rem;
@@ -66,17 +67,47 @@ export const AboutH1 = styled.span`
 export const AboutA = styled.a`
   color: white;
   text-decoration: none;
+  position: relative;
 
-  &:hover {
-    text-decoration: underline;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
   }
 `;
 
 export const LinkRoute = styled(LinkR)`
   color: white;
   text-decoration: none;
+  position: relative;
 
-  &:hover {
-    text-decoration: underline;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
   }
 `;

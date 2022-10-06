@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import CONSTANTS from "../../utils/constants";
 
 export const FooterContainer = styled.div`
-  background-color: ${CONSTANTS.colors.softBlack};
+  background: #000;
   width: 100%;
   bottom: 0;
   display: flex;

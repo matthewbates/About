@@ -22,16 +22,16 @@ export const FormHeader = styled.h2`
   justify-content: center;
   text-align: center;
   font-family: "Lato";
-  font-weight: 300;
   text-transform: uppercase;
-  color: ${CONSTANTS.colors.persephoneWhite};
+  font-weight: 400;
+  color: #000;
 `;
 
 export const TextInput = styled.input`
   font-family: "Poppins";
   display: flex;
   justify-content: center;
-  color: ${CONSTANTS.colors.persephoneWhite};
+  color: ${CONSTANTS.colors.softBlack};
   align-items: center;
   width: 45%;
   padding: 10px;
@@ -39,7 +39,7 @@ export const TextInput = styled.input`
   font-size: 16px;
   background: transparent;
   resize: none;
-  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
+  border: 1px solid ${CONSTANTS.colors.softBlack};
   border-radius: 6px;
 
   @media screen and (max-width: 768px) {
@@ -59,7 +59,7 @@ export const EmailInput = styled.input`
   font-size: 16px;
   background: transparent;
   resize: none;
-  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
+  border: 1px solid ${CONSTANTS.colors.softBlack};
   border-radius: 6px;
 
   @media screen and (max-width: 768px) {
@@ -72,7 +72,7 @@ export const TextArea = styled.textarea`
   font-family: "Poppins";
   display: flex;
   justify-content: center;
-  color: ${CONSTANTS.colors.persephoneWhite};
+  color: ${CONSTANTS.colors.softBlack};
   align-items: center;
   width: 45%;
   padding: 15px;
@@ -80,7 +80,7 @@ export const TextArea = styled.textarea`
   font-size: 16px;
   background: transparent;
   resize: none;
-  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
+  border: 1px solid ${CONSTANTS.colors.softBlack};
   border-radius: 6px;
 
   @media screen and (max-width: 768px) {
@@ -92,11 +92,11 @@ export const FormLabel = styled.label`
   display: flex;
   line-height: 2rem;
   font-family: "Lato";
-  color: ${CONSTANTS.colors.persephoneWhite};
+  color: ${CONSTANTS.colors.softBlack};
 `;
 
 export const FormButton = styled.button`
-  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
+  border: 1px solid ${CONSTANTS.colors.softBlack};
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -111,7 +111,7 @@ export const FormButton = styled.button`
   margin-top: 1rem;
   margin-bottom: 4rem;
   background: transparent;
-  color: ${CONSTANTS.colors.persephoneWhite};
+  color: ${CONSTANTS.colors.softBlack};
 
   @media screen and (max-width: 768px) {
     width: 40%;
@@ -119,8 +119,8 @@ export const FormButton = styled.button`
 
   &:hover {
     box-shadow: none;
-    background: ${CONSTANTS.colors.persephoneWhite};
-    color: ${CONSTANTS.colors.royalBlue};
+    background: #fff;
+    color: #000;
     transition: 200ms ease-in;
   }
 `;

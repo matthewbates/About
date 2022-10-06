@@ -7,6 +7,8 @@ export const HeaderLinksContainer = styled.div`
   justify-content: center;
   background: #fff;
   width: 100%;
+  text-align: center;
+  
 `;
 
 export const HeaderLinkScroll = styled(Link)`

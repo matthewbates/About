@@ -3,7 +3,7 @@ import CONSTANTS from "../../utils/constants";
 import { Link } from "react-scroll";
 
 export const IntroContainer = styled.div`
-  background-color: ${CONSTANTS.colors.navyBlue};
+  background: #0049B7;
   color: ${CONSTANTS.colors.persephoneWhite};
   height: 100vh;
   display: flex;

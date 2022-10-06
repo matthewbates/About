@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ContactContainer = styled.div`
-  background: ${CONSTANTS.colors.royalBlue};
+  background: #FFF685;
   height: 100%;
 `;
 
