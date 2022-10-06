@@ -8,12 +8,7 @@ import {
   AboutP,
   LinkRoute,
 } from "./AboutElements";
-import Card from "../../components/Card";
-import { about } from "./data";
 import ScrollEffect from "../../components/ScrollEffect";
-import sterling from "../../assets/sterling.jpg";
-import Sterling from "../Sterling";
-import { Link } from "react-scroll";
 
 export default function About() {
   return (

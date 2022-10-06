@@ -24,23 +24,13 @@ export default function RightNav({ open, closeDrawer }) {
         <AuthorImg src={Author} alt="image" />
         <AuthorName>Matthew Bates</AuthorName>
       </div>
-
-      {sidebarData.map((item, index) => (
-        <div style={{ textAlign: "center" }}>
-          <RightNavA
-            key={index}
-            href={item.href}
-            style={{ color: "#F1F2F2", listStyle: "none" }}
-          >
-            {item.contact}
-          </RightNavA>
-        </div>
-      ))}
-      <NavLinks closeDrawer={closeDrawer} title={"Home"} />
-      <NavLinks closeDrawer={closeDrawer} title={"About"} />
-      <NavLinks closeDrawer={closeDrawer} title={"Skills"} />
-      <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
-      <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
+      <div style={{ marginTop: "2rem", letterSpacing: "2px" }}>
+        <NavLinks closeDrawer={closeDrawer} title={"Home"} />
+        <NavLinks closeDrawer={closeDrawer} title={"About"} />
+        <NavLinks closeDrawer={closeDrawer} title={"Skills"} />
+        <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
+        <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
+      </div>
       <RightNavBtn>
         <RightNavButton onClick={downloadResume}>Resume</RightNavButton>
       </RightNavBtn>
