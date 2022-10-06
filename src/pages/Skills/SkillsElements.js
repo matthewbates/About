@@ -28,8 +28,8 @@ export const SkillsCard = styled.div`
 
 export const SkillsImage = styled.img`
   padding: 1rem;
-  width: 85px;
-  height: 85px;
+  width: 100px;
+  height: 100px;
 
   &:hover {
     transform: rotateX(360deg);
@@ -38,7 +38,7 @@ export const SkillsImage = styled.img`
 `;
 
 export const SkillsH3 = styled.h3`
-  font-family: "Poppins";
+  font-family: "Space Mono";
   color: ${CONSTANTS.colors.persephoneWhite};
   margin-top: 2rem;
 `;

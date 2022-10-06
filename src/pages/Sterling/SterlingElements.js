@@ -34,3 +34,14 @@ export const ImgWrapper = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
 `;
+
+export const Img = styled.img`
+object-fit: contain;
+height: 70vh;
+width: 70vw;
+
+@media screen and (max-width: 768px) {
+    height: 55vh;
+    width: 55vw;
+}
+`
