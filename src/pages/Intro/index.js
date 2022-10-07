@@ -1,5 +1,10 @@
 import React from "react";
-import { IntroContainer, IntroMemoji, IntroH1 } from "./IntroElements";
+import {
+  IntroContainer,
+  IntroWrapper,
+  IntroMemoji,
+  IntroH1,
+} from "./IntroElements";
 import TypeWriterEffect from "react-typewriter-effect";
 import Card from "../../components/Card";
 import memoji from "../../assets/memoji.png";
@@ -7,18 +12,21 @@ import memoji from "../../assets/memoji.png";
 export default function Home() {
   return (
     <IntroContainer id="Home">
-      <Card
-        style={{
-          marginTop: "3rem",
-          background: "white",
-          justifyContent: "left",
-          textAlign: "left",
-          alignItems: "left",
-        }}
-      >
-        <IntroMemoji src={memoji} />
+      <IntroWrapper>
         <IntroH1>Hi, I'm Matthew</IntroH1>
-        <div style={{ marginTop: "2rem" }} className="subtitle-small subtitle">
+        <IntroMemoji src={memoji} />
+        <div
+          style={{
+            marginTop: "1rem",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            maxWidth: "300px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+          className="subtitle-small subtitle"
+        >
           <TypeWriterEffect
             multiText={[
               "Front-end software developer",
@@ -26,13 +34,18 @@ export default function Home() {
               "Freelance web designer",
             ]}
             multiTextDelay={2500}
-            textStyle={{ fontSize: "1.2rem", textAlign: "center" }}
+            textStyle={{
+              fontSize: "20px",
+              textAlign: "center",
+              fontFamily: "Space Mono",
+              color: "#05386b",
+            }}
             cursorColor="#fff"
             typeSpeed={80}
             multiTextLoop
           />
         </div>
-      </Card>
+      </IntroWrapper>
     </IntroContainer>
   );
 }

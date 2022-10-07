@@ -7,10 +7,11 @@ export const StyledContainer = styled.nav`
   align-items: center;
   height: 80px;
   z-index: 999;
-  background: #fff;
-  margin-top: 3.5rem;
+  background: ${CONSTANTS.colors.persephoneWhite};
+
   width: ${({ width }) => width || "90%"};
   position: ${({ position }) => position || "relative"};
+  /* border-bottom: 2px solid #05368b; */
 `;
 
 export const StyledWrapper = styled.div`

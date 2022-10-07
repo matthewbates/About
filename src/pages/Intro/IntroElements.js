@@ -3,16 +3,14 @@ import CONSTANTS from "../../utils/constants";
 import { Link } from "react-scroll";
 
 export const IntroContainer = styled.div`
-  background: #0049b7;
+  background: #5cdb95;
   color: ${CONSTANTS.colors.persephoneWhite};
-  height: 110vh;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  height: 100vh;
   background-size: cover;
-  margin-top: -4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
 
   .subtitle {
     color: ${CONSTANTS.colors.persephoneWhite};
@@ -36,8 +34,17 @@ export const IntroContainer = styled.div`
   }
 `;
 
+export const IntroWrapper = styled.div`
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 50%;
+`;
+
 export const IntroMemoji = styled.img`
-  height: 400px;
+  height: 250px;
 
   @media screen and (max-width: 420px) {
     height: 300px;
@@ -45,18 +52,9 @@ export const IntroMemoji = styled.img`
 `;
 
 export const IntroH1 = styled.h1`
-  font-family: "Roboto";
-  font-weight: 700;
+  font-family: "League Spartan";
   font-size: 3rem;
   color: ${CONSTANTS.colors.persephoneWhite};
-  text-shadow: 1px 1px 1px ${CONSTANTS.colors.steel},
-    1px 2px 1px ${CONSTANTS.colors.steel}, 1px 3px 1px ${CONSTANTS.colors.steel},
-    1px 4px 1px ${CONSTANTS.colors.steel}, 1px 5px 1px ${CONSTANTS.colors.steel},
-    1px 6px 1px ${CONSTANTS.colors.steel}, 1px 7px 1px ${CONSTANTS.colors.steel},
-    1px 8px 1px ${CONSTANTS.colors.steel}, 1px 9px 1px ${CONSTANTS.colors.steel},
-    1px 10px 1px ${CONSTANTS.colors.steel}, 1px 18px 6px rgba(16, 16, 16, 0.4),
-    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
-    1px 30px 60px rgba(16, 16, 16, 0.4);
 
   @media screen and (max-width: 420px) {
     font-size: 2.5rem;

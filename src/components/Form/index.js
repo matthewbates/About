@@ -16,10 +16,6 @@ const SERVICE_ID = "service_7j2rpfd";
 const TEMPLATE_ID = "template_bl3e1rq";
 const USER_ID = "pxTQ3Ga0lBOJ4vGzM";
 
-// const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
-// const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-// const USER_ID = process.env.REACT_APP_USER_ID;
-
 export default function Forms() {
   function handleOnSubmit(e) {
     e.preventDefault();

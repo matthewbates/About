@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledBurger = styled.div`
   display: none;
+
   position: fixed;
   top: 15px;
   right: 40px;
@@ -19,8 +20,9 @@ export const StyledBurger = styled.div`
 
   div {
     width: 2rem;
+
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "white" : "black")};
+    background-color: ${({ open }) => (open ? "white" : "#05386b")};
     border-radius: 20px;
     transform-origin: 1px;
     transition: all 0.4s linear;

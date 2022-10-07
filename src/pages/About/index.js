@@ -17,7 +17,7 @@ export default function About() {
       <AboutWrapper>
         <AboutHeader>About</AboutHeader>
         <AboutH1>The skinny...</AboutH1>
-        <span style={{ fontWeight: "bold" }}>
+     
           <AboutP>
             I'm a software developer living in the small town of{" "}
             <AboutA
@@ -32,7 +32,7 @@ export default function About() {
             <LinkRoute to="/sterling">Sterling</LinkRoute>. I am 31 years old
             and I have been making websites for about 1.5 years.
           </AboutP>
-        </span>
+        
         <AboutP>
           I primarily utilize HTML, CSS, and JavaScript. Although constantly
           changing, my focus right now is React.js, Redux, Node, and Mocha.

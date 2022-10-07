@@ -6,7 +6,11 @@ export default function Burger({ open, handleOnClick }) {
     <StyledBurger
       open={open}
       onClick={handleOnClick}
-      style={{ position: "fixed", top: "20px", right: "20px" }}
+      style={{
+        position: "fixed",
+        top: "22px",
+        right: "25px",
+      }}
     >
       <div />
       <div />

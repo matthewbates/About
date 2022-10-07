@@ -13,11 +13,9 @@ export const ImgH1 = styled.h1`
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 1rem;
 `;
 
 export const ImgH3 = styled.h3`
-  margin-top: 1rem;
   cursor: pointer;
   color: white;
   text-align: center;
@@ -36,12 +34,12 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-object-fit: contain;
-height: 70vh;
-width: 70vw;
+  object-fit: contain;
+  height: 70vh;
+  width: 70vw;
 
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     height: 55vh;
     width: 55vw;
-}
-`
+  }
+`;
