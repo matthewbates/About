@@ -15,7 +15,7 @@ export const HeaderLinkScroll = styled(Link)`
   padding: 1.4rem;
   font-family: "Space Mono";
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 6px;
   color: #05386b;
   font-weight: bold;
