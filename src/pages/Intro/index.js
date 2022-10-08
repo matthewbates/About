@@ -1,51 +1,56 @@
 import React from "react";
-import {
-  IntroContainer,
-  IntroWrapper,
-  IntroMemoji,
-  IntroH1,
-} from "./IntroElements";
+import { IntroContainer, IntroButton } from "./IntroElements";
 import TypeWriterEffect from "react-typewriter-effect";
-import Card from "../../components/Card";
-import memoji from "../../assets/memoji.png";
+import Resume from "../../assets/Resume.pdf";
+import { saveAs } from "file-saver";
 
 export default function Home() {
+  const downloadResume = () => {
+    saveAs(Resume, "matthewbates-resume.pdf");
+  };
+
   return (
     <IntroContainer id="Home">
-      <IntroWrapper>
-        <IntroH1>Hi, I'm Matthew</IntroH1>
-        <IntroMemoji src={memoji} />
-        <div
+      <div
+        style={{
+          marginLeft: "2rem",
+          marginTop: "3rem",
+        }}
+      >
+        <h1>Hi, my name is</h1>
+        <h2 className="required">Matthew </h2>
+        <h2>I build things for the web.</h2>
+        <h3
           style={{
-            marginTop: "1rem",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            maxWidth: "300px",
-            marginLeft: "auto",
-            marginRight: "auto",
+            fontSize: "18px",
+            marginTop: "10px",
+            fontFamily: "Space Mono",
+            color: "white",
           }}
-          className="subtitle-small subtitle"
         >
-          <TypeWriterEffect
-            multiText={[
-              "Front-end software developer",
-              "A creative, passionate technologist",
-              "Freelance web designer",
-            ]}
-            multiTextDelay={2500}
-            textStyle={{
-              fontSize: "20px",
-              textAlign: "center",
-              fontFamily: "Space Mono",
-              color: "#05386b",
-            }}
-            cursorColor="#fff"
-            typeSpeed={80}
-            multiTextLoop
-          />
-        </div>
-      </IntroWrapper>
+          <p>I'm a:</p>
+        </h3>
+        <TypeWriterEffect
+          multiText={[
+            "front-end software developer with full-stack experience",
+            "creative, passionate technologist",
+            "freelance web designer",
+          ]}
+          multiTextDelay={2500}
+          textStyle={{
+            fontSize: "20px",
+            fontFamily: "Space Mono",
+            color: "#5cdb95",
+            marginTop: "10px",
+            flexWrap: "wrap",
+            maxWidth: "260px",
+          }}
+          cursorColor="#fff"
+          typeSpeed={80}
+          multiTextLoop
+        />
+        <IntroButton onClick={downloadResume}>Resume</IntroButton>
+      </div>
     </IntroContainer>
   );
 }

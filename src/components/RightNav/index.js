@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   UlStyle,
   AuthorImg,
@@ -14,8 +14,14 @@ import { saveAs } from "file-saver";
 import { sidebarData } from "./data";
 
 export default function RightNav({ open, closeDrawer }) {
-  function downloadResume() {
+  const downloadResume = () => {
     saveAs(Resume, "matthewbates-resume.pdf");
+  };
+
+  const onResize = (e) => {
+    if (e.currentTarget.innerWidth > 768) {
+      
+    }
   }
 
   return (

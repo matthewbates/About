@@ -8,7 +8,6 @@ import { navbarIconData, navbarLinks } from "./data";
 import HeaderIcon from "../HeaderIcon";
 import Burger from "../Burger";
 import RightNav from "../RightNav";
-import NavLinks from "../NavLinks";
 import gsap from "gsap";
 import HeaderNavLinks from "../HeaderNavLinks";
 
@@ -19,6 +18,19 @@ export default function Header({ width, position }) {
   const closeDrawer = () => {
     setTimeout(() => setOpen(false), 800);
   };
+
+  const onResize = (e) => {
+    if (e.currentTarget.innerWidth > 768) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  });
 
   useEffect(() => {
     gsap.from(".nav-icon", {
