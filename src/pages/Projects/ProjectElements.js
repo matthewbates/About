@@ -2,7 +2,8 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ProjectContainer = styled.div`
-  background: #00ddff;
+  background: #05386b;
+  border-top: 1px solid ${CONSTANTS.colors.persephoneWhite};
   display: flex;
   text-align: left;
   padding-top: 30px;
@@ -16,20 +17,20 @@ export const ProjectContainer = styled.div`
     min-height: 100vh;
   }
   .header {
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 `;
 
 export const ProjectHeader = styled.h2`
+  margin-top: 2rem;
   line-height: 3rem;
   font-weight: 400;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-family: "Lato";
-  font-weight: 400;
   text-transform: uppercase;
-  color: #000;
+  color: ${CONSTANTS.colors.persephoneWhite};
 `;
 
 export const ProjectH1 = styled.h1`

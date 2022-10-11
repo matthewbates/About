@@ -17,29 +17,29 @@ export default function About() {
       <AboutWrapper>
         <AboutHeader>About</AboutHeader>
         <AboutH1>The skinny...</AboutH1>
-     
-          <AboutP>
-            I'm a software developer living in the small town of{" "}
-            <AboutA
-              href="https://www.manitouspringsgov.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "white" }}
-            >
-              Manitou Springs, Colorado
-            </AboutA>{" "}
-            with my Australian Shepherd,{" "}
-            <LinkRoute to="/sterling">Sterling</LinkRoute>. I am 31 years old
-            and I have been making websites for about 1.5 years.
-          </AboutP>
-        
+
+        <AboutP>
+          I'm a software developer living in the small town of{" "}
+          <AboutA
+            href="https://www.manitouspringsgov.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#5cdb95" }}
+          >
+            Manitou Springs, Colorado
+          </AboutA>{" "}
+          with my Australian Shepherd,{" "}
+          <LinkRoute to="/sterling">Sterling</LinkRoute>. I am 31 years old and
+          I have been making websites for about 1.5 years.
+        </AboutP>
+
         <AboutP>
           I primarily utilize HTML, CSS, and JavaScript. Although constantly
           changing, my focus right now is React.js, Redux, Node, and Mocha.
         </AboutP>
         <AboutP>
           I design, develop, and maintain mobile & tablet-optimized{" "}
-          <LinkRoute to="/projects" style={{ color: "white" }}>
+          <LinkRoute to="/projects" style={{ color: "#5cdb95" }}>
             websites
           </LinkRoute>{" "}
           for my clients, and I'm searching to get my foot in the door with a
@@ -60,15 +60,15 @@ export default function About() {
         </AboutP> */}
         <AboutP style={{ marginBottom: "3rem" }}>
           I have a few hobbies. I enjoy{" "}
-          <LinkRoute to="/backpacking" style={{ color: "white" }}>
+          <LinkRoute to="/backpacking" style={{ color: "#5cdb95" }}>
             backpacking
-          </LinkRoute>,{" "}
-          fly fishing, and skiing/snowboarding. I{" "}
+          </LinkRoute>
+          , fly fishing, and skiing/snowboarding. I{" "}
           <AboutA
             href="https://www.medium.com/@matthewhcbates"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "white" }}
+            style={{ color: "#5cdb95" }}
           >
             blog
           </AboutA>{" "}

@@ -15,23 +15,22 @@ export const Form = styled.form`
 `;
 
 export const FormHeader = styled.h2`
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  line-height: 3rem;
   font-weight: 400;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-family: "Lato";
   text-transform: uppercase;
-  font-weight: 400;
-  color: #000;
+  color: ${CONSTANTS.colors.persephoneWhite};
 `;
 
 export const TextInput = styled.input`
   font-family: "Poppins";
   display: flex;
   justify-content: center;
-  color: ${CONSTANTS.colors.softBlack};
+  color: ${CONSTANTS.colors.persephoneWhite};
   align-items: center;
   width: 45%;
   padding: 10px;
@@ -39,7 +38,7 @@ export const TextInput = styled.input`
   font-size: 16px;
   background: transparent;
   resize: none;
-  border: 1px solid ${CONSTANTS.colors.softBlack};
+  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
   border-radius: 6px;
 
   @media screen and (max-width: 768px) {
@@ -51,7 +50,7 @@ export const EmailInput = styled.input`
   font-family: "Poppins";
   display: flex;
   justify-content: center;
-  color: ${CONSTANTS.colors.softBlack};
+  color: ${CONSTANTS.colors.persephoneWhite};
   align-items: center;
   width: 45%;
   padding: 15px;
@@ -59,7 +58,7 @@ export const EmailInput = styled.input`
   font-size: 16px;
   background: transparent;
   resize: none;
-  border: 1px solid ${CONSTANTS.colors.softBlack};
+  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
   border-radius: 6px;
 
   @media screen and (max-width: 768px) {
@@ -72,7 +71,7 @@ export const TextArea = styled.textarea`
   font-family: "Poppins";
   display: flex;
   justify-content: center;
-  color: ${CONSTANTS.colors.softBlack};
+  color: ${CONSTANTS.colors.persephoneWhite};
   align-items: center;
   width: 45%;
   padding: 15px;
@@ -80,7 +79,7 @@ export const TextArea = styled.textarea`
   font-size: 16px;
   background: transparent;
   resize: none;
-  border: 1px solid ${CONSTANTS.colors.softBlack};
+  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
   border-radius: 6px;
 
   @media screen and (max-width: 768px) {
@@ -92,11 +91,11 @@ export const FormLabel = styled.label`
   display: flex;
   line-height: 2rem;
   font-family: "Lato";
-  color: ${CONSTANTS.colors.softBlack};
+  color: ${CONSTANTS.colors.persephoneWhite};
 `;
 
 export const FormButton = styled.button`
-  border: 1px solid ${CONSTANTS.colors.softBlack};
+  border: 1px solid ${CONSTANTS.colors.persephoneWhite};
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -111,7 +110,7 @@ export const FormButton = styled.button`
   margin-top: 1rem;
   margin-bottom: 4rem;
   background: transparent;
-  color: ${CONSTANTS.colors.softBlack};
+  color: ${CONSTANTS.colors.persephoneWhite};
 
   @media screen and (max-width: 768px) {
     width: 40%;
@@ -120,7 +119,7 @@ export const FormButton = styled.button`
   &:hover {
     box-shadow: none;
     background: #fff;
-    color: #000;
+    color: #05386b;
     transition: 200ms ease-in;
   }
 `;

@@ -3,10 +3,11 @@ import { Link } from "react-scroll";
 import CONSTANTS from "../../utils/constants";
 
 export const FooterContainer = styled.div`
-  background: #000;
+  background: ${CONSTANTS.colors.softBlack};
   width: 100%;
   bottom: 0;
   display: flex;
+  flex-direction: column;
 `;
 
 export const FooterWrapper = styled.div`
@@ -39,5 +40,22 @@ export const ScrollButton = styled(Link)`
     padding: 5px 5px;
     border: 1px solid white;
     cursor: pointer;
+  }
+`;
+
+export const FooterCredit = styled.div`
+  font-family: "Lato";
+  line-height: 1;
+
+  a {
+    padding: 10px;
+    font-size: 14px;
+    color: ${CONSTANTS.colors.persephoneWhite};
+    text-decoration: none;
+
+    &:hover {
+      color: #5cdb95;
+      transition: 200ms all ease-in;
+    }
   }
 `;

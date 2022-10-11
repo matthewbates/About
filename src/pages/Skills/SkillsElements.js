@@ -2,7 +2,8 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const SkillsContainer = styled.section`
-  background: #f75990;
+  background: #05386b;
+  border-top: 1px solid ${CONSTANTS.colors.persephoneWhite};
 `;
 
 export const SkillsWrapper = styled.div`
@@ -24,6 +25,7 @@ export const SkillsCard = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 420px;
+  padding: 0 auto;
 
   @media screen and (max-width: 768px) {
     max-width: 320px;

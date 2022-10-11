@@ -3,9 +3,9 @@ import CONSTANTS from "../../utils/constants";
 import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
-  /* background: ${CONSTANTS.colors.persephoneWhite}; */
-  background: #ff1d58;
+  background: #05386b;
   height: 100%;
+  border-top: 1px solid ${CONSTANTS.colors.persephoneWhite};
 `;
 
 export const AboutWrapper = styled.div`
@@ -42,7 +42,7 @@ export const AboutP = styled.p`
   margin-inline-end: 0px;
   font-family: "Space Mono";
   font-size: 20px;
-  color: #000;
+  color: #edf5e1;
 `;
 
 export const AboutH1 = styled.span`
@@ -76,7 +76,7 @@ export const AboutA = styled.a`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #5cdb95;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
     transform: scaleX(0);
@@ -89,7 +89,7 @@ export const AboutA = styled.a`
 `;
 
 export const LinkRoute = styled(LinkR)`
-  color: white;
+  color: #5cdb95;
   text-decoration: none;
   position: relative;
 
@@ -100,7 +100,7 @@ export const LinkRoute = styled(LinkR)`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #5cdb95;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
     transform: scaleX(0);

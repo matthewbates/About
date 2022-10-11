@@ -16,7 +16,6 @@ export const ImgH1 = styled.h1`
 `;
 
 export const ImgH3 = styled.h3`
-  margin-top: 1rem;
   cursor: pointer;
   color: white;
   text-align: center;

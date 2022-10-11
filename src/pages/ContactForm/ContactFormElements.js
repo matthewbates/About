@@ -2,7 +2,8 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ContactContainer = styled.div`
-  background: #FFF685;
+  background: #05386b;
+  border-top: 1px solid ${CONSTANTS.colors.persephoneWhite};
   height: 100%;
 `;
 
