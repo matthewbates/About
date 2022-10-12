@@ -32,7 +32,7 @@ export const TextInput = styled.input`
   justify-content: center;
   color: ${CONSTANTS.colors.persephoneWhite};
   align-items: center;
-  width: 45%;
+  width: 40%;
   padding: 10px;
   margin-bottom: 15px;
   font-size: 16px;
@@ -52,7 +52,7 @@ export const EmailInput = styled.input`
   justify-content: center;
   color: ${CONSTANTS.colors.persephoneWhite};
   align-items: center;
-  width: 45%;
+  width: 40%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -73,7 +73,7 @@ export const TextArea = styled.textarea`
   justify-content: center;
   color: ${CONSTANTS.colors.persephoneWhite};
   align-items: center;
-  width: 45%;
+  width: 40%;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 16px;

@@ -70,6 +70,6 @@ export const IntroButton = styled.button`
   &:hover {
     color: #05386b;
     background: ${CONSTANTS.colors.persephoneWhite};
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
   }
 `;

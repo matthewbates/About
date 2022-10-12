@@ -47,6 +47,7 @@ export default function Home() {
           }}
           cursorColor="#fff"
           typeSpeed={80}
+          deleteSpeed={4000}
           multiTextLoop
         />
         <IntroButton onClick={downloadResume}>Resume</IntroButton>

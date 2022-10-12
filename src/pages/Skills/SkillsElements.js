@@ -17,7 +17,7 @@ export const SkillsWrapper = styled.div`
 export const SkillsCard = styled.div`
   border: 2px solid ${CONSTANTS.colors.persephoneWhite};
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.7) 0px 20px 38px, rgba(0, 0, 0, 0.5) 0px 15px 12px;
+  box-shadow: 0px 10px 20px;
   border-radius: 20px;
   background-color: transparent;
   margin-top: 2rem;
@@ -30,17 +30,18 @@ export const SkillsCard = styled.div`
   @media screen and (max-width: 768px) {
     max-width: 320px;
   }
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-7px);
+    box-shadow: 0px 20px 30px;
+  }
 `;
 
 export const SkillsImage = styled.img`
   padding: 1rem;
   width: 100px;
   height: 100px;
-
-  &:hover {
-    transform: rotateX(360deg);
-    transition: transform 1.5s ease-in-out;
-  }
 `;
 
 export const SkillsH3 = styled.h3`

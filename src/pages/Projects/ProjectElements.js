@@ -19,6 +19,8 @@ export const ProjectContainer = styled.div`
   .header {
     /* margin-top: 50px; */
   }
+
+
 `;
 
 export const ProjectHeader = styled.h2`
@@ -31,8 +33,4 @@ export const ProjectHeader = styled.h2`
   font-family: "Lato";
   text-transform: uppercase;
   color: ${CONSTANTS.colors.persephoneWhite};
-`;
-
-export const ProjectH1 = styled.h1`
-  text-decoration: underline;
 `;

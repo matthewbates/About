@@ -21,7 +21,7 @@ export const StyledProjectImage = styled.div`
   .overlay {
     position: absolute;
     width: 100%;
-    height:0%;
+    height: 0%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -35,6 +35,30 @@ export const StyledProjectImage = styled.div`
     line-height: 30px;
     font-size: 16px;
 
+    .project-links {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-top: 10px;
+      margin-left: -10px;
+      color: ${CONSTANTS.colors.persephoneWhite};
+      a {
+        padding: 10px;
+        &.external {
+        }
+        svg {
+          color: white;
+          width: 28px;
+          height: 28px;
+        }
+
+        &:hover {
+          transform: translateY(4px);
+          color: #5cdb95;
+        }
+      }
+    }
+
     @media screen and (max-width: 420px) {
       font-size: 12px;
       text-align: center;
@@ -45,13 +69,12 @@ export const StyledProjectImage = styled.div`
 `;
 
 export const ImageH3 = styled.h3`
-  justify-content: space-between;
-  font-family: "Quicksand" sans-serif;
-  text-decoration: underline;
+  font-family: "Lato";
 `;
 
 export const ImageP = styled.p`
   color: ${CONSTANTS.colors.persephoneWhite};
+  margin-top: 0.5rem;
 
   @media screen and (max-width: 390px) {
     font-size: 8px;
@@ -62,7 +85,7 @@ export const ImageA = styled.a`
   color: ${CONSTANTS.colors.persephoneWhite};
   text-decoration: none;
   letter-spacing: 2px;
-  font-family: "Quicksand" sans-serif;
+  font-family: "Poppins";
   width: 70px;
 
   &:hover {
