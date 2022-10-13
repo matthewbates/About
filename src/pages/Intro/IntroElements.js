@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 import CONSTANTS from "../../utils/constants";
 import { Link } from "react-scroll";
 
@@ -71,5 +72,34 @@ export const IntroButton = styled.button`
     color: #05386b;
     background: ${CONSTANTS.colors.persephoneWhite};
     transition: all 300ms ease-in-out;
+  }
+`;
+
+export const TransitionStyles = css`
+  /* Fade up */
+  .fadeup-enter {
+    opacity: 0.01;
+    transform: translateY(20px);
+    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+  }
+  .fadeup-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
+
+    .fade-enter {
+      opacity: 0;
+    }
+    .fade-enter-active {
+      opacity: 1;
+      transition: opacity 300ms var(--easing);
+    }
+    .fade-exit {
+      opacity: 1;
+    }
+    .fade-exit-active {
+      opacity: 0;
+      transition: opacity 300ms var(--easing);
+    }
   }
 `;

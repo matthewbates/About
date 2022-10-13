@@ -21,6 +21,20 @@ export const StyledWrapper = styled.div`
   align-items: center;
 `;
 
+export const NavbarButton = styled.button`
+  cursor: pointer;
+  font-family: "Space Mono";
+  position: relative;
+  font-size: 14px;
+  color: #05386b;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
+`;
+
 export const HeaderLinksSpan = styled.span`
   margin-left: 500px;
 `;
