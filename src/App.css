@@ -1,4 +1,18 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+
+  scrollbar-width: 6px;
+  scrollbar-color: #05386b;
+}
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f2f2;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #05386b;
+  border: 3px solid #f1f2f2;
+  border-radius: 120px;
 }
