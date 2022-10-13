@@ -40,7 +40,9 @@ export default function Forms() {
     <FormContainer>
       <Form onSubmit={handleOnSubmit}>
         <FormHeader>Contact</FormHeader>
-        <FormLabel className="required">Full Name</FormLabel>
+        <FormLabel style={{ marginTop: "1rem" }} className="required">
+          Full Name
+        </FormLabel>
         <TextInput type="text" name="user_full_name" required />
         <FormLabel className="required">Email Address</FormLabel>
         <EmailInput type="email" name="user_email" required />

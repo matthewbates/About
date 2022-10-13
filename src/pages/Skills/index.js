@@ -9,6 +9,7 @@ import {
   SkillsImage,
   SkillsH3,
 } from "./SkillsElements";
+import Section from "../../components/Section";
 
 export default function Skills() {
   return (
@@ -16,30 +17,40 @@ export default function Skills() {
       <SkillsContainer id="Skills">
         <SkillsWrapper>
           <SkillsHeader>Skills</SkillsHeader>
-          <SkillsCard style={{ marginTop: "4rem" }}>
-            <SkillsH3>Languages & Frameworks</SkillsH3>
-            {languagesAndFrameworks.map((item, index) => (
-              <Fragment key={index}>
-                <SkillsImage src={item.img} alt="" />
-              </Fragment>
-            ))}
-          </SkillsCard>
-          <SkillsCard>
-            <SkillsH3>Libraries & Source Control</SkillsH3>
-            {libraries.map((item, index) => (
-              <Fragment key={index}>
-                <SkillsImage src={item.img} alt="" />
-              </Fragment>
-            ))}
-          </SkillsCard>
-          <SkillsCard style={{ marginBottom: "4rem" }}>
-            <SkillsH3>Data Markup & Extensions</SkillsH3>
-            {frontendDevelopment.map((item, index) => (
-              <Fragment key={index}>
-                <SkillsImage src={item.img} alt="" />
-              </Fragment>
-            ))}
-          </SkillsCard>
+          <Section>
+            <SkillsCard
+              style={{
+                marginTop: "4rem",
+              }}
+            >
+              <SkillsH3>Languages & Frameworks</SkillsH3>
+              {languagesAndFrameworks.map((item, index) => (
+                <Fragment key={index}>
+                  <SkillsImage src={item.img} alt="" />
+                </Fragment>
+              ))}
+            </SkillsCard>
+          </Section>
+          <Section>
+            <SkillsCard>
+              <SkillsH3>Libraries & Source Control</SkillsH3>
+              {libraries.map((item, index) => (
+                <Fragment key={index}>
+                  <SkillsImage src={item.img} alt="" />
+                </Fragment>
+              ))}
+            </SkillsCard>
+          </Section>
+          <Section>
+            <SkillsCard style={{ marginBottom: "4rem" }}>
+              <SkillsH3>Data Markup & Extensions</SkillsH3>
+              {frontendDevelopment.map((item, index) => (
+                <Fragment key={index}>
+                  <SkillsImage src={item.img} alt="" />
+                </Fragment>
+              ))}
+            </SkillsCard>
+          </Section>
         </SkillsWrapper>
       </SkillsContainer>
     </>
