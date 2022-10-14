@@ -14,6 +14,7 @@ export default function Loader() {
       duration: 2.5,
       textContent: 0,
       ease: "power1.in",
+      snap: { textContent: 1 },
     });
     gsap.to([".loading-title", ".loading-number"], {
       delay: 2.8,

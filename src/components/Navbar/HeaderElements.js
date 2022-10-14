@@ -2,21 +2,32 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const StyledContainer = styled.nav`
-  position: fixed;
+  /* NEW */
+  /* position: fixed;
   height: 80px;
   background: ${CONSTANTS.colors.persephoneWhite};
   width: 100%;
   transition: top 0.6s;
-  top: ${({ visible }) => (visible ? "0" : "-80px;")};
-  /* display: flex;
+  top: ${({ visible }) => (visible ? "0" : "-80px;")}; */
+
+  /* OLD */
+  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
   z-index: 999;
   background: ${CONSTANTS.colors.persephoneWhite};
   width: ${({ width }) => width || "90%"};
-  position: ${({ position }) => position || "relative"}; */
+  position: ${({ position }) => position || "relative"};
 `;
+
+// position: "fixed",
+// height: "80px",
+// width: "100%",
+// backgroundColor: `${CONSTANTS.colors.persephoneWhite}`,
+// textAlign: "center",
+// transition: "top 0.6s",
+// zIndex: "999",
 
 export const StyledWrapper = styled.div`
   margin-left: 1rem;

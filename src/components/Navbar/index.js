@@ -10,7 +10,6 @@ import Burger from "../Burger";
 import RightNav from "../RightNav";
 import gsap from "gsap";
 import HeaderNavLinks from "../HeaderNavLinks";
-import CONSTANTS from "../../utils/constants";
 import { debounce } from "../../utils/helpers";
 
 export default function Header({ width, position }) {
@@ -34,11 +33,11 @@ export default function Header({ width, position }) {
 
     setVisible(
       (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 40) ||
+        prevScrollPos - currentScrollPos > 70) ||
         currentScrollPos < 10
     );
     setPrevScrollPos(currentScrollPos);
-  }, 100);
+  }, 50);
 
   useEffect(() => {
     window.addEventListener("scroll", handleOnScroll);
@@ -75,16 +74,17 @@ export default function Header({ width, position }) {
 
   const navbarStyles = {
     position: "fixed",
-    height: "80px",
+    height: "60px",
     width: "100%",
-    backgroundColor: `${CONSTANTS.colors.persephoneWhite}`,
+    backgroundColor: "grey",
     textAlign: "center",
     transition: "top 0.6s",
-    zIndex: "999",
   };
 
   return (
-    <div style={{ ...navbarStyles, top: visible ? "0" : "-80px" }}>
+    // <div style={{ ...navbarStyles, top: visible ? "0" : "-60px" }}>Header</div>
+    
+    <StyledContainer width={width} position={position}>
       <StyledWrapper>
         {navbarIconData.map((item, index) => (
           <HeaderIcon
@@ -97,7 +97,7 @@ export default function Header({ width, position }) {
         ))}
       </StyledWrapper>
       <>
-        <Burger open={open} handleOnClick={handleOnClick} visible={visible} />
+        <Burger open={open} handleOnClick={handleOnClick} />
         <div
           style={{
             top: 0,
@@ -114,7 +114,7 @@ export default function Header({ width, position }) {
           <HeaderNavLinks key={index} title={item.to} />
         ))}
       </NavLinksWrapper>
-    </div>
+    </StyledContainer>
   );
 }
 

@@ -10,14 +10,13 @@ export const navbarIconData = [
     img: LinkedIn,
     style: {
       height: "34px",
-      marginRight: "16px",
-      marginTop: "1.2rem",
+      marginRight: "18px",
     },
   },
   {
     url: "https://www.medium.com/@matthewhcbates",
     img: Medium,
-    style: { height: "35px", marginRight: "16px", marginTop: "1.2rem" },
+    style: { height: "35px", marginRight: "18px" },
   },
   {
     url: "https://www.codewars.com/users/matthewhcbates",
@@ -25,16 +24,15 @@ export const navbarIconData = [
     style: {
       padding: 3,
       height: "34px",
-      marginRight: "16px",
+      marginRight: "18px",
       borderRadius: "5px",
       backgroundColor: "#A8332A",
-      marginTop: "1.2rem",
     },
   },
   {
     url: "https://www.github.com/matthewbates",
     img: GitHub,
-    style: { height: "38px", marginRight: "16px", marginTop: "1.2rem" },
+    style: { height: "38px", marginRight: "18px" },
   },
   // {
   //   url: "https://www.buymeacoffee.com/matthewhcbates",

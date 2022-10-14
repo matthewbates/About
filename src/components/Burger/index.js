@@ -10,7 +10,7 @@ export default function Burger({ open, handleOnClick, visible }) {
         position: "fixed",
         top: "22px",
         right: "25px",
-        opacity: visible ? 1 : 0,
+        // opacity: visible ? 1 : 0,
       }}
     >
       <div />
