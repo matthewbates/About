@@ -38,7 +38,7 @@ export default function Header({ width, position }) {
         currentScrollPos < 10
     );
     setPrevScrollPos(currentScrollPos);
-  }, 50);
+  }, 100);
 
   useEffect(() => {
     window.addEventListener("scroll", handleOnScroll);
@@ -73,18 +73,7 @@ export default function Header({ width, position }) {
     });
   }, []);
 
-  const navbarStyles = {
-    position: "fixed",
-    height: "60px",
-    width: "100%",
-    backgroundColor: "grey",
-    textAlign: "center",
-    transition: "top 0.6s",
-  };
-
   return (
-    // <div style={{ ...navbarStyles, top: visible ? "0" : "-60px" }}>Header</div>
-
     <StyledContainer
       style={{
         position: "fixed",
@@ -107,14 +96,16 @@ export default function Header({ width, position }) {
         ))}
       </StyledWrapper>
       <>
-        <Burger open={open} handleOnClick={handleOnClick} />
+        <Burger open={open} handleOnClick={handleOnClick} visible={visible} />
         <div
-          style={{
-            top: 0,
-            right: 0,
-            position: "fixed",
-            zIndex: open ? 1 : -1,
-          }}
+          style={
+            {
+              // top: 0,
+              // right: 0,
+              // position: "fixed",
+              // zIndex: open ? 1 : -1,
+            }
+          }
         >
           <RightNav open={open} closeDrawer={closeDrawer} />
         </div>
