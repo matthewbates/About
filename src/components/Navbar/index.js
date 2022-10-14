@@ -12,7 +12,6 @@ import gsap from "gsap";
 import HeaderNavLinks from "../HeaderNavLinks";
 import { debounce } from "../../utils/helpers";
 import CONSTANTS from "../../utils/constants";
-import NavIconEffect from "../../hooks/useScrollDirection";
 
 export default function Header({ width, position }) {
   const [open, setOpen] = useState(false);
@@ -44,14 +43,14 @@ export default function Header({ width, position }) {
   useEffect(() => {
     window.addEventListener("scroll", handleOnScroll);
     return () => window.removeEventListener("scroll", handleOnScroll);
-  });
+  }, [prevScrollPos, visible, handleOnScroll]);
 
   useEffect(() => {
     window.addEventListener("resize", onResize);
     return () => {
       window.removeEventListener("resize", onResize);
     };
-  }, [prevScrollPos, visible, handleOnScroll]);
+  }, []);
 
   useEffect(() => {
     gsap.from(".nav-icon", {
