@@ -11,6 +11,7 @@ import RightNav from "../RightNav";
 import gsap from "gsap";
 import HeaderNavLinks from "../HeaderNavLinks";
 import { debounce } from "../../utils/helpers";
+import CONSTANTS from "../../utils/constants";
 
 export default function Header({ width, position }) {
   const [open, setOpen] = useState(false);
@@ -83,8 +84,17 @@ export default function Header({ width, position }) {
 
   return (
     // <div style={{ ...navbarStyles, top: visible ? "0" : "-60px" }}>Header</div>
-    
-    <StyledContainer width={width} position={position}>
+
+    <StyledContainer
+      style={{
+        position: "fixed",
+        height: "80px",
+        width: "100%",
+        background: `${CONSTANTS.colors.persephoneWhite}`,
+        top: visible ? "0" : "-80px",
+        transition: "top 0.4s",
+      }}
+    >
       <StyledWrapper>
         {navbarIconData.map((item, index) => (
           <HeaderIcon

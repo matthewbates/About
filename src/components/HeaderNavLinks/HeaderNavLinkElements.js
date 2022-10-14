@@ -3,11 +3,11 @@ import CONSTANTS from "../../utils/constants";
 import { Link } from "react-scroll";
 
 export const HeaderLinksContainer = styled.div`
-  display: flex;
+  /* display: flex;
   justify-content: center;
   background: inherit;
   width: 100%;
-  text-align: center;
+  text-align: center; */
 `;
 
 export const HeaderLinkScroll = styled(Link)`
