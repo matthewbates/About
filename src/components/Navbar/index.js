@@ -100,10 +100,10 @@ export default function Header({ width, position }) {
         <div
           style={
             {
-              // top: 0,
-              // right: 0,
-              // position: "fixed",
-              // zIndex: open ? 1 : -1,
+              top: 0,
+              right: 0,
+              position: "fixed",
+              zIndex: open ? 1 : -1,
             }
           }
         >

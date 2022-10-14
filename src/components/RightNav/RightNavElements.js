@@ -15,7 +15,7 @@ export const UlStyle = styled.aside`
   opacity: ${({ open }) => (open ? 1 : 0)};
 
   @media screen and (min-width: 420px) and (max-width: 768px) {
-    width: 45%;
+    width: 55%;
   }
 `;
 
