@@ -7,8 +7,9 @@ export const SkillsContainer = styled.section`
 `;
 
 export const SkillsWrapper = styled.div`
-  display: flex;
+  display: grid;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   align-items: center;

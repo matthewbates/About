@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LoadingScreen = styled.div`
-  font-family: "Roboto";
+  font-family: "Lato";
 
   .loading-container {
     display: flex;

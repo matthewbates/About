@@ -12,6 +12,7 @@ import gsap from "gsap";
 import HeaderNavLinks from "../HeaderNavLinks";
 import { debounce } from "../../utils/helpers";
 import CONSTANTS from "../../utils/constants";
+import NavIconEffect from "../../hooks/useScrollDirection";
 
 export default function Header({ width, position }) {
   const [open, setOpen] = useState(false);
@@ -99,14 +100,12 @@ export default function Header({ width, position }) {
       <>
         <Burger open={open} handleOnClick={handleOnClick} visible={visible} />
         <div
-          style={
-            {
-              top: 0,
-              right: 0,
-              position: "fixed",
-              zIndex: open ? 1 : -1,
-            }
-          }
+          style={{
+            top: 0,
+            right: 0,
+            position: "fixed",
+            zIndex: open ? 1 : -1,
+          }}
         >
           <RightNav open={open} closeDrawer={closeDrawer} />
         </div>

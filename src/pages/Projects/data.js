@@ -24,7 +24,7 @@ export const projectData = [
   {
     img: persephoneGraes,
     link: "https://www.persephonegraescafe.com",
-    techStack: "JavaScript · React · Styled-Components : Local Storage",
+    techStack: "JavaScript · React · Styled-Components · Local Storage",
     title: "Persephone Graes Cafe & Juice Bar",
     style: {
       padding: "2.5px",

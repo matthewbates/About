@@ -15,8 +15,8 @@ export default function Skills() {
   return (
     <>
       <SkillsContainer id="Skills">
+        <SkillsHeader>Skills</SkillsHeader>
         <SkillsWrapper>
-          <SkillsHeader>Skills</SkillsHeader>
           <Section>
             <SkillsCard
               style={{
