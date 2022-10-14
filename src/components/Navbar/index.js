@@ -66,9 +66,10 @@ export default function Header({ width, position }) {
   useEffect(() => {
     gsap.from(".links", {
       x: 100,
-      delay: 2.2,
+      delay: 2.1,
       opacity: 0,
       duration: 1.5,
+      ease: "bounce",
       stagger: 0.35,
     });
   }, []);

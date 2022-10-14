@@ -4,7 +4,7 @@ import CONSTANTS from "../../utils/constants";
 export const UlStyle = styled.aside`
   position: fixed;
   z-index: 999;
-  width: 40%;
+  width: 55%;
   height: 100%;
   padding-top: 3.5rem;
   flex-flow: column nowrap;
@@ -15,7 +15,7 @@ export const UlStyle = styled.aside`
   opacity: ${({ open }) => (open ? 1 : 0)};
 
   @media screen and (min-width: 420px) and (max-width: 768px) {
-    width: 55%;
+    width: 45%;
   }
 `;
 
