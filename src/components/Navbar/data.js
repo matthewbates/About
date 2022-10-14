@@ -9,30 +9,32 @@ export const navbarIconData = [
     url: "https://www.linkedin.com/in/matthew-bates-71b7bb79/",
     img: LinkedIn,
     style: {
-      height: "32px",
-      marginRight: "18px",
+      height: "34px",
+      marginRight: "16px",
+      marginTop: "1.2rem",
     },
   },
   {
     url: "https://www.medium.com/@matthewhcbates",
     img: Medium,
-    style: { height: "32px", marginRight: "18px" },
+    style: { height: "35px", marginRight: "16px", marginTop: "1.2rem" },
   },
   {
     url: "https://www.codewars.com/users/matthewhcbates",
     img: CodeWars,
     style: {
       padding: 3,
-      height: "32px",
-      marginRight: "18px",
+      height: "34px",
+      marginRight: "16px",
       borderRadius: "5px",
       backgroundColor: "#A8332A",
+      marginTop: "1.2rem",
     },
   },
   {
     url: "https://www.github.com/matthewbates",
     img: GitHub,
-    style: { height: "35px", marginRight: "18px" },
+    style: { height: "38px", marginRight: "16px", marginTop: "1.2rem" },
   },
   // {
   //   url: "https://www.buymeacoffee.com/matthewhcbates",

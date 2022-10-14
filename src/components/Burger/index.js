@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledBurger } from "./BurgerElements";
 
-export default function Burger({ open, handleOnClick }) {
+export default function Burger({ open, handleOnClick, visible }) {
   return (
     <StyledBurger
       open={open}
@@ -10,6 +10,7 @@ export default function Burger({ open, handleOnClick }) {
         position: "fixed",
         top: "22px",
         right: "25px",
+        opacity: visible ? 1 : 0,
       }}
     >
       <div />

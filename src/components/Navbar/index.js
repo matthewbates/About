@@ -10,9 +10,13 @@ import Burger from "../Burger";
 import RightNav from "../RightNav";
 import gsap from "gsap";
 import HeaderNavLinks from "../HeaderNavLinks";
+import CONSTANTS from "../../utils/constants";
+import { debounce } from "../../utils/helpers";
 
 export default function Header({ width, position }) {
   const [open, setOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   const handleOnClick = () => setOpen(!open);
   const closeDrawer = () => {
@@ -25,12 +29,28 @@ export default function Header({ width, position }) {
     }
   };
 
+  const handleOnScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 40) ||
+        currentScrollPos < 10
+    );
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleOnScroll);
+    return () => window.removeEventListener("scroll", handleOnScroll);
+  });
+
   useEffect(() => {
     window.addEventListener("resize", onResize);
     return () => {
       window.removeEventListener("resize", onResize);
     };
-  });
+  }, [prevScrollPos, visible, handleOnScroll]);
 
   useEffect(() => {
     gsap.from(".nav-icon", {
@@ -53,8 +73,18 @@ export default function Header({ width, position }) {
     });
   }, []);
 
+  const navbarStyles = {
+    position: "fixed",
+    height: "80px",
+    width: "100%",
+    backgroundColor: `${CONSTANTS.colors.persephoneWhite}`,
+    textAlign: "center",
+    transition: "top 0.6s",
+    zIndex: "999",
+  };
+
   return (
-    <StyledContainer width={width} position={position}>
+    <div style={{ ...navbarStyles, top: visible ? "0" : "-80px" }}>
       <StyledWrapper>
         {navbarIconData.map((item, index) => (
           <HeaderIcon
@@ -67,7 +97,7 @@ export default function Header({ width, position }) {
         ))}
       </StyledWrapper>
       <>
-        <Burger open={open} handleOnClick={handleOnClick} />
+        <Burger open={open} handleOnClick={handleOnClick} visible={visible} />
         <div
           style={{
             top: 0,
@@ -84,7 +114,7 @@ export default function Header({ width, position }) {
           <HeaderNavLinks key={index} title={item.to} />
         ))}
       </NavLinksWrapper>
-    </StyledContainer>
+    </div>
   );
 }
 

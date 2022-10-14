@@ -2,16 +2,20 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const StyledContainer = styled.nav`
-  display: flex;
+  position: fixed;
+  height: 80px;
+  background: ${CONSTANTS.colors.persephoneWhite};
+  width: 100%;
+  transition: top 0.6s;
+  top: ${({ visible }) => (visible ? "0" : "-80px;")};
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
   z-index: 999;
   background: ${CONSTANTS.colors.persephoneWhite};
-
   width: ${({ width }) => width || "90%"};
-  position: ${({ position }) => position || "relative"};
-  /* border-bottom: 2px solid #05368b; */
+  position: ${({ position }) => position || "relative"}; */
 `;
 
 export const StyledWrapper = styled.div`
