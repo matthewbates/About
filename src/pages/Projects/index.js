@@ -11,15 +11,16 @@ export default function Projects() {
   return (
     <ProjectContainer id="Projects">
       <ProjectHeader>Recent Projects</ProjectHeader>
-      {projectData.map(({ img, link, techStack, style, title, github }) => (
+      {projectData.map((item, index) => (
         <ProjectItem
-          key={img}
-          img={img}
-          link={link}
-          techStack={techStack}
-          style={style}
-          title={title}
-          github={github}
+          key={index}
+          img={item.img}
+          link={item.link}
+          techStack={item.techStack}
+          style={item.style}
+          title={item.title}
+          github={item.github}
+          badges={item.badges}
         />
       ))}
     </ProjectContainer>

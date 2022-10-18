@@ -25,7 +25,7 @@ export const StyledProjectImage = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     font-family: "Quicksand", sans-serif;
     display: flex;
     flex-direction: column;
@@ -41,20 +41,20 @@ export const StyledProjectImage = styled.div`
       position: relative;
       margin-top: 10px;
       margin-left: -10px;
-      color: ${CONSTANTS.colors.persephoneWhite};
+      color: white;
       a {
         padding: 10px;
         &.external {
         }
         svg {
-          color: white;
+          color: ${CONSTANTS.colors.persephoneWhite};
           width: 28px;
           height: 28px;
-        }
 
-        &:hover {
-          transform: translateY(4px);
-          color: #5cdb95;
+          &:hover {
+            color: #5cdb95;
+            transition: 200ms ease-in;
+          }
         }
       }
     }
@@ -69,7 +69,8 @@ export const StyledProjectImage = styled.div`
 `;
 
 export const ImageH3 = styled.h3`
-  font-family: "Lato";
+  font-family: "Poppins";
+  text-transform: uppercase;
 `;
 
 export const ImageP = styled.p`

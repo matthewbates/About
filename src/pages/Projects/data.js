@@ -9,27 +9,42 @@ export const projectData = [
   {
     img: marsIndustries,
     link: "https://www.marsindustriesco.com",
-    techStack:
-      "JavaScript · React · Styled-Components · Node.js · Greensock · EmailJS",
+    techStack: "JavaScript · React · Styled Components · EmailJS · Greensock",
     title: "Mars Industries",
     style: {
       padding: "4.5px",
-      border: "1px solid orange",
-      boxShadow: "4px 4px 2px 2px orange",
+      // border: "1px solid orange",
+      // boxShadow: "4px 4px 2px 2px orange",
       marginLeft: "3rem",
       marginRight: "3rem",
+      fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/mars-industries",
+    badges: [
+      {
+        javascript:
+          "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+        react:
+          "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
+        styledComponents:
+          "https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white",
+        nodeJs:
+          "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
+      },
+    ],
   },
+
   {
     img: persephoneGraes,
     link: "https://www.persephonegraescafe.com",
-    techStack: "JavaScript · React · Styled-Components · Local Storage",
+    techStack:
+      "JavaScript · React · Styled Components · Google Business Profile API",
     title: "Persephone Graes Cafe & Juice Bar",
     style: {
       padding: "2.5px",
-      border: "1px solid white",
-      boxShadow: "4px 4px 2px 2px grey",
+      // border: "1px solid white",
+      // boxShadow: "4px 4px 2px 2px grey",
+      fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/persephone-graes",
   },
@@ -37,14 +52,15 @@ export const projectData = [
     img: mountainBuddy,
     link: "https://vimeo.com/695889451/21156ef4dd",
     techStack:
-      "JavaScript · React · Ruby on Rails · PostgreSQL · Google Login · Google Maps API · Weather API",
+      "JavaScript · React · Ruby on Rails · PostgreSQL · Google Maps API · OpenWeatherMap API",
     title: "Mountain Buddy",
     style: {
       padding: "2.5px",
-      border: "1px solid white",
-      boxShadow: "4px 4px 3px 2px blue",
+      // border: "1px solid white",
+      // boxShadow: "4px 4px 3px 2px blue",
       marginLeft: "3rem",
       marginRight: "3rem",
+      FontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/Mountain-Buddy",
   },
@@ -52,14 +68,15 @@ export const projectData = [
     img: breweryDiscovery,
     link: "https://vimeo.com/695879205/c181dc0706",
     techStack:
-      "JavaScript · Ruby on Rails · SQLite · Bootstrap · Google Maps API",
+      "JavaScript · Ruby on Rails · Bootstrap · SQLite · Google Maps API",
     title: "Brewery Discovery",
     style: {
       padding: "2.5px",
-      border: "1px solid white",
-      boxShadow: "4px 4px 3px 2px gold",
+      // border: "1px solid white",
+      // boxShadow: "4px 4px 3px 2px gold",
       marginLeft: "4rem",
       marginRight: "4rem",
+      FontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/Brewery-Discovery",
   },
@@ -70,10 +87,11 @@ export const projectData = [
     title: "SkiBum",
     style: {
       padding: "2.5px",
-      border: "1px solid white",
-      boxShadow: "4px 4px 3px 2px teal",
+      // border: "1px solid white",
+      // boxShadow: "4px 4px 3px 2px teal",
       marginLeft: "2rem",
       marginRight: "2rem",
+      fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/SkiBum",
   },
@@ -84,8 +102,9 @@ export const projectData = [
     title: "Pokedex",
     style: {
       padding: "2.5px",
-      border: "1px solid white",
-      boxShadow: "4px 4px 3px 2px red",
+      // border: "1px solid white",
+      // boxShadow: "4px 4px 3px 2px red",
+      fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/Pokedex",
   },

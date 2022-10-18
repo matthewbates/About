@@ -10,7 +10,7 @@ export default function ProjectItem({
   github,
   techStack,
   title,
-  target,
+  badges,
 }) {
   const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
 
@@ -24,7 +24,7 @@ export default function ProjectItem({
           style={style}
           techStack={techStack}
           github={github}
-          target={target}
+          badges={badges}
         />
       </div>
     </ProjectListContainer>

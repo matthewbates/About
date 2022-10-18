@@ -13,7 +13,7 @@ import HeaderNavLinks from "../HeaderNavLinks";
 import { debounce } from "../../utils/helpers";
 import CONSTANTS from "../../utils/constants";
 
-export default function Header({ width, position }) {
+export default function Header() {
   const [open, setOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -23,15 +23,26 @@ export default function Header({ width, position }) {
     setTimeout(() => setOpen(false), 800);
   };
 
+  // if the window size exceeds 768 pixels and the sidebar is open,
+  // update setOpen to false
   const onResize = (e) => {
     if (e.currentTarget.innerWidth > 768) {
       setOpen(false);
     }
   };
 
+  useEffect(() => {
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+
   const handleOnScroll = debounce(() => {
     const currentScrollPos = window.pageYOffset;
 
+    // if the user scrolls up 70 pixels || pageYOffset is
+    // less than 10 pixels, display the navbar
     setVisible(
       (prevScrollPos > currentScrollPos &&
         prevScrollPos - currentScrollPos > 70) ||
@@ -45,13 +56,7 @@ export default function Header({ width, position }) {
     return () => window.removeEventListener("scroll", handleOnScroll);
   }, [prevScrollPos, visible, handleOnScroll]);
 
-  useEffect(() => {
-    window.addEventListener("resize", onResize);
-    return () => {
-      window.removeEventListener("resize", onResize);
-    };
-  }, []);
-
+  // greensock animation for icons
   useEffect(() => {
     gsap.from(".nav-icon", {
       y: 100,
@@ -63,6 +68,7 @@ export default function Header({ width, position }) {
     });
   }, []);
 
+  // greensock animation for nav links
   useEffect(() => {
     gsap.from(".links", {
       x: 100,
