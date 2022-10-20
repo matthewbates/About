@@ -10,7 +10,7 @@ export default function Projects() {
 
   return (
     <ProjectContainer id="Projects">
-      <ProjectHeader>Recent Projects</ProjectHeader>
+      <ProjectHeader>Featured Projects</ProjectHeader>
       {projectData.map((item, index) => (
         <ProjectItem
           key={index}
