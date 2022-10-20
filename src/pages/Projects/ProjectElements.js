@@ -5,6 +5,8 @@ export const ProjectContainer = styled.div`
   background: #05386b;
   border-top: 1px solid ${CONSTANTS.colors.persephoneWhite};
   display: flex;
+  /* display: grid;
+  grid-template-columns: minmax(200px, 1fr); */
   text-align: left;
   padding-top: 30px;
   align-items: center;
@@ -19,8 +21,6 @@ export const ProjectContainer = styled.div`
   .header {
     /* margin-top: 50px; */
   }
-
-
 `;
 
 export const ProjectHeader = styled.h2`
