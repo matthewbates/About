@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ProjectListContainer = styled.div`
   .listItem {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -24,4 +25,6 @@ export const ProjectListContainer = styled.div`
     transition: 1s;
     transform: scale(100%);
   }
+
+  
 `;

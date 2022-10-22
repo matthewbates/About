@@ -3,9 +3,15 @@ import CONSTANTS from "../../utils/constants";
 import { Link as LinkR } from "react-router-dom";
 
 export const AboutContainer = styled.div`
-  background: #05386b;
+  /* background: #05386b; */
+  background: ${({ isClicked }) =>
+    isClicked ? `${CONSTANTS.colors.batman}` : "#05386b"};
   height: 100%;
   border-top: 1px solid ${CONSTANTS.colors.persephoneWhite};
+  border-top: ${({ isClicked }) =>
+    isClicked
+      ? "1px solid grey"
+      : `1px solid ${CONSTANTS.colors.persephoneWhite}`};
 `;
 
 export const AboutWrapper = styled.div`

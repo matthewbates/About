@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { HomeContainer } from "./HomeElements";
 import Navbar from "../../components/Navbar";
 import Intro from "../Intro";
 import About from "../About";
@@ -7,16 +8,24 @@ import Projects from "../Projects";
 import Contact from "../ContactForm";
 import Footer from "../../components/Footer";
 
-export default function index() {
+export default function Home() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const toggleTheme = () => {
+    let element = document.body;
+    element.classList.toggle("dark");
+    setIsClicked(!isClicked);
+  };
+
   return (
-    <>
-      <Navbar />
-      <Intro />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+    <HomeContainer>
+      <Navbar toggleTheme={toggleTheme} isClicked={isClicked} />
+      <Intro isClicked={isClicked} />
+      <About isClicked={isClicked} />
+      <Skills isClicked={isClicked} />
+      <Projects isClicked={isClicked} />
+      <Contact isClicked={isClicked} />
       <Footer />
-    </>
+    </HomeContainer>
   );
 }

@@ -3,13 +3,13 @@ import { ProjectContainer, ProjectHeader } from "./ProjectElements";
 import { projectData } from "./data";
 import ProjectItem from "../../components/ProjectItem";
 
-export default function Projects() {
+export default function Projects({ isClicked }) {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
   return (
-    <ProjectContainer id="Projects">
+    <ProjectContainer id="Projects" isClicked={isClicked}>
       <ProjectHeader>Featured Projects</ProjectHeader>
       {projectData.map((item, index) => (
         <ProjectItem

@@ -11,10 +11,10 @@ import {
 } from "./SkillsElements";
 import Section from "../../components/Section";
 
-export default function Skills() {
+export default function Skills({ isClicked }) {
   return (
     <>
-      <SkillsContainer id="Skills">
+      <SkillsContainer id="Skills" isClicked={isClicked}>
         <SkillsHeader>Skills</SkillsHeader>
         <SkillsWrapper>
           <Section>

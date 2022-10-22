@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   StyledContainer,
   StyledWrapper,
+  ToggleSwitch,
   NavLinksWrapper,
 } from "./HeaderElements";
 import { navbarIconData, navbarLinks } from "./data";
@@ -13,7 +14,7 @@ import HeaderNavLinks from "../HeaderNavLinks";
 import { debounce } from "../../utils/helpers";
 import CONSTANTS from "../../utils/constants";
 
-export default function Header() {
+export default function Header({ isClicked, toggleTheme }) {
   const [open, setOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -101,6 +102,16 @@ export default function Header() {
             style={item.style}
           />
         ))}
+        <button
+          style={{
+            border: "none",
+            fontSize: "1.5rem",
+            cursor: "pointer",
+          }}
+          onClick={toggleTheme}
+        >
+          {isClicked ? "☀️" : "🌙"}
+        </button>
       </StyledWrapper>
       <>
         <Burger open={open} handleOnClick={handleOnClick} visible={visible} />

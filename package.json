@@ -37,6 +37,7 @@
     "social-icons": "^1.0.1",
     "styled-components": "^5.3.5",
     "sweetalert2": "^11.4.17",
+    "use-local-storage": "^2.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

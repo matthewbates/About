@@ -10,9 +10,9 @@ import {
 } from "./AboutElements";
 import Section from "../../components/Section";
 
-export default function About() {
+export default function About({ isClicked }) {
   return (
-    <AboutContainer id="About">
+    <AboutContainer id="About" isClicked={isClicked}>
       <AboutWrapper>
         <AboutHeader>About</AboutHeader>
         <AboutH1>The skinny...</AboutH1>

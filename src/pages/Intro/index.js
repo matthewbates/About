@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { IntroContainer, IntroButton, TransitionStyles } from "./IntroElements";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { IntroContainer, IntroButton } from "./IntroElements";
 import TypeWriterEffect from "react-typewriter-effect";
 import Resume from "../../assets/Resume.pdf";
 import { saveAs } from "file-saver";
-import { ItemDescription } from "semantic-ui-react";
 
-export default function Home() {
+export default function Home({ isClicked }) {
   const [isMounted, setIsMounted] = useState(false);
+
   const downloadResume = () => {
     saveAs(Resume, "matthewbates-resume.pdf");
   };
@@ -17,20 +16,8 @@ export default function Home() {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my Name is </h1>;
-  const two = <h2>Matthew Bates</h2>;
-  const three = <h2>I build things for the web.</h2>;
-  const four = (
-    <>
-      <p>I'm a software developer at </p>
-      <a href="https://www.google.com" />
-    </>
-  );
-
-  const items = [one, two, three, four];
-
   return (
-    <IntroContainer id="Home">
+    <IntroContainer id="Home" isClicked={isClicked}>
       <div
         style={{
           marginLeft: "2rem",
@@ -72,14 +59,6 @@ export default function Home() {
         />
         <IntroButton onClick={downloadResume}>Resume</IntroButton>
       </div>
-      {/* <TransitionGroup component={null}>
-        {isMounted &&
-          items.map((item, i) => (
-            <CSSTransition key={i} classNames="fadeup">
-              <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-            </CSSTransition>
-          ))}
-      </TransitionGroup> */}
     </IntroContainer>
   );
 }

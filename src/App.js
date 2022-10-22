@@ -9,7 +9,6 @@ import Backpacking from "./pages/Backpacking";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [showing, isShowing] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 3500);
@@ -17,7 +16,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="app scrollhost">
+    <div>
       {isLoading ? (
         <Loader />
       ) : (

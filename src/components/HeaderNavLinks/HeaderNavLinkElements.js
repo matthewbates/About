@@ -18,6 +18,7 @@ export const HeaderLinkScroll = styled(Link)`
   font-size: 14px;
   margin-top: 6px;
   color: #05386b;
+  /* color: ${CONSTANTS.colors.persephoneWhite}; */
   font-weight: bold;
   text-transform: uppercase;
 

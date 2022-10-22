@@ -8,7 +8,9 @@ export const IntroContainer = styled.section`
   -webkit-box-align: center;
   justify-content: center;
   flex-direction: column;
-  background: #05386b;
+  /* background: #05386b; */
+  background: ${({ isClicked }) =>
+    isClicked ? `${CONSTANTS.colors.batman}` : "#05386b"};
   align-items: flex-start;
   min-height: 100vh;
   flex-wrap: wrap;

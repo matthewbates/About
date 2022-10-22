@@ -2,11 +2,14 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ProjectContainer = styled.div`
-  background: #05386b;
-  border-top: 1px solid ${CONSTANTS.colors.persephoneWhite};
+  /* background: #05386b; */
+  background: ${({ isClicked }) =>
+    isClicked ? `${CONSTANTS.colors.batman}` : "#05386b"};
+  border-top: ${({ isClicked }) =>
+    isClicked
+      ? "1px solid grey"
+      : `1px solid ${CONSTANTS.colors.persephoneWhite}`};
   display: flex;
-  /* display: grid;
-  grid-template-columns: minmax(200px, 1fr); */
   text-align: left;
   padding-top: 30px;
   align-items: center;
