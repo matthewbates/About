@@ -58,6 +58,7 @@ export default function Header({ isClicked, toggleTheme }) {
   }, [prevScrollPos, visible, handleOnScroll]);
 
   // greensock animation for icons
+  // this is tranferrable for anthing within a timeline that is built
   useEffect(() => {
     gsap.from(".nav-icon", {
       y: 100,

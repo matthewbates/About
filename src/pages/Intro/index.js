@@ -6,6 +6,22 @@ import { saveAs } from "file-saver";
 
 export default function Home({ isClicked }) {
   const [isMounted, setIsMounted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
+  const [array, getArray] = useState([])
+
+// const firstName = (fName) => {
+//   const regex = ([a-zA-Z0-9]);
+//   if (fName !== regex || fName === "") {
+//     alert("please enter a valid first name!")
+//   }
+// }
+
+// const lastName = (lName) => {
+//   const regex = ([a-ZA-Z0-9]);
+//   if (lName !== regex || lName === "") {
+//     alert("please enter a valid last name!")
+//   }
+// }
 
   const downloadResume = () => {
     saveAs(Resume, "matthewbates-resume.pdf");
