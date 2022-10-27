@@ -8,7 +8,6 @@ export const IntroContainer = styled.section`
   -webkit-box-align: center;
   justify-content: center;
   flex-direction: column;
-  /* background: #05386b; */
   background: ${({ isClicked }) =>
     isClicked ? `${CONSTANTS.colors.batman}` : "#05386b"};
   align-items: flex-start;
@@ -75,6 +74,30 @@ export const IntroContainer = styled.section`
     color: ${CONSTANTS.colors.persephoneWhite};
     font-family: "Space Mono";
     font-weight: 400;
+  }
+`;
+
+export const IntroWrapper = styled.div`
+  margin-right: 2rem;
+  margin-top: 3rem;
+`;
+
+export const IntroLi = styled.li`
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  list-style: none;
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 `;
 

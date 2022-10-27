@@ -73,7 +73,7 @@ export default function Header({ isClicked, toggleTheme }) {
   useEffect(() => {
     gsap.from(".links", {
       x: 100,
-      delay: 2.5,
+      delay: 2.8,
       opacity: 0,
       duration: 1.5,
       ease: "bounce",
