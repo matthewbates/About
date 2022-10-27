@@ -24,6 +24,25 @@ export const IntroContainer = styled.section`
     color: #5cdb95;
   }
 
+  li {
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    list-style: none;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   h1 {
     font-size: 18px;
     margin: 0 0 10px;
@@ -74,34 +93,5 @@ export const IntroButton = styled.button`
     color: #05386b;
     background: ${CONSTANTS.colors.persephoneWhite};
     transition: all 300ms ease-in-out;
-  }
-`;
-
-export const TransitionStyles = css`
-  /* Fade up */
-  .fadeup-enter {
-    opacity: 0.01;
-    transform: translateY(20px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-  }
-  .fadeup-enter-active {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-
-    .fade-enter {
-      opacity: 0;
-    }
-    .fade-enter-active {
-      opacity: 1;
-      transition: opacity 300ms var(--easing);
-    }
-    .fade-exit {
-      opacity: 1;
-    }
-    .fade-exit-active {
-      opacity: 0;
-      transition: opacity 300ms var(--easing);
-    }
   }
 `;

@@ -1,79 +1,40 @@
 import React, { useState, useEffect } from "react";
 import { IntroContainer, IntroButton } from "./IntroElements";
 import TypeWriterEffect from "react-typewriter-effect";
-import Resume from "../../assets/Resume.pdf";
-import { saveAs } from "file-saver";
+// import Resume from "../../assets/Resume.pdf";
+// import { saveAs } from "file-saver";
+import { items } from "./data";
 
 export default function Home({ isClicked }) {
   const [isMounted, setIsMounted] = useState(false);
-  const [isLoading, setIsLoading] = useState(false)
-  const [array, getArray] = useState([])
 
-// const firstName = (fName) => {
-//   const regex = ([a-zA-Z0-9]);
-//   if (fName !== regex || fName === "") {
-//     alert("please enter a valid first name!")
-//   }
-// }
+  // const downloadResume = () => {
+  //   saveAs(Resume, "matthewbates-resume.pdf");
+  // };
 
-// const lastName = (lName) => {
-//   const regex = ([a-ZA-Z0-9]);
-//   if (lName !== regex || lName === "") {
-//     alert("please enter a valid last name!")
-//   }
-// }
-
-  const downloadResume = () => {
-    saveAs(Resume, "matthewbates-resume.pdf");
-  };
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 3500);
-    return () => clearTimeout(timeout);
-  }, []);
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => setIsMounted(true), 3500);
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
   return (
     <IntroContainer id="Home" isClicked={isClicked}>
       <div
         style={{
-          marginLeft: "2rem",
+          marginRight: "2rem",
           marginTop: "3rem",
         }}
       >
-        <h1>Hi, my name is</h1>
-        <h2 className="required">Matthew </h2>
-        <h2>I build things for the web.</h2>
-        <h3
-          style={{
-            fontSize: "18px",
-            marginTop: "10px",
-            fontFamily: "Space Mono",
-            color: "white",
-          }}
-        >
-          <p>I'm a:</p>
-        </h3>
-        <TypeWriterEffect
-          multiText={[
-            "front-end software developer with full-stack experience",
-            "creative, passionate technologist",
-            "freelance web designer",
-          ]}
-          multiTextDelay={2500}
-          textStyle={{
-            fontSize: "20px",
-            fontFamily: "Space Mono",
-            color: "#5cdb95",
-            marginTop: "10px",
-            flexWrap: "wrap",
-            maxWidth: "260px",
-          }}
-          cursorColor="#fff"
-          typeSpeed={80}
-          deleteSpeed={4000}
-          multiTextLoop
-        />
-        <IntroButton onClick={downloadResume}>Resume</IntroButton>
+        <ul style={{ marginLeft: "2rem", marginTop: "2rem" }}>
+          {items.map((item, index) => (
+            <li
+              className="fade-list-style"
+              style={{ animationDelay: `${250 * index}ms` }}
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
     </IntroContainer>
   );

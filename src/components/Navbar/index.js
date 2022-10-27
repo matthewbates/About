@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   StyledContainer,
   StyledWrapper,
-  ToggleSwitch,
   NavLinksWrapper,
 } from "./HeaderElements";
 import { navbarIconData, navbarLinks } from "./data";
@@ -62,7 +61,7 @@ export default function Header({ isClicked, toggleTheme }) {
   useEffect(() => {
     gsap.from(".nav-icon", {
       y: 100,
-      delay: 0.8,
+      delay: 2,
       opacity: 0,
       duration: 2,
       ease: "back",
@@ -74,7 +73,7 @@ export default function Header({ isClicked, toggleTheme }) {
   useEffect(() => {
     gsap.from(".links", {
       x: 100,
-      delay: 2.1,
+      delay: 2.5,
       opacity: 0,
       duration: 1.5,
       ease: "bounce",
@@ -103,7 +102,7 @@ export default function Header({ isClicked, toggleTheme }) {
             style={item.style}
           />
         ))}
-        <button
+        {/* <button
           style={{
             border: "none",
             fontSize: "1.5rem",
@@ -112,7 +111,7 @@ export default function Header({ isClicked, toggleTheme }) {
           onClick={toggleTheme}
         >
           {isClicked ? "☀️" : "🌙"}
-        </button>
+        </button> */}
       </StyledWrapper>
       <>
         <Burger open={open} handleOnClick={handleOnClick} visible={visible} />
