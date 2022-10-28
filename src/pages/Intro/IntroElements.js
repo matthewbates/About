@@ -15,31 +15,12 @@ export const IntroContainer = styled.section`
   flex-wrap: wrap;
 
   @media screen and (min-width: 480px) and (max-width: 768px) {
-    padding-top: 10vh;
+    padding-top: 6vh;
   }
 
   .required::after {
     content: "&&";
     color: #5cdb95;
-  }
-
-  li {
-    opacity: 0;
-    animation-name: fadein;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    list-style: none;
-  }
-
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
   }
 
   h1 {

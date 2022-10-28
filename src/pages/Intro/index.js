@@ -8,7 +8,7 @@ export default function Home({ isClicked }) {
       <IntroWrapper>
         <ul style={{ marginLeft: "2rem", marginTop: "2rem" }}>
           {items.map((item, index) => (
-            <IntroLi style={{ animationDelay: `${250 * index}ms` }}>
+            <IntroLi key={index} style={{ animationDelay: `${250 * index}ms` }}>
               {item}
             </IntroLi>
           ))}

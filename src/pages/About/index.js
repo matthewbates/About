@@ -15,7 +15,7 @@ export default function About({ isClicked }) {
     <AboutContainer id="About" isClicked={isClicked}>
       <AboutWrapper>
         <AboutHeader>About</AboutHeader>
-        <AboutH1>The skinny...</AboutH1>
+        <AboutH1>In general...</AboutH1>
         <Section>
           <AboutP>
             I'm a software developer living in the small town of{" "}
@@ -28,7 +28,7 @@ export default function About({ isClicked }) {
               Manitou Springs, Colorado
             </AboutA>{" "}
             with my Australian Shepherd,{" "}
-            <LinkRoute to="/sterling">Sterling</LinkRoute>. I am 31 years old
+            <LinkRoute to="/sterling">Sterling</LinkRoute>. I am 32 years old
             and I have been making websites for about 1.5 years.
           </AboutP>
         </Section>
@@ -52,10 +52,10 @@ export default function About({ isClicked }) {
         <Section>
           <AboutP>
             I've been intrigued with web development for a long time, so much so
-            that I decided to leave my job in master data to pursue my dream of
-            becoming a software engineer. It's a space of constant improvement
-            and exciting & new technology. I'm always using technology to solve
-            my life's probems and ambitions.
+            that I decided to drastically alter my career path to pursue a
+            career in tech. It's a space of constant improvement and exciting &
+            new technology. I'm always using technology to solve my life's
+            probems and ambitions.
           </AboutP>
         </Section>
         <Section>
@@ -73,9 +73,16 @@ export default function About({ isClicked }) {
             >
               blog
             </AboutA>{" "}
-            regularly, as well. I am an avid griller and I have been known to
-            make great tri-tip fajitas, steaks, as well as my personal twist on
-            the jalepeno popper.
+            regularly, as well. I am an avid griller and if you are in Colorado
+            Springs, you can find me pouring beers at{" "}
+            <AboutA
+              href="https://www.cerberusbrewingco.com/sevens-gate-taproom.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#5cdb95" }}
+            >
+              Seven's Gate
+            </AboutA>
           </AboutP>
         </Section>
       </AboutWrapper>
