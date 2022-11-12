@@ -31,6 +31,10 @@ export default function Header({ isClicked, toggleTheme }) {
     }
   };
 
+  function multiply(a, b) {
+    return a * b;
+  }
+
   useEffect(() => {
     window.addEventListener("resize", onResize);
     return () => {
@@ -102,16 +106,6 @@ export default function Header({ isClicked, toggleTheme }) {
             style={item.style}
           />
         ))}
-        {/* <button
-          style={{
-            border: "none",
-            fontSize: "1.5rem",
-            cursor: "pointer",
-          }}
-          onClick={toggleTheme}
-        >
-          {isClicked ? "☀️" : "🌙"}
-        </button> */}
       </StyledWrapper>
       <>
         <Burger open={open} handleOnClick={handleOnClick} visible={visible} />

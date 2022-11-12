@@ -73,16 +73,7 @@ export default function About({ isClicked }) {
             >
               blog
             </AboutA>{" "}
-            regularly, as well. I am an avid griller and if you are in Colorado
-            Springs, you can find me pouring beers at{" "}
-            <AboutA
-              href="https://www.cerberusbrewingco.com/sevens-gate-taproom.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#5cdb95" }}
-            >
-              Seven's Gate
-            </AboutA>
+            regularly, as well.
           </AboutP>
         </Section>
       </AboutWrapper>
