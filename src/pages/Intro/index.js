@@ -1,6 +1,7 @@
 import React from "react";
 import { IntroContainer, IntroWrapper, IntroLi } from "./IntroElements";
 import { items } from "./data";
+import { IntroButton } from "./IntroElements";
 
 export default function Home({ isClicked }) {
   return (
@@ -14,6 +15,7 @@ export default function Home({ isClicked }) {
           ))}
         </ul>
       </IntroWrapper>
+      <IntroButton>Resume</IntroButton>
     </IntroContainer>
   );
 }

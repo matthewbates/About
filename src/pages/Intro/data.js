@@ -39,6 +39,6 @@ const five = (
     multiTextLoop
   />
 );
-const six = <IntroButton onClick={downloadResume}>Resume</IntroButton>;
+// const six = <IntroButton onClick={downloadResume}>Resume</IntroButton>;
 
-export const items = [one, two, three, four, five, six];
+export const items = [one, two, three, four, five];
