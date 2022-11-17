@@ -31,10 +31,6 @@ export default function Header({ isClicked, toggleTheme }) {
     }
   };
 
-  function multiply(a, b) {
-    return a * b;
-  }
-
   useEffect(() => {
     window.addEventListener("resize", onResize);
     return () => {

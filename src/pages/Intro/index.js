@@ -15,7 +15,6 @@ export default function Home({ isClicked }) {
           ))}
         </ul>
       </IntroWrapper>
-      <IntroButton>Resume</IntroButton>
     </IntroContainer>
   );
 }
