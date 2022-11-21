@@ -18,11 +18,7 @@ export default function Skills({ isClicked }) {
         <SkillsHeader>Skills</SkillsHeader>
         <SkillsWrapper>
           <Section>
-            <SkillsCard
-              style={{
-                marginTop: "4rem",
-              }}
-            >
+            <SkillsCard>
               <SkillsH3>Languages & Frameworks</SkillsH3>
               {languagesAndFrameworks.map((item, index) => (
                 <Fragment key={index}>

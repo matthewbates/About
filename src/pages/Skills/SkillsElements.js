@@ -12,12 +12,12 @@ export const SkillsContainer = styled.section`
 `;
 
 export const SkillsWrapper = styled.div`
-  display: grid;
-  flex-direction: column;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
   text-align: center;
-  align-items: center;
+  gap: 2rem;
+  justify-content: space-evenly;
 `;
 
 export const SkillsCard = styled.div`
