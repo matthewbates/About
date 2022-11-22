@@ -1,9 +1,7 @@
 import React from "react";
 import { UlStyle, AuthorImg, AuthorName } from "./RightNavElements";
-import Resume from "../../assets/Resume.pdf";
 import Author from "../../assets/author.png";
 import NavLinks from "../NavLinks";
-import { saveAs } from "file-saver";
 
 export default function RightNav({ open, closeDrawer }) {
   return (
