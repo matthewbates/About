@@ -1,6 +1,7 @@
 import React from "react";
 import {
   ProjectImageContainer,
+  ProjectImageWrapper,
   Image,
   ImageH3,
   ImageP,
@@ -21,7 +22,7 @@ export default function ProjectImage({
   return (
     <ProjectImageContainer>
       <Image src={img} alt="project" />
-      <div className="overlay">
+      <ProjectImageWrapper className="overlay">
         <ImageH3>{title}</ImageH3>
         <ImageP style={style}>{techStack}</ImageP>
         <div className="project-links">
@@ -39,7 +40,7 @@ export default function ProjectImage({
             <External name="External" />
           </a>
         </div>
-      </div>
+      </ProjectImageWrapper>
     </ProjectImageContainer>
   );
 }

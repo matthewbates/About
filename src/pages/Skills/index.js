@@ -19,7 +19,7 @@ export default function Skills({ isClicked }) {
         <SkillsWrapper>
           <Section>
             <SkillsCard>
-              <SkillsH3>Languages & Frameworks</SkillsH3>
+              <SkillsH3>Programming Languages</SkillsH3>
               {languagesAndFrameworks.map((item, index) => (
                 <Fragment key={index}>
                   <SkillsImage src={item.img} alt="" />
@@ -29,7 +29,7 @@ export default function Skills({ isClicked }) {
           </Section>
           <Section>
             <SkillsCard>
-              <SkillsH3>Libraries & Source Control</SkillsH3>
+              <SkillsH3>Technical Tools</SkillsH3>
               {libraries.map((item, index) => (
                 <Fragment key={index}>
                   <SkillsImage src={item.img} alt="" />
@@ -39,7 +39,7 @@ export default function Skills({ isClicked }) {
           </Section>
           <Section>
             <SkillsCard style={{ marginBottom: "4rem" }}>
-              <SkillsH3>Data Markup & Extensions</SkillsH3>
+              <SkillsH3>Markup and Frameworks</SkillsH3>
               {frontendDevelopment.map((item, index) => (
                 <Fragment key={index}>
                   <SkillsImage src={item.img} alt="" />

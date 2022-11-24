@@ -5,6 +5,7 @@ import Intro from "../Intro";
 import About from "../About";
 import Skills from "../Skills";
 import Projects from "../Projects";
+import Testimonials from "../Testimonials";
 import Contact from "../ContactForm";
 import Footer from "../../components/Footer";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <About isClicked={isClicked} />
       <Skills isClicked={isClicked} />
       <Projects isClicked={isClicked} />
+      {/* <Testimonials isClicked={isClicked} /> */}
       <Contact isClicked={isClicked} />
       <Footer />
     </HomeContainer>

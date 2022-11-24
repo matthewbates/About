@@ -36,8 +36,6 @@ export const ProjectImageContainer = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    margin-top: 10px;
-    margin-left: -10px;
     color: white;
     a {
       padding: 10px;
@@ -57,6 +55,12 @@ export const ProjectImageContainer = styled.div`
   }
 `;
 
+export const ProjectImageWrapper = styled.div`
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Image = styled.img`
   display: block;
   width: 100%;
@@ -67,11 +71,16 @@ export const Image = styled.img`
 export const ImageH3 = styled.h3`
   font-family: "Poppins";
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+    font-size: 18px;
+  }
 `;
 
 export const ImageP = styled.p`
   color: ${CONSTANTS.colors.persephoneWhite};
-  margin-top: 0.5rem;
+  max-width: 460px;
 
   @media screen and (max-width: 390px) {
     font-size: 8px;

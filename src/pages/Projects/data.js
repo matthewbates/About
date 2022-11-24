@@ -4,17 +4,16 @@ import skiBum from "../../assets/images/skiBum.png";
 import pokedex from "../../assets/images/pokedex.png";
 import persephoneGraes from "../../assets/images/persephoneGraes.png";
 import marsIndustries from "../../assets/images/marsIndustries.png";
+import youtube from "../../assets/images/youtube.png";
 
 export const projectData = [
   {
     img: marsIndustries,
     link: "https://www.marsindustriesco.com",
-    techStack: "JavaScript · React · Styled Components · EmailJS · Greensock",
+    techStack: "JavaScript · React · EmailJS · Greensock",
     title: "Mars Industries",
     style: {
       padding: "4.5px",
-      // border: "1px solid orange",
-      // boxShadow: "4px 4px 2px 2px orange",
       marginLeft: "3rem",
       marginRight: "3rem",
       fontFamily: "Space Mono",
@@ -37,16 +36,24 @@ export const projectData = [
   {
     img: persephoneGraes,
     link: "https://www.persephonegraescafe.com",
-    techStack:
-      "JavaScript · React · Styled Components · Google Business Profile API",
+    techStack: "JavaScript · React · Google Business Profile API",
     title: "Persephone Graes Cafe & Juice Bar",
     style: {
       padding: "2.5px",
-      // border: "1px solid white",
-      // boxShadow: "4px 4px 2px 2px grey",
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/persephone-graes",
+  },
+  {
+    img: youtube,
+    link: "https://aesthetic-alpaca-04fc9c.netlify.app/",
+    techStack: "JavaScript · React · YouTube Data API · Semantic UI",
+    title: "YouTube Clone",
+    style: {
+      padding: "2.5px",
+      fontFamily: "Space Mono",
+    },
+    github: "https://github.com/matthewbates/youtube-clone",
   },
   {
     img: mountainBuddy,
@@ -56,8 +63,6 @@ export const projectData = [
     title: "Mountain Buddy",
     style: {
       padding: "2.5px",
-      // border: "1px solid white",
-      // boxShadow: "4px 4px 3px 2px blue",
       marginLeft: "3rem",
       marginRight: "3rem",
       fontFamily: "Space Mono",
@@ -72,8 +77,6 @@ export const projectData = [
     title: "Brewery Discovery",
     style: {
       padding: "2.5px",
-      // border: "1px solid white",
-      // boxShadow: "4px 4px 3px 2px gold",
       marginLeft: "4rem",
       marginRight: "4rem",
       fontFamily: "Space Mono",
@@ -87,8 +90,6 @@ export const projectData = [
     title: "SkiBum",
     style: {
       padding: "2.5px",
-      // border: "1px solid white",
-      // boxShadow: "4px 4px 3px 2px teal",
       marginLeft: "2rem",
       marginRight: "2rem",
       fontFamily: "Space Mono",
@@ -102,8 +103,6 @@ export const projectData = [
     title: "Pokedex",
     style: {
       padding: "2.5px",
-      // border: "1px solid white",
-      // boxShadow: "4px 4px 3px 2px red",
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/Pokedex",

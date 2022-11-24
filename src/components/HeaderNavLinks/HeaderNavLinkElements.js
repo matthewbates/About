@@ -2,14 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 import { Link } from "react-scroll";
 
-export const HeaderLinksContainer = styled.div`
-  /* display: flex;
-  justify-content: center;
-  background: inherit;
-  width: 100%;
-  text-align: center; */
-`;
-
 export const HeaderLinkScroll = styled(Link)`
   cursor: pointer;
   padding: 1.4rem;
@@ -21,6 +13,7 @@ export const HeaderLinkScroll = styled(Link)`
   /* color: ${CONSTANTS.colors.persephoneWhite}; */
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none !important;
 
   @media screen and (min-width: 768px) and (max-width: 1000px) {
     padding: 0.8rem;

@@ -4,7 +4,8 @@ import {
   FooterWrapper,
   SocialIcons,
   SocialIconLink,
-  FooterCredit,
+  CreditWrapper,
+  Credit
 } from "./FooterElements";
 import Copyright from "../Copyright";
 import Socials from "../Socials";
@@ -34,15 +35,15 @@ export default function Footer() {
         <FooterWrapper>
           <Socials />
           <Copyright />
-          <FooterCredit>
+          <CreditWrapper>
             <a
               href="https://www.github.com/matthewbates/about"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div>Designed &amp; Built by Matthew Bates</div>
+              <Credit>Designed &amp; Built by Matthew Bates</Credit>
             </a>
-          </FooterCredit>
+          </CreditWrapper>
         </FooterWrapper>
       </FooterContainer>
     </>

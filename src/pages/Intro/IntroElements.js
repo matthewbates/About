@@ -84,12 +84,12 @@ export const IntroLi = styled.li`
 
 export const IntroButton = styled.button`
   cursor: pointer;
-  margin: 10% auto 0px;
+  margin: 10% auto 0px !important;
   width: max-content;
   border: 1.5px solid #5cdb95;
   color: ${CONSTANTS.colors.persephoneWhite};
   background-color: transparent;
-  padding: 12px 30px;
+  padding: 12px 30px !important;
   margin-top: 1rem;
   font-family: "Space Mono";
 

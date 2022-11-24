@@ -32,18 +32,7 @@ export const FooterText = styled.div`
   color: ${CONSTANTS.colors.persephoneWhite};
 `;
 
-export const ScrollButton = styled(Link)`
-  .arrow {
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px 5px;
-    border: 1px solid white;
-    cursor: pointer;
-  }
-`;
-
-export const FooterCredit = styled.div`
+export const CreditWrapper = styled.div`
   font-family: "Lato";
   line-height: 1;
 
@@ -58,4 +47,8 @@ export const FooterCredit = styled.div`
       transition: 200ms all ease-in;
     }
   }
+`;
+
+export const Credit = styled.div`
+  margin-top: -1rem;
 `;

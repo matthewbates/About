@@ -6,14 +6,7 @@ export const languagesAndFrameworks = [
     name: "JavaScript",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
   },
-  {
-    name: "Node.js",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-  },
-  {
-    name: "Express",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
-  },
+
   {
     name: "SQL",
     img: sql,
@@ -26,9 +19,17 @@ export const languagesAndFrameworks = [
     name: "Rails",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg",
   },
+  {
+    name: "Python",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  },
 ];
 
 export const libraries = [
+  {
+    name: "Git",
+    img: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+  },
   {
     name: "React",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
@@ -38,16 +39,16 @@ export const libraries = [
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
   },
   {
-    name: "Mocha",
-    img: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
+    name: "Node.js",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
   },
   {
-    name: "Git",
-    img: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+    name: "Jest",
+    img: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
   },
   {
-    name: "Postman",
-    img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+    name: "AWS",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
   },
 ];
 
@@ -65,11 +66,11 @@ export const frontendDevelopment = [
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
   },
   {
-    name: "Tailwind",
-    img: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-  },
-  {
     name: "Bootstrap",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
+  },
+  {
+    name: "Bulma",
+    img: "https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg",
   },
 ];
