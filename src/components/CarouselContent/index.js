@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "react-bootstrap/carousel";
+import { Carousel } from "react-bootstrap";
 import { Container, Img, Wrapper, H3, H4, P } from "./CarouselElements";
 import slides from "./data";
 
