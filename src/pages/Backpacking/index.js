@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  ImgContainer,
-  ImgH1,
-  ImgWrapper,
-  ImgH3,
-  Img,
-} from "./BackpackingElements";
+import { Container, FlexContainer, H3, Img, H4 } from "./BackpackingElements";
 import harvard from "../../assets/harvard.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -17,12 +11,12 @@ export default function Backpacking() {
   };
 
   return (
-    <ImgContainer style={{ background: "black" }}>
-      <ImgWrapper>
-        <ImgH1>Mt. Harvard, Colorado's 2nd tallest mountain</ImgH1>
+    <Container style={{ background: "black" }}>
+      <FlexContainer>
+        <H3>Mt. Harvard, Colorado's 2nd tallest mountain</H3>
         <Img src={harvard} loading="lazy" />
-        <ImgH3 onClick={routeChange}>Go Back</ImgH3>
-      </ImgWrapper>
-    </ImgContainer>
+        <H4 onClick={routeChange}>Go Back</H4>
+      </FlexContainer>
+    </Container>
   );
 }

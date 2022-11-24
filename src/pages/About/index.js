@@ -18,7 +18,7 @@ export default function About({ isClicked }) {
         <AboutH1>In general...</AboutH1>
         <Section>
           <AboutP>
-            I'm a software developer living in the small town of{" "}
+            I'm a software developer living in{" "}
             <AboutA
               href="https://www.manitouspringsgov.com/"
               target="_blank"
@@ -28,34 +28,42 @@ export default function About({ isClicked }) {
               Manitou Springs, Colorado
             </AboutA>{" "}
             with my Australian Shepherd,{" "}
-            <LinkRoute to="/sterling">Sterling</LinkRoute>. I am 32 years old
-            and I have been making websites for about 1.5 years.
+            <LinkRoute to="/sterling" style={{ color: "#5cdb95" }}>
+              Sterling
+            </LinkRoute>
+            . I am 32 years old and I have been making websites for about 1.5
+            years.
           </AboutP>
         </Section>
         <Section>
           <AboutP>
-            I primarily utilize HTML, CSS, and JavaScript. Although constantly
-            changing, my focus right now is React.js, Redux, Node, and Mocha.
+            I primarily utilize JavaScript, React, and CSS. Although constantly
+            changing, my focus right now is Python, Node.js, and Jest.
           </AboutP>
         </Section>
         <Section>
           <AboutP>
-            I design, develop, and maintain mobile & tablet-optimized{" "}
-            <LinkRoute to="/projects" style={{ color: "#5cdb95" }}>
-              websites
-            </LinkRoute>{" "}
-            for my clients, and I'm searching to get my foot in the door with a
-            tech company as a front-end developer.
+            I've been intrigued with web development for a long time, so much so
+            that I decided to alter my profession to pursue a career in tech.
+            It's a space of constant improvement and exciting & new technology.
+            I'm always using technology to solve my life's probems and
+            ambitions.
           </AboutP>
         </Section>
         <AboutH1>A little more...</AboutH1>
         <Section>
           <AboutP>
-            I've been intrigued with web development for a long time, so much so
-            that I decided to drastically alter my career path to pursue a
-            career in tech. It's a space of constant improvement and exciting &
-            new technology. I'm always using technology to solve my life's
-            probems and ambitions.
+            I design, develop, test, and delploy mobile & tablet-optimized{" "}
+            <AboutA
+              href="https://soft-lebkuchen-2188b1.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#5cdb95" }}
+            >
+              websites
+            </AboutA>{" "}
+            for my clients, and I'm searching to get my foot in the door with a
+            tech company as a front-end developer.
           </AboutP>
         </Section>
         <Section>

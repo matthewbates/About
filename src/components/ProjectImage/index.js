@@ -18,7 +18,6 @@ export default function ProjectImage({
   title,
   badges,
 }) {
-  console.log(badges);
   return (
     <ProjectImageContainer>
       <Image src={img} alt="project" />

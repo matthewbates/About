@@ -20,9 +20,9 @@ export const UlStyle = styled.aside`
 `;
 
 export const AuthorImg = styled.img`
-  margin-top: 2rem;
-  width: 170px;
-  height: 170px;
+  margin-top: 0.5rem;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 `;
 

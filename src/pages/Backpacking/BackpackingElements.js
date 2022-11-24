@@ -1,45 +1,38 @@
 import styled from "styled-components";
 
-export const ImgContainer = styled.div`
-  background-color: #000;
+export const Container = styled.div`
   height: 100vh;
   width: 100vw;
-`;
-
-export const ImgH1 = styled.h1`
-  color: white;
-  font-family: "Space Mono";
-  max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  background: #000;
 `;
 
-export const ImgH3 = styled.h3`
-  cursor: pointer;
-  color: white;
-  text-align: center;
-  font-family: "Space Mono";
-
-  &:hover {
-    text-decoration: 2px underline;
-  }
+export const FlexContainer = styled.div`
+  color: #fff;
 `;
 
-export const ImgWrapper = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+export const H3 = styled.h3`
+  max-width: 420px;
 `;
 
 export const Img = styled.img`
   object-fit: contain;
-  height: 70vh;
-  width: 70vw;
+  height: 450px;
+  width: 450px;
 
   @media screen and (max-width: 768px) {
-    height: 65vh;
-    width: 65vw;
+    height: 350px;
+    width: 350px;
+  }
+`;
+
+export const H4 = styled.h4`
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: 2px solid #fff underline;
   }
 `;

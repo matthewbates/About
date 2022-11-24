@@ -25,7 +25,7 @@ export const SkillsCard = styled.div`
   border-radius: 15px !important;
   box-shadow: 0px 10px 20px !important;
   border-radius: 20px !important;
-  background-color: transparent;
+  background-color: ${CONSTANTS.colors.persephoneWhite};
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
   justify-content: center !important;
@@ -39,10 +39,11 @@ export const SkillsCard = styled.div`
     margin-right: 1rem;
   }
 
-  &:hover,
-  &:focus-within {
-    transform: translateY(-7px);
-    box-shadow: 0px 20px 30px;
+  .icon {
+    &:hover {
+      transition: 200ms ease-in-out;
+      transform: scale(1.1);
+    }
   }
 `;
 
@@ -54,10 +55,11 @@ export const SkillsImage = styled.img`
 
 export const SkillsH3 = styled.h3`
   font-family: "Space Mono";
-  color: ${CONSTANTS.colors.persephoneWhite};
+  color: ${CONSTANTS.colors.softBlack};
   margin-top: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  font-weight: 700;
 `;
 
 export const SkillsHeader = styled.h2`
