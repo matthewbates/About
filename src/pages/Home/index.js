@@ -25,7 +25,7 @@ export default function Home() {
       <About isClicked={isClicked} />
       <Skills isClicked={isClicked} />
       <Projects isClicked={isClicked} />
-      {/* <Testimonials isClicked={isClicked} /> */}
+      <Testimonials isClicked={isClicked} />
       <Contact isClicked={isClicked} />
       <Footer />
     </HomeContainer>
