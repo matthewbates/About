@@ -35,6 +35,8 @@ export const SkillsCard = styled.div`
 
   @media screen and (max-width: 768px) {
     max-width: 320px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   &:hover,
