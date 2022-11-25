@@ -8,8 +8,8 @@ export default function Burger({ open, handleOnClick, visible }) {
       onClick={handleOnClick}
       style={{
         position: "fixed",
-        top: "22px",
-        right: "25px",
+        top: "28px",
+        right: "30px",
         opacity: visible ? 1 : 0,
       }}
     >

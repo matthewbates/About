@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const StyledBurger = styled.div`
   display: none;
   z-index: 2;
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1.5rem;
   /* display: flex; */
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -15,8 +15,7 @@ export const StyledBurger = styled.div`
   }
 
   div {
-    width: 2rem;
-
+    width: 1.5rem;
     height: 0.25rem;
     background-color: ${({ open }) => (open ? "white" : "#05386b")};
     border-radius: 20px;
