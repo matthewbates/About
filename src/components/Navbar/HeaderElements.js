@@ -3,13 +3,17 @@ import CONSTANTS from "../../utils/constants";
 
 export const StyledContainer = styled.nav`
   display: flex;
+  background: ${CONSTANTS.colors.persephoneWhite};
   justify-content: space-between;
   align-items: center;
   height: 80px;
   z-index: 999;
-  background: #05386b;
   width: ${({ width }) => width || "90%"};
-  position: ${({ position }) => position || "relative"};
+  /* position: ${({ position }) => position || "relative"}; */
+  position: fixed;
+  width: 100%;
+  top: ${({ visible }) => (visible ? "0" : "-80px")};
+  transition: top 0.4s;
 `;
 
 export const StyledWrapper = styled.div`
@@ -17,6 +21,13 @@ export const StyledWrapper = styled.div`
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.8);
   align-items: center;
+`;
+
+export const RightNavWrapper = styled.div`
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: ${({ open }) => (open ? 1 : -1)};
 `;
 
 export const NavbarButton = styled.button`

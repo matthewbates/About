@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   StyledContainer,
   StyledWrapper,
+  RightNavWrapper,
   NavLinksWrapper,
 } from "./HeaderElements";
 import { navbarIconData, navbarLinks } from "./data";
@@ -11,9 +12,8 @@ import RightNav from "../RightNav";
 import gsap from "gsap";
 import HeaderNavLinks from "../HeaderNavLinks";
 import { debounce } from "../../utils/helpers";
-import CONSTANTS from "../../utils/constants";
 
-export default function Header({ isClicked, toggleTheme }) {
+export default function Header() {
   const [open, setOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -23,8 +23,6 @@ export default function Header({ isClicked, toggleTheme }) {
     setTimeout(() => setOpen(false), 800);
   };
 
-  // if the window size exceeds 768 pixels and the sidebar is open,
-  // update setOpen to false
   const onResize = (e) => {
     if (e.currentTarget.innerWidth > 768) {
       setOpen(false);
@@ -38,28 +36,9 @@ export default function Header({ isClicked, toggleTheme }) {
     };
   }, []);
 
-  const handleOnScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset;
-
-    // if the user scrolls up 70 pixels || pageYOffset is
-    // less than 10 pixels, display the navbar
-    setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 70) ||
-        currentScrollPos < 10
-    );
-    setPrevScrollPos(currentScrollPos);
-  }, 100);
-
+  // gsap timeline created to avoid using two useEffect hooks
   useEffect(() => {
-    window.addEventListener("scroll", handleOnScroll);
-    return () => window.removeEventListener("scroll", handleOnScroll);
-  }, [prevScrollPos, visible, handleOnScroll]);
-
-  // greensock animation for icons
-  // this is tranferrable for anthing within a timeline that is built
-  useEffect(() => {
-    gsap.from(".nav-icon", {
+    gsap.timeline().from(".nav-icon", {
       y: 100,
       delay: 2,
       opacity: 0,
@@ -67,11 +46,7 @@ export default function Header({ isClicked, toggleTheme }) {
       ease: "back",
       stagger: 0.25,
     });
-  }, []);
-
-  // greensock animation for nav links
-  useEffect(() => {
-    gsap.from(".links", {
+    gsap.timeline().from(".links", {
       x: 100,
       delay: 2.8,
       opacity: 0,
@@ -81,17 +56,26 @@ export default function Header({ isClicked, toggleTheme }) {
     });
   }, []);
 
+  // sets scroll logic
+  const handleOnScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    );
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  // handles the scroll logic
+  useEffect(() => {
+    window.addEventListener("scroll", handleOnScroll);
+    return () => window.removeEventListener("scroll", handleOnScroll);
+  }, [prevScrollPos, visible, handleOnScroll]);
+
   return (
-    <StyledContainer
-      style={{
-        position: "fixed",
-        height: "80px",
-        width: "100%",
-        background: `${CONSTANTS.colors.persephoneWhite}`,
-        top: visible ? "0" : "-80px",
-        transition: "top 0.4s",
-      }}
-    >
+    <StyledContainer visible={visible}>
       <StyledWrapper>
         {navbarIconData.map((item, index) => (
           <HeaderIcon
@@ -103,19 +87,10 @@ export default function Header({ isClicked, toggleTheme }) {
           />
         ))}
       </StyledWrapper>
-      <>
-        <Burger open={open} handleOnClick={handleOnClick} visible={visible} />
-        <div
-          style={{
-            top: 0,
-            right: 0,
-            position: "fixed",
-            zIndex: open ? 1 : -1,
-          }}
-        >
-          <RightNav open={open} closeDrawer={closeDrawer} />
-        </div>
-      </>
+      <Burger open={open} handleOnClick={handleOnClick} visible={visible} />
+      <RightNavWrapper>
+        <RightNav open={open} closeDrawer={closeDrawer} />
+      </RightNavWrapper>
       <NavLinksWrapper className="links">
         {navbarLinks.map((item, index) => (
           <HeaderNavLinks key={index} title={item.to} />
@@ -124,8 +99,3 @@ export default function Header({ isClicked, toggleTheme }) {
     </StyledContainer>
   );
 }
-
-Header.defaultProps = {
-  width: "100%",
-  position: "fixed",
-};

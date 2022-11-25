@@ -2,7 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const SkillsContainer = styled.section`
-  /* background: #05386b; */
   background: ${({ isClicked }) =>
     isClicked ? `${CONSTANTS.colors.batman}` : "#05386b"};
   border-top: ${({ isClicked }) =>
@@ -22,9 +21,7 @@ export const SkillsWrapper = styled.div`
 
 export const SkillsCard = styled.div`
   border: 2px solid ${CONSTANTS.colors.persephoneWhite};
-  border-radius: 15px !important;
-  box-shadow: 0px 10px 20px !important;
-  border-radius: 20px !important;
+  border-radius: 5px !important;
   background-color: ${CONSTANTS.colors.persephoneWhite};
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
@@ -42,8 +39,13 @@ export const SkillsCard = styled.div`
   .icon {
     &:hover {
       transition: 200ms ease-in-out;
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
+  }
+
+  &:hover {
+    transform: translate(4px, -4px);
+    box-shadow: -12px 12px #000;
   }
 `;
 
