@@ -5,12 +5,11 @@ import CONSTANTS from "../../utils/constants";
 export const FooterContainer = styled.div`
   background: ${CONSTANTS.colors.softBlack};
   width: 100%;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
 `;
 
 export const FooterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1rem;
@@ -20,11 +19,14 @@ export const FooterWrapper = styled.div`
   text-align: center;
 `;
 
-export const SocialIcons = styled.div``;
-
-export const SocialIconLink = styled.a`
-  color: ${CONSTANTS.colors.persephoneWhite};
-  font-size: 24px;
+export const Img = styled.img`
+  margin-bottom: 1rem;
+  gap: 1rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
 `;
 
 export const FooterText = styled.div`

@@ -2,38 +2,34 @@ import React, { useState, useEffect } from "react";
 import {
   FooterContainer,
   FooterWrapper,
-  SocialIcons,
-  SocialIconLink,
+  Img,
   CreditWrapper,
-  Credit
+  Credit,
 } from "./FooterElements";
 import Copyright from "../Copyright";
 import Socials from "../Socials";
 
 export default function Footer() {
-  const [githubInfo, setGitHubInfo] = useState({
-    stars: null,
-    forks: null,
-  });
+  const [logo, setLogo] = useState(
+    "https://www.codewars.com/users/matthewhcbates/badges/micro"
+  );
+
+  const onResize = (e) => {
+    if (e.target.innerWidth > 768) {
+      setLogo("https://www.codewars.com/users/matthewhcbates/badges/small");
+    }
+  };
 
   useEffect(() => {
-    fetch("https://api.github.com/repos/matthewbates/about")
-      .then((r) => r.json())
-      .then((json) => {
-        const { stargazers_count, forks_count } = json;
-        setGitHubInfo({
-          stars: stargazers_count,
-          forks: forks_count,
-        });
-      })
-      .catch((e) => console.error(e));
-  }, []);
+    window.addEventListener("resize", onResize);
+  }, [logo]);
 
   return (
     <>
       <FooterContainer>
         <FooterWrapper>
-          <Socials />
+          <Img src={logo} />
+          {/* <Socials /> */}
           <Copyright />
           <CreditWrapper>
             <a
