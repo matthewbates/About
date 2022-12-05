@@ -7,7 +7,9 @@ export const UlStyle = styled.aside`
   width: 55%;
   height: 100%;
   padding-top: 3.5rem;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* flex-flow: column nowrap; */
   z-index: 999;
   transition: 0.4s ease-in;
   background: ${CONSTANTS.colors.batman};

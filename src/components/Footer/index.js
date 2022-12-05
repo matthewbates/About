@@ -28,7 +28,6 @@ export default function Footer() {
     <>
       <FooterContainer>
         <FooterWrapper>
-          <Img src={logo} />
           {/* <Socials /> */}
           <Copyright />
           <CreditWrapper>
@@ -40,6 +39,7 @@ export default function Footer() {
               <Credit>Designed &amp; Built by Matthew Bates</Credit>
             </a>
           </CreditWrapper>
+          <Img src={logo} />
         </FooterWrapper>
       </FooterContainer>
     </>

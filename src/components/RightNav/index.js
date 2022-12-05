@@ -9,6 +9,10 @@ export default function RightNav({ open, closeDrawer }) {
       <div style={{ textAlign: "center" }}>
         <AuthorImg src={Author} alt="image" />
         <AuthorName>Matthew Bates</AuthorName>
+        <img
+          style={{ marginTop: "1rem" }}
+          src="https://www.codewars.com/users/matthewhcbates/badges/micro"
+        />
       </div>
       <div style={{ marginTop: "2rem", letterSpacing: "2px" }}>
         <NavLinks closeDrawer={closeDrawer} title={"Home"} />

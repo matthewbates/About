@@ -17,9 +17,9 @@ export default function App() {
 
   return (
     <div>
-      {/* {isLoading ? (
+      {isLoading ? (
         <Loader />
-      ) : ( */}
+      ) : (
         <Router>
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -28,7 +28,7 @@ export default function App() {
             <Route path="/backpacking" element={<Backpacking />} />
           </Routes>
         </Router>
-      {/* )} */}
+      )}
     </div>
   );
 }
