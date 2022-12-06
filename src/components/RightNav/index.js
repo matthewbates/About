@@ -19,7 +19,7 @@ export default function RightNav({ open, closeDrawer }) {
         <NavLinks closeDrawer={closeDrawer} title={"About"} />
         <NavLinks closeDrawer={closeDrawer} title={"Skills"} />
         <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
-        {/* <NavLinks closeDrawer={closeDrawer} title={"Testimonials"} /> */}
+        <NavLinks closeDrawer={closeDrawer} title={"Testimonials"} />
         <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
       </div>
     </UlStyle>

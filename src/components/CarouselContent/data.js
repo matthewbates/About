@@ -1,27 +1,27 @@
 import dylan from "../../assets/dylan.jpeg";
-import javascript from "../../assets/javascript.png";
-import react from "../../assets/react.png";
+import morgan from "../../assets/morgan.jpeg";
+import justin from "../../assets/justin.jpeg";
 
 export default [
   {
     id: 1,
     image: dylan,
     name: "Dylan Dupasquier",
-    title: "Front-end developer",
+    title: "Front-end Developer",
     text: "Matthew is very knowledgeable in both front end functionality and design. It has been a pleasure to collaborate with him.",
   },
   {
     id: 2,
-    image: javascript,
-    name: "Second Name",
-    title: "Second Title",
-    text: "The simple and intuitive design makes it easy for me use. I highly recommend Fetch to my peers.",
+    image: morgan,
+    name: "Morgan VanYperen",
+    title: "Instructor III @ Flatiron School",
+    text: "Matthew has always been great and easy to work with. He's pro-active when it comes to communicating about expectations and is determined to do things right.",
   },
   {
     id: 3,
-    image: react,
-    name: "Third Name",
-    title: "Third Title",
-    text: "I enjoy catching up with Fetch on my laptop, or on my phone when I'm on the go!",
+    image: justin,
+    name: "Justin Luciano",
+    title: "Front-end Developer @ InvestCloud, Inc.",
+    text: "Matthew is a joy to work with. He's extremely detail-oriented in his design & functionality, and always strives to learn new ways to make his work faster and better.",
   },
 ];

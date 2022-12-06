@@ -54,9 +54,9 @@ export const navbarLinks = [
   {
     to: "Projects",
   },
-  // {
-  //   to: "Testimonials",
-  // },
+  {
+    to: "Testimonials",
+  },
   {
     to: "Contact",
   },

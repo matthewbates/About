@@ -20,13 +20,14 @@ export const Wrapper = styled.div`
   padding-left: 5%;
   padding-right: 5%;
   border: 1px solid #ddd;
-  height: 286px;
+  height: 325px;
   overflow-y: hidden;
   text-transform: uppercase;
 
   @media screen and (max-width: 768px) {
     width: 80%;
     padding-top: 15%;
+    height: 370px;
   }
 `;
 

@@ -4,7 +4,7 @@ import {
   StyledWrapper,
   RightNavWrapper,
   NavLinksWrapper,
-} from "./HeaderElements";
+} from "./NavbarElements";
 import { navbarIconData, navbarLinks } from "./data";
 import HeaderIcon from "../HeaderIcon";
 import Burger from "../Burger";

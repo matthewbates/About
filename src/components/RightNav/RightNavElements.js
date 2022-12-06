@@ -12,7 +12,7 @@ export const UlStyle = styled.aside`
   /* flex-flow: column nowrap; */
   z-index: 999;
   transition: 0.4s ease-in;
-  background: ${CONSTANTS.colors.batman};
+  background: #090909;
   right: ${({ open }) => (open ? "0" : "-100%")};
   opacity: ${({ open }) => (open ? 1 : 0)};
 
