@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 
 import { languagesAndFrameworks, libraries, frontendDevelopment } from "./data";
 import {
@@ -21,7 +23,13 @@ export default function Skills() {
             <SkillsH3>Programming Languages</SkillsH3>
             {languagesAndFrameworks.map((item, index) => (
               <Fragment key={index}>
-                <SkillsImage className="icon" src={item.img} alt="icon" />
+                <OverlayTrigger
+                  trigger="hover"
+                  placement="top"
+                  overlay={<Tooltip>{item.label}</Tooltip>}
+                >
+                  <SkillsImage className="icon" src={item.img} alt={item.alt} />
+                </OverlayTrigger>
               </Fragment>
             ))}
           </SkillsCard>
@@ -31,7 +39,13 @@ export default function Skills() {
             <SkillsH3>Technical Tools</SkillsH3>
             {libraries.map((item, index) => (
               <Fragment key={index}>
-                <SkillsImage className="icon" src={item.img} alt="icon" />
+                <OverlayTrigger
+                  trigger="hover"
+                  placement="top"
+                  overlay={<Tooltip>{item.label}</Tooltip>}
+                >
+                  <SkillsImage className="icon" src={item.img} alt="icon" />
+                </OverlayTrigger>
               </Fragment>
             ))}
           </SkillsCard>
@@ -41,7 +55,13 @@ export default function Skills() {
             <SkillsH3>Markup and Frameworks</SkillsH3>
             {frontendDevelopment.map((item, index) => (
               <Fragment key={index}>
-                <SkillsImage className="icon" src={item.img} alt="icon" />
+                <OverlayTrigger
+                  trigger="hover"
+                  placement="top"
+                  overlay={<Tooltip>{item.label}</Tooltip>}
+                >
+                  <SkillsImage className="icon" src={item.img} alt="icon" />
+                </OverlayTrigger>
               </Fragment>
             ))}
           </SkillsCard>
