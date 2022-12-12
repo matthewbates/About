@@ -4,8 +4,7 @@ export const Container = styled.div`
   background: #05386b !important;
   color: #090909;
   height: 100%;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem;
 `;
 
 export const Img = styled.img``;

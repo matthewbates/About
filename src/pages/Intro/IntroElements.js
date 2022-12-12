@@ -1,15 +1,12 @@
 import styled from "styled-components";
-import { css } from "styled-components";
 import CONSTANTS from "../../utils/constants";
-import { Link } from "react-scroll";
 
 export const IntroContainer = styled.section`
   display: flex;
   -webkit-box-align: center;
   justify-content: center;
   flex-direction: column;
-  background: ${({ isClicked }) =>
-    isClicked ? `${CONSTANTS.colors.batman}` : "#05386b"};
+  background: #05386b;
   align-items: flex-start;
   min-height: 100vh;
   flex-wrap: wrap;

@@ -16,7 +16,7 @@ export default function App() {
   }, []);
 
   return (
-    <div>
+    <>
       {isLoading ? (
         <Loader />
       ) : (
@@ -29,6 +29,6 @@ export default function App() {
           </Routes>
         </Router>
       )}
-    </div>
+    </>
   );
 }

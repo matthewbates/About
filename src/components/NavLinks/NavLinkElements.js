@@ -7,7 +7,7 @@ export const LinkScroll = styled(Link)`
   flex-direction: column;
   text-align: center;
   cursor: pointer;
-  margin: 2.5rem;
+  margin: 2rem;
   font-family: "Space Mono";
   position: relative;
   font-size: 14px;

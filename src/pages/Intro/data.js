@@ -20,7 +20,7 @@ const four = (
 const five = (
   <TypeWriterEffect
     multiText={[
-      "front-end software developer with full-stack experience",
+      "front-end developer with full-stack experience",
       "creative, passionate technologist",
       "freelance web designer",
     ]}
@@ -31,7 +31,7 @@ const five = (
       color: "#5cdb95",
       marginTop: "10px",
       flexWrap: "wrap",
-      maxWidth: "260px",
+      // maxWidth: "360px",
     }}
     cursorColor="#fff"
     typeSpeed={80}
