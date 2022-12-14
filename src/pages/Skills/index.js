@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+import Popover from "react-bootstrap/Popover";
 
 import { languagesAndFrameworks, libraries, frontendDevelopment } from "./data";
 import {
@@ -26,7 +27,11 @@ export default function Skills() {
                 <OverlayTrigger
                   trigger="hover"
                   placement="top"
-                  overlay={<Tooltip>{item.label}</Tooltip>}
+                  overlay={
+                    <Popover>
+                      <Popover.Body>{item.label}</Popover.Body>
+                    </Popover>
+                  }
                 >
                   <SkillsImage className="icon" src={item.img} alt={item.alt} />
                 </OverlayTrigger>
@@ -42,7 +47,11 @@ export default function Skills() {
                 <OverlayTrigger
                   trigger="hover"
                   placement="top"
-                  overlay={<Tooltip>{item.label}</Tooltip>}
+                  overlay={
+                    <Popover>
+                      <Popover.Body>{item.label}</Popover.Body>
+                    </Popover>
+                  }
                 >
                   <SkillsImage className="icon" src={item.img} alt="icon" />
                 </OverlayTrigger>
@@ -58,7 +67,11 @@ export default function Skills() {
                 <OverlayTrigger
                   trigger="hover"
                   placement="top"
-                  overlay={<Tooltip>{item.label}</Tooltip>}
+                  overlay={
+                    <Popover>
+                      <Popover.Body>{item.label}</Popover.Body>
+                    </Popover>
+                  }
                 >
                   <SkillsImage className="icon" src={item.img} alt="icon" />
                 </OverlayTrigger>
