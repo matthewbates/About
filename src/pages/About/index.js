@@ -38,7 +38,7 @@ export default function About({ isClicked }) {
         <Section>
           <AboutP>
             I primarily utilize JavaScript, React, and CSS. Although constantly
-            changing, my focus right now is Python, Node.js, and Jest.
+            changing, my focus right now is Python3, Node.js, and Jest.
           </AboutP>
         </Section>
         <Section>
@@ -62,8 +62,8 @@ export default function About({ isClicked }) {
             >
               websites
             </AboutA>{" "}
-            for my clients, and I'm searching to get my foot in the door with a
-            tech company as a front-end developer.
+            for my clients, and I work as an application developer for a
+            University full-time.
           </AboutP>
         </Section>
         <Section>
