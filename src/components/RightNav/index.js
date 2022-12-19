@@ -12,6 +12,7 @@ export default function RightNav({ open, closeDrawer }) {
         <img
           style={{ marginTop: "1rem" }}
           src="https://www.codewars.com/users/matthewhcbates/badges/micro"
+          alt="author"
         />
       </div>
       <div style={{ marginTop: "2rem", letterSpacing: "2px" }}>

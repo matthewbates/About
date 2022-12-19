@@ -1,15 +1,22 @@
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import Skills from "./index";
+import userEvent from "@testing-library/user-event";
 
-// write a test that validates hover effects for skills icons
-test("Icons responds to hover", async () => {
-  const user = userEvent.setup();
-  render(<Skills />);
+// initial conditions
+describe("Headers are rendered on the screen", () => {
+  test("Initial conditions", () => {
+    render(<Skills />);
+    const skillsHeader = screen.getByRole("");
+    expect(skillsHeader).toHaveTextContent(/skills/i);
+    const languagesHeader = screen.getByRole("");
+    expect(languagesHeader).toHaveTextContent(/programming languages/i);
+    const technicalHeader = screen.getByRole("");
+    expect(technicalHeader).toHaveTextContent(/technical tools/i);
+    const markupHeader = screen.getByRole("");
+    expect(markupHeader).toHaveTextContent(/markup and frameworks/i);
+  });
 
-  // popover starts out hidden
-  const iconLabel = screen.getByRole("image", { name: /icon/i });
-  expect(iconLabel).not.toBeInTheDocument();
-
-  
+  test("User can hover over the icon and display the title", () => {
+    
+  })
 });
