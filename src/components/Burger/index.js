@@ -3,6 +3,7 @@ import { StyledBurger } from "./BurgerElements";
 
 export default function Burger({ open, handleOnClick, visible }) {
   return (
+    // reusable burger component
     <StyledBurger
       open={open}
       onClick={handleOnClick}
