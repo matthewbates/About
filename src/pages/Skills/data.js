@@ -54,24 +54,24 @@ export const libraries = [
     label: "Redux",
     alt: "icon",
   },
-  {
-    name: "Node.js",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-    label: "Node.js",
-    alt: "icon",
-  },
+  // {
+  //   name: "Node.js",
+  //   img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+  //   label: "Node.js",
+  //   alt: "icon",
+  // },
   {
     name: "Jest",
     img: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
     label: "Jest",
     alt: "icon",
   },
-  {
-    name: "AWS",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-    label: "AWS",
-    alt: "icon",
-  },
+  // {
+  //   name: "AWS",
+  //   img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  //   label: "AWS",
+  //   alt: "icon",
+  // },
 ];
 
 export const frontendDevelopment = [
