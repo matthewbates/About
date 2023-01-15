@@ -87,12 +87,12 @@ export const frontendDevelopment = [
     label: "CSS",
     alt: "icon",
   },
-  {
-    name: "SASS",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-    label: "SASS",
-    alt: "icon",
-  },
+  // {
+  //   name: "SASS",
+  //   img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+  //   label: "SASS",
+  //   alt: "icon",
+  // },
   {
     name: "Bootstrap",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
