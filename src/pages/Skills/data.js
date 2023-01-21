@@ -54,12 +54,12 @@ export const libraries = [
     label: "Redux",
     alt: "icon",
   },
-  // {
-  //   name: "Node.js",
-  //   img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-  //   label: "Node.js",
-  //   alt: "icon",
-  // },
+  {
+    name: "Node.js",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+    label: "Node.js",
+    alt: "icon",
+  },
   {
     name: "Jest",
     img: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
@@ -87,12 +87,12 @@ export const frontendDevelopment = [
     label: "CSS",
     alt: "icon",
   },
-  // {
-  //   name: "SASS",
-  //   img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-  //   label: "SASS",
-  //   alt: "icon",
-  // },
+  {
+    name: "SASS",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+    label: "SASS",
+    alt: "icon",
+  },
   {
     name: "Bootstrap",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
