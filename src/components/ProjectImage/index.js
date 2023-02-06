@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   ProjectImageContainer,
   ProjectImageWrapper,
@@ -20,7 +21,9 @@ export default function ProjectImage({
 }) {
   return (
     <ProjectImageContainer>
+      {/* <LazyLoadImage> */}
       <Image src={img} alt="project" />
+      {/* </LazyLoadImage> */}
       <ProjectImageWrapper className="overlay">
         <ImageH3>{title}</ImageH3>
         <ImageP style={style}>{techStack}</ImageP>

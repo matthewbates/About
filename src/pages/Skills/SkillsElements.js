@@ -16,7 +16,7 @@ export const SkillsWrapper = styled.div`
   flex-direction: row;
   text-align: center;
   gap: 2rem;
-  justify-content: space-evenly !important;
+  justify-content: space-evenly;
 `;
 
 export const SkillsCard = styled.div`
