@@ -18,16 +18,8 @@ export default function About({ isClicked }) {
         <AboutH1>In general...</AboutH1>
         <Section>
           <AboutP>
-            I'm a software developer living in{" "}
-            <AboutA
-              href="https://www.manitouspringsgov.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#5cdb95" }}
-            >
-              Manitou Springs, Colorado
-            </AboutA>{" "}
-            with my Australian Shepherd,{" "}
+            I'm a software developer living in Denver, CO with my Australian
+            Shepherd,{" "}
             <LinkRoute to="/sterling" style={{ color: "#5cdb95" }}>
               Sterling
             </LinkRoute>
@@ -62,8 +54,8 @@ export default function About({ isClicked }) {
             >
               websites
             </AboutA>{" "}
-            for my clients, and I work as an application developer for a
-            University full-time.
+            for my clients, and I work as an application developer for the
+            University of Denver full-time.
           </AboutP>
         </Section>
         <Section>
