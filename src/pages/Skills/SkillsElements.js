@@ -2,12 +2,8 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const SkillsContainer = styled.section`
-  background: ${({ isClicked }) =>
-    isClicked ? `${CONSTANTS.colors.batman}` : "#05386b"};
-  border-top: ${({ isClicked }) =>
-    isClicked
-      ? "1px solid grey"
-      : `1px solid ${CONSTANTS.colors.persephoneWhite}`};
+  background: #05386b;
+  border-top: 1px solid ${CONSTANTS.colors.persephoneWhite};
 `;
 
 export const SkillsWrapper = styled.div`
@@ -15,8 +11,9 @@ export const SkillsWrapper = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   text-align: center;
-  gap: 2rem;
   justify-content: space-evenly;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 `;
 
 export const SkillsCard = styled.div`
@@ -31,9 +28,10 @@ export const SkillsCard = styled.div`
   padding: 0 auto !important;
 
   @media screen and (max-width: 768px) {
-    max-width: 320px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    gap: 2rem;
+    // max-width: 320px;
+    // margin-left: 1rem;
+    // margin-right: 1rem;
   }
 
   .icon {
