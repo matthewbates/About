@@ -29,9 +29,9 @@ export const SkillsCard = styled.div`
 
   @media screen and (max-width: 768px) {
     gap: 2rem;
-    // max-width: 320px;
-    // margin-left: 1rem;
-    // margin-right: 1rem;
+    max-width: 320px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .icon {
