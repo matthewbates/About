@@ -5,13 +5,16 @@ export const StyledBurger = styled.div`
   z-index: 2;
   width: 1rem;
   height: 1.5rem;
-  /* display: flex; */
   flex-flow: column nowrap;
   justify-content: space-around;
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
     display: flex;
+    position: fixed;
+    top: 28px;
+    right: 30px;
+    opacity: ${({ visible }) => (visible ? 1 : 0)};
   }
 
   div {
