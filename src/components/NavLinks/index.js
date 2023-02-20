@@ -1,6 +1,5 @@
 import React from "react";
-import { LinksContainer, LinkScroll } from "./NavLinkElements";
-import { sidebarData } from "./data";
+import { LinkScroll } from "./NavLinkElements";
 
 export default function NavLinks({ title, classes, closeDrawer }) {
   return (

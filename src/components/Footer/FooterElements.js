@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-scroll";
 import CONSTANTS from "../../utils/constants";
 
 export const FooterContainer = styled.div`

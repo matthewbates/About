@@ -69,7 +69,7 @@ export const Image = styled.img`
 `;
 
 export const ImageH3 = styled.h3`
-  font-family: "Poppins";
+  font-family: "Space Mono";
   text-transform: uppercase;
 
   @media screen and (max-width: 768px) {
