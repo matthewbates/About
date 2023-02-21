@@ -5,6 +5,7 @@ import pokedex from "../../assets/images/pokedex.png";
 import persephoneGraes from "../../assets/images/persephoneGraes.png";
 import marsIndustries from "../../assets/images/marsIndustries.png";
 import youtube from "../../assets/images/youtube.png";
+import clientSite from "../../assets/images/clientSite.png";
 
 export const projectData = [
   {
@@ -56,6 +57,17 @@ export const projectData = [
     github: "https://github.com/matthewbates/youtube-clone",
   },
   {
+    img: clientSite,
+    link: "https://soft-lebkuchen-2188b1.netlify.app/",
+    techStack: "JavaScript · React · Atlist Maps · Styled Components",
+    title: "MB Web Solutions",
+    style: {
+      padding: "2.5px",
+      fontFamily: "Space Mono",
+    },
+    github: "https://github.com/matthewbates/mb-web-innovations",
+  },
+  {
     img: mountainBuddy,
     link: "https://vimeo.com/695889451/21156ef4dd",
     techStack:
@@ -96,15 +108,15 @@ export const projectData = [
     },
     github: "https://github.com/matthewbates/SkiBum",
   },
-  {
-    img: pokedex,
-    link: "https://vimeo.com/695844138/aef213f1d9",
-    techStack: "JavaScript · HTML · CSS",
-    title: "Pokedex",
-    style: {
-      padding: "2.5px",
-      fontFamily: "Space Mono",
-    },
-    github: "https://github.com/matthewbates/Pokedex",
-  },
+  // {
+  //   img: pokedex,
+  //   link: "https://vimeo.com/695844138/aef213f1d9",
+  //   techStack: "JavaScript · HTML · CSS",
+  //   title: "Pokedex",
+  //   style: {
+  //     padding: "2.5px",
+  //     fontFamily: "Space Mono",
+  //   },
+  //   github: "https://github.com/matthewbates/Pokedex",
+  // },
 ];
