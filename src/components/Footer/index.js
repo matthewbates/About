@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from "react";
-import {
-  FooterContainer,
-  FooterWrapper,
-  Img,
-  CreditWrapper,
-  Credit,
-} from "./FooterElements";
+import { FooterContainer, FooterWrapper, Img } from "./FooterElements";
 import Copyright from "../Copyright";
-import Socials from "../Socials";
 
 export default function Footer() {
   const [logo, setLogo] = useState(
@@ -15,9 +8,9 @@ export default function Footer() {
   );
 
   const onResize = (e) => {
-    if (e.target.innerWidth > 768) {
-      setLogo("https://www.codewars.com/users/matthewhcbates/badges/small");
-    }
+    return e.target.innerWidth > 768
+      ? setLogo("https://www.codewars.com/users/matthewhcbates/badges/small")
+      : setLogo("https://www.codewars.com/users/matthewhcbates/badges/micro");
   };
 
   useEffect(() => {
@@ -28,9 +21,8 @@ export default function Footer() {
     <>
       <FooterContainer>
         <FooterWrapper>
-          {/* <Socials /> */}
           <Copyright />
-          <CreditWrapper>
+          {/* <CreditWrapper>
             <a
               href="https://www.github.com/matthewbates/about"
               target="_blank"
@@ -38,7 +30,7 @@ export default function Footer() {
             >
               <Credit>Designed &amp; Built by Matthew Bates</Credit>
             </a>
-          </CreditWrapper>
+          </CreditWrapper> */}
           <Img src={logo} />
         </FooterWrapper>
       </FooterContainer>
