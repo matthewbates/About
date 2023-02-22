@@ -3,9 +3,7 @@ import { FooterContainer, FooterWrapper, Img } from "./FooterElements";
 import Copyright from "../Copyright";
 
 export default function Footer() {
-  const [logo, setLogo] = useState(
-    "https://www.codewars.com/users/matthewhcbates/badges/micro"
-  );
+  const [logo, setLogo] = useState("");
 
   const onResize = (e) => {
     return e.target.innerWidth > 768
