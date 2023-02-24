@@ -76,7 +76,7 @@ export default function Header() {
 
   return (
     <StyledContainer visible={visible}>
-      <StyledWrapper>
+      <StyledWrapper open={open}>
         {navbarIconData.map((item, index) => (
           <HeaderIcon
             key={index}

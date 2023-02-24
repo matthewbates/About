@@ -3,22 +3,19 @@ import CONSTANTS from "../../utils/constants";
 
 export const UlStyle = styled.aside`
   position: fixed;
+  justify-content: center;
+  align-items: center;
   z-index: 999;
-  width: 55%;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
   padding-top: 3.5rem;
   flex-direction: column;
   flex-wrap: nowrap;
-  /* flex-flow: column nowrap; */
   z-index: 999;
   transition: 0.4s ease-in;
   background: #090909;
   right: ${({ open }) => (open ? "0" : "-100%")};
   opacity: ${({ open }) => (open ? 1 : 0)};
-
-  @media screen and (min-width: 420px) and (max-width: 768px) {
-    width: 45%;
-  }
 `;
 
 export const AuthorImg = styled.img`
