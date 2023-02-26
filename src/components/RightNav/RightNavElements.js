@@ -6,7 +6,7 @@ export const UlStyle = styled.aside`
   justify-content: center;
   align-items: center;
   z-index: 999;
-  width: 100%;
+  width: 55%;
   height: 100vh;
   padding-top: 3.5rem;
   flex-direction: column;

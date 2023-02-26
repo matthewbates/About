@@ -18,7 +18,7 @@ export const StyledContainer = styled.nav`
 
 export const StyledWrapper = styled.div`
   margin-left: 1rem;
-  display: ${({ open }) => (open ? "none" : "flex")};
+  display: flex;
   box-shadow: rgba(0, 0, 0, 0.8);
   align-items: center;
 `;
