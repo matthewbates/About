@@ -10,23 +10,15 @@ import Contact from "../ContactForm";
 import Footer from "../../components/Footer";
 
 export default function Home() {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const toggleTheme = () => {
-    let element = document.body;
-    element.classList.toggle("dark");
-    setIsClicked(!isClicked);
-  };
-
   return (
     <HomeContainer>
-      <Navbar toggleTheme={toggleTheme} isClicked={isClicked} />
-      <Intro isClicked={isClicked} />
-      <About isClicked={isClicked} />
-      <Skills isClicked={isClicked} />
-      <Projects isClicked={isClicked} />
-      <Testimonials isClicked={isClicked} />
-      <Contact isClicked={isClicked} />
+      <Navbar />
+      <Intro />
+      <About />
+      <Skills />
+      <Projects />
+      <Testimonials />
+      <Contact />
       <Footer />
     </HomeContainer>
   );

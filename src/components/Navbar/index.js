@@ -36,7 +36,6 @@ export default function Header() {
     };
   }, []);
 
-  // gsap timeline created to avoid using two useEffect hooks
   useEffect(() => {
     gsap.timeline().from(".nav-icon", {
       y: 100,
