@@ -3,13 +3,13 @@ import morgan from "../../assets/morgan.jpeg";
 import justin from "../../assets/justin.jpeg";
 
 export default [
-  {
-    id: 1,
-    image: dylan,
-    name: "Dylan Dupasquier",
-    title: "Front-end Developer",
-    text: "Matthew is very knowledgeable in both front end functionality and design. It has been a pleasure to collaborate with him.",
-  },
+  // {
+  //   id: 1,
+  //   image: dylan,
+  //   name: "Dylan Dupasquier",
+  //   title: "Front-end Developer",
+  //   text: "Matthew is very knowledgeable in both front end functionality and design. It has been a pleasure to collaborate with him.",
+  // },
   {
     id: 2,
     image: morgan,
