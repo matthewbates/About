@@ -34,11 +34,11 @@ export const navbarIconData = [
     img: GitHub,
     style: { height: "42px", marginRight: "18px" },
   },
-  {
-    url: "https://www.fiverr.com/matthewhcbates?up_rollout=true",
-    img: Fiverr,
-    style: { height: "42px", marginRight: "18px" },
-  },
+  // {
+  //   url: "https://www.fiverr.com/matthewhcbates?up_rollout=true",
+  //   img: Fiverr,
+  //   style: { height: "42px", marginRight: "18px" },
+  // },
 ];
 
 export const navbarLinks = [

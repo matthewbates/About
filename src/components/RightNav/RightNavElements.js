@@ -5,7 +5,7 @@ export const UlStyle = styled.aside`
   position: fixed;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: ${({ open }) => (open ? "999" : "999")};
   width: 55%;
   height: 100vh;
   padding-top: 3.5rem;
