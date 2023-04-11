@@ -9,11 +9,12 @@ export const SkillsContainer = styled.section`
 export const SkillsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   text-align: center;
   justify-content: space-evenly;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  max-width: 100%;
+  margin: 0 auto;
 `;
 
 export const SkillsCard = styled.div`
@@ -22,16 +23,15 @@ export const SkillsCard = styled.div`
   background-color: ${CONSTANTS.colors.persephoneWhite};
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
-  justify-content: center !important;
-  align-items: center !important;
-  max-width: 420px !important;
-  padding: 0 auto !important;
+  transition: 0.2s ease-in;
+  max-width: 100%;
+  width: 400px;
+  height: 100%;
+  padding: 10px;
 
   @media screen and (max-width: 768px) {
     gap: 2rem;
     max-width: 320px;
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
 
   .icon {
@@ -56,10 +56,10 @@ export const SkillsImage = styled.img`
 export const SkillsH3 = styled.h3`
   font-family: "Space Mono";
   color: ${CONSTANTS.colors.softBlack};
-  margin-top: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+
+  margin: 0 auto;
   font-weight: 700;
+  max-width: 200px;
 `;
 
 export const SkillsHeader = styled.h2`

@@ -20,9 +20,9 @@ const four = (
 const five = (
   <TypeWriterEffect
     multiText={[
-      "front-end developer with full-stack experience",
+      "softare engineer and mobile applications developer",
       "creative, passionate technologist",
-      "freelance web designer",
+      "freelance, mobile-responsive web designer",
     ]}
     // multiTextDelay={2500}
     textStyle={{

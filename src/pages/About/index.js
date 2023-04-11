@@ -18,7 +18,7 @@ export default function About({ isClicked }) {
         <AboutH1>In general...</AboutH1>
         <Section>
           <AboutP>
-            I'm a software developer living in Denver, CO with my Australian
+            I'm a software engineer living in Denver, CO with my Australian
             Shepherd,{" "}
             <LinkRoute to="/sterling" style={{ color: "#5cdb95" }}>
               Sterling
