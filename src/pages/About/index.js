@@ -21,16 +21,14 @@ export default function About({ isClicked }) {
             I'm a software engineer living in Denver, CO with my Australian
             Shepherd,{" "}
             <LinkRoute to="/sterling" style={{ color: "#5cdb95" }}>
-              Sterling
+              Sterling.
             </LinkRoute>
-            . I am 32 years old and I have been making websites for about 1.5
-            years.
           </AboutP>
         </Section>
         <Section>
           <AboutP>
-            I primarily utilize JavaScript, React, and CSS. Although constantly
-            changing, my focus right now is Python3, Node.js, and Jest.
+            I primarily utilize the MERN stack along with various databases and Saas's, such as Firebase. Although constantly
+            changing, my focus right now is React.
           </AboutP>
         </Section>
         <Section>
