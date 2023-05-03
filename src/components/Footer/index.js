@@ -20,15 +20,6 @@ export default function Footer() {
       <FooterContainer>
         <FooterWrapper>
           <Copyright />
-          {/* <CreditWrapper>
-            <a
-              href="https://www.github.com/matthewbates/about"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Credit>Designed &amp; Built by Matthew Bates</Credit>
-            </a>
-          </CreditWrapper> */}
           <Img src={logo} />
         </FooterWrapper>
       </FooterContainer>

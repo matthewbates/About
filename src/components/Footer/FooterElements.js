@@ -2,7 +2,7 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const FooterContainer = styled.div`
-  background: ${CONSTANTS.colors.softBlack};
+  background: lightgray;
   width: 100%;
 `;
 
@@ -30,7 +30,7 @@ export const Img = styled.img`
 
 export const FooterText = styled.div`
   align-items: center;
-  color: ${CONSTANTS.colors.persephoneWhite};
+  color: black;
 `;
 
 export const CreditWrapper = styled.div`

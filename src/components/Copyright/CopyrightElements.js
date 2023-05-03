@@ -2,8 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const CopyrightText = styled.p`
-  /* font-size: 14px; */
-  color: ${CONSTANTS.colors.persephoneWhite};
-  /* text-align: center; */
+  color: gray;
   font-family: "Lato";
 `;

@@ -3,17 +3,11 @@ import CONSTANTS from "../../utils/constants";
 
 export const IntroContainer = styled.section`
   display: flex;
-  -webkit-box-align: center;
   justify-content: center;
+  min-height: 100vh;
   flex-direction: column;
   background: #05386b;
-  align-items: flex-start;
-  min-height: 100vh;
   flex-wrap: wrap;
-
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    padding-top: 6vh;
-  }
 
   .required::after {
     content: "&&";
@@ -31,13 +25,13 @@ export const IntroContainer = styled.section`
       margin: 0 0 20px 2px;
     }
   }
+
   h2 {
-    font-family: "Inter Tight";
+    font-family: "Arial";
     line-height: 1.1;
-    display: block;
     color: ${CONSTANTS.colors.blueGrotto};
     font-size: 60px;
-
+    font-weight: bold;
     @media screen and (max-width: 768px) {
       font-size: 36px;
       max-width: 340px;
@@ -47,26 +41,21 @@ export const IntroContainer = styled.section`
   h3 {
     font-family: "Lato";
   }
-
   p {
     color: ${CONSTANTS.colors.persephoneWhite};
     font-family: "Space Mono";
     font-weight: 400;
+    font-size: 18px;
   }
 `;
 
-export const IntroWrapper = styled.div`
-  margin-right: 2rem;
-  margin-top: 3rem;
-`;
-
-export const IntroLi = styled.li`
+export const IntroItems = styled.div`
+  display: flex;
+  margin-left: 2em;
   opacity: 0;
   animation-name: fadein;
   animation-duration: 500ms;
-  animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  list-style: none;
 
   @keyframes fadein {
     0% {
@@ -77,16 +66,18 @@ export const IntroLi = styled.li`
       opacity: 1;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    max-width: 380px;
+  }
 `;
 
 export const IntroButton = styled.button`
   cursor: pointer;
-  margin: 10% auto 0px !important;
-  width: max-content;
   border: 1.5px solid #5cdb95;
   color: ${CONSTANTS.colors.persephoneWhite};
   background-color: transparent;
-  padding: 12px 30px !important;
+  padding: 0.8em;
   margin-top: 1rem;
   font-family: "Space Mono";
 

@@ -4,6 +4,7 @@ import { HeaderLinkScroll } from "./HeaderNavLinkElements";
 export default function HeaderNavLinks({ title, classes }) {
   return (
     <HeaderLinkScroll
+      style={{ fontSize: "14px" }}
       to={title}
       spy={true}
       offset={0}

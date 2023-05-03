@@ -15,7 +15,12 @@ export default function RightNav({ open, closeDrawer }) {
           alt="author"
         />
       </div>
-      <div style={{ marginTop: "2rem", letterSpacing: "2px" }}>
+      <div
+        style={{
+          marginTop: "2rem",
+          letterSpacing: "1px",
+        }}
+      >
         <NavLinks closeDrawer={closeDrawer} title={"Home"} />
         <NavLinks closeDrawer={closeDrawer} title={"About"} />
         <NavLinks closeDrawer={closeDrawer} title={"Skills"} />

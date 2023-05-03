@@ -13,7 +13,7 @@ export const UlStyle = styled.aside`
   flex-wrap: nowrap;
   z-index: 999;
   transition: 0.4s ease-in;
-  background: #090909;
+  background: #212427;
   right: ${({ open }) => (open ? "0" : "-100%")};
   opacity: ${({ open }) => (open ? 1 : 0)};
 `;
@@ -31,5 +31,6 @@ export const AuthorName = styled.h1`
   font-size: 25px;
   display: block;
   text-align: center;
-  font-family: "Lato";
+  font-family: "Arial";
+  letter-spacing: 1px;
 `;

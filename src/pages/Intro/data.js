@@ -20,18 +20,15 @@ const four = (
 const five = (
   <TypeWriterEffect
     multiText={[
-      "softare engineer and mobile applications developer",
+      "software engineer and mobile applications developer",
       "creative, passionate technologist",
       "freelance, mobile-responsive web designer",
     ]}
-    // multiTextDelay={2500}
     textStyle={{
-      fontSize: "20px",
+      fontSize: "18px",
       fontFamily: "Space Mono",
       color: "#5cdb95",
-      marginTop: "10px",
       flexWrap: "wrap",
-      // maxWidth: "360px",
     }}
     cursorColor="#fff"
     typeSpeed={80}

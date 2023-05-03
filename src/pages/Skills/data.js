@@ -1,5 +1,7 @@
 // import sql from "../../assets/stack/sql.png";
 import sql from "../../assets/stack/sql.png";
+import greensock from "../../assets/greensock.svg";
+import mongodb from "../../assets/mongodb.svg";
 
 export const languagesAndFrameworks = [
   {
@@ -66,12 +68,12 @@ export const libraries = [
     label: "Jest",
     alt: "icon",
   },
-  // {
-  //   name: "AWS",
-  //   img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-  //   label: "AWS",
-  //   alt: "icon",
-  // },
+  {
+    name: "MongoDB",
+    img: mongodb,
+    label: "MongoDB",
+    alt: "icon",
+  },
 ];
 
 export const frontendDevelopment = [
@@ -88,21 +90,14 @@ export const frontendDevelopment = [
     alt: "icon",
   },
   {
-    name: "SASS",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
-    label: "SASS",
-    alt: "icon",
-  },
-  {
     name: "Bootstrap",
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
     label: "Bootstrap",
     alt: "icon",
   },
   {
-    name: "Bulma",
-    img: "https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg",
-    label: "Bulma",
-    alt: "icon",
+    name: "Greensock",
+    img: greensock,
+    label: "Greensock",
   },
 ];

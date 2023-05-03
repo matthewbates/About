@@ -4,19 +4,12 @@ import { Link } from "react-scroll";
 
 export const HeaderLinkScroll = styled(Link)`
   cursor: pointer;
-  padding: 1.4rem;
-  font-family: "Space Mono";
+  font-family: "Arial";
   position: relative;
-  font-size: 14px;
-  margin-top: 6px;
   color: #05386b;
-  font-weight: bold;
   text-transform: uppercase;
-  text-decoration: none !important;
-
-  @media screen and (min-width: 768px) and (max-width: 1000px) {
-    padding: 0.8rem;
-  }
+  text-decoration: none;
+  padding: 0.3em;
 
   &::after {
     content: "";
@@ -27,7 +20,7 @@ export const HeaderLinkScroll = styled(Link)`
     left: 0;
     background-color: #05386b;
     transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s;
     transform: scaleX(0);
     transform-origin: bottom left;
   }

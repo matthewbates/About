@@ -9,7 +9,6 @@ export const StyledContainer = styled.nav`
   height: 80px;
   z-index: 80;
   width: ${({ width }) => width || "90%"};
-  /* position: ${({ position }) => position || "relative"}; */
   position: fixed;
   width: 100%;
   top: ${({ visible }) => (visible ? "0" : "-80px")};
@@ -49,14 +48,7 @@ export const HeaderLinksSpan = styled.span`
 `;
 
 export const NavLinksWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-right: 2rem;
-
-  @media screen and (min-width: 820px) {
-    gap: 0;
-  }
+  margin-left: auto;
 
   @media screen and (max-width: 768px) {
     display: none;
