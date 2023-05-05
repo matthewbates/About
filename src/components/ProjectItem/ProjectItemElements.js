@@ -4,14 +4,12 @@ export const ProjectListContainer = styled.div`
   .listItem {
     position: relative;
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin: 40px 15px;
+    margin: 2em;
     justify-content: center;
-    /* Pre-animation */
     opacity: 0;
     transform: scale(85%);
-    transition: 1s;
+    transition: 0.3s;
+
     @media (max-width: 690px) {
       flex-direction: column;
       display: flex;
@@ -25,6 +23,4 @@ export const ProjectListContainer = styled.div`
     transition: 1s;
     transform: scale(100%);
   }
-
-  
 `;

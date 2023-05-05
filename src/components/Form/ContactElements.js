@@ -120,9 +120,8 @@ export const Form = styled.form`
   padding: 40px;
   border-radius: 8px;
   max-width: 90%;
-  width: 400px;
+  width: 550px;
   background: inherit;
-  border: none;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 2px;
 `;
 
@@ -130,8 +129,7 @@ export const H2 = styled.h2`
   color: ${CONSTANTS.colors.persephoneWhite};
   text-transform: uppercase;
   display: flex;
-  font-family: "Lato";
-  font-weight: 600;
+  font-family: "Arial";
   justify-content: center;
 `;
 
@@ -147,7 +145,7 @@ export const FormInput = styled.input`
   padding: 10px;
   border-radius: 8px;
   width: 100%;
-  border: 1px solid lightgray;
+  border: ${({ error }) => (error ? "2px solid red" : "none")};
 
   &:focus {
     outline: none;
@@ -160,10 +158,9 @@ export const TextArea = styled.textarea`
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin-bottom: 10px;
   font-size: 16px;
   resize: none;
-  border: 1px solid lightgray;
+  border: ${({ error }) => (error ? "2px solid red" : "none")};
   border-radius: 8px;
   width: 100%;
 
@@ -175,7 +172,7 @@ export const TextArea = styled.textarea`
 export const FormSubmitBtn = styled.button`
   margin-left: 60px;
   margin-right: 60px;
-  margin-top: 10px;
+  margin-top: 2em;
   cursor: pointer;
   padding: 10px;
   border-radius: 8px;
@@ -188,4 +185,14 @@ export const FormSubmitBtn = styled.button`
     background: inherit;
     color: ${CONSTANTS.colors.persephoneWhite};
   }
+`;
+
+export const ErrorMessage = styled.span`
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 0.5em;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
 `;

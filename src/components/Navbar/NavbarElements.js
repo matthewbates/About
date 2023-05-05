@@ -48,7 +48,7 @@ export const HeaderLinksSpan = styled.span`
 `;
 
 export const NavLinksWrapper = styled.div`
-  margin-left: auto;
+  margin-right: 1em;
 
   @media screen and (max-width: 768px) {
     display: none;

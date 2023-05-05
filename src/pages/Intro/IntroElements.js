@@ -19,8 +19,9 @@ export const IntroContainer = styled.section`
     margin: 0 0 10px;
     color: ${CONSTANTS.colors.persephoneWhite};
     font-family: "Space Mono";
+    transition: 0.3s;
+  font-weight: 400;
 
-    font-weight: 400;
     @media (max-width: 480px) {
       margin: 0 0 20px 2px;
     }
@@ -32,6 +33,8 @@ export const IntroContainer = styled.section`
     color: ${CONSTANTS.colors.blueGrotto};
     font-size: 60px;
     font-weight: bold;
+    transition: 0.3s;
+
     @media screen and (max-width: 768px) {
       font-size: 36px;
       max-width: 340px;
@@ -40,12 +43,14 @@ export const IntroContainer = styled.section`
 
   h3 {
     font-family: "Lato";
+    transition: 0.3s;
   }
   p {
     color: ${CONSTANTS.colors.persephoneWhite};
     font-family: "Space Mono";
     font-weight: 400;
     font-size: 18px;
+    transition: 0.3s;
   }
 `;
 

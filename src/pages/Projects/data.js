@@ -10,6 +10,8 @@ import clientSite from "../../assets/images/clientSite.png";
 export const projectData = [
   {
     img: marsIndustries,
+    description:
+      "A mobile-responsive, general contracting website built with React featuring unique Greensock animations, React-Router, a custom carousel, and contact form with validation handling.",
     link: "https://www.marsindustriesco.com",
     techStack: "JavaScript · React · EmailJS · Greensock",
     title: "Mars Industries",
@@ -20,44 +22,27 @@ export const projectData = [
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/mars-industries",
-    badges: [
-      {
-        javascript:
-          "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
-        react:
-          "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
-        styledComponents:
-          "https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white",
-        nodeJs:
-          "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
-      },
-    ],
+    isReversed: false,
   },
 
   {
     img: persephoneGraes,
+    description:
+      "This site utilizes various API's, namely the Google Business Profile API, to generate real-time reviews from his customers. A custom, responsive menu compliments the many, wonderful culinary creations made by Chef Limon. ",
     link: "https://www.persephonegraescafe.com",
-    techStack: "JavaScript · React · Google Business Profile API",
-    title: "Persephone Graes Cafe & Juice Bar",
+    techStack: "JavaScript · React · Google Maps/Business Profile API",
+    title: "Persephone Graes",
     style: {
       padding: "2.5px",
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/persephone-graes",
-  },
-  {
-    img: youtube,
-    link: "https://aesthetic-alpaca-04fc9c.netlify.app/",
-    techStack: "JavaScript · React · YouTube Data API · Semantic UI",
-    title: "YouTube Clone",
-    style: {
-      padding: "2.5px",
-      fontFamily: "Space Mono",
-    },
-    github: "https://github.com/matthewbates/youtube-clone",
+    isReversed: true,
   },
   {
     img: clientSite,
+    description:
+      "Modern problems require modern (web) solutions. I wanted to create a supplamental website for prospective clients to give them some insight of what I could create for them.",
     link: "https://soft-lebkuchen-2188b1.netlify.app/",
     techStack: "JavaScript · React · Atlist Maps · Styled Components",
     title: "MB Web Solutions",
@@ -66,9 +51,26 @@ export const projectData = [
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/mb-web-innovations",
+    isReversed: false,
+  },
+  {
+    img: youtube,
+    description:
+      "This site utilizes various API's, namely the Google Business Profile API, to generate real-time reviews from his customers. A custom, responsive menu compliments the many, wonderful culinary creations made by Chef Limon. ",
+    link: "https://aesthetic-alpaca-04fc9c.netlify.app/",
+    techStack: "JavaScript · React · YouTube Data API · Semantic UI",
+    title: "YouTube Clone",
+    style: {
+      padding: "2.5px",
+      fontFamily: "Space Mono",
+    },
+    github: "https://github.com/matthewbates/youtube-clone",
+    isReversed: true,
   },
   {
     img: mountainBuddy,
+    description:
+      "This site utilizes various API's, namely the Google Business Profile API, to generate real-time reviews from his customers. A custom, responsive menu compliments the many, wonderful culinary creations made by Chef Limon. ",
     link: "https://vimeo.com/695889451/21156ef4dd",
     techStack:
       "JavaScript · React · Ruby on Rails · PostgreSQL · Google Maps API · OpenWeatherMap API",
@@ -80,9 +82,12 @@ export const projectData = [
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/Mountain-Buddy",
+    isReversed: false,
   },
   {
     img: breweryDiscovery,
+    description:
+      "This site utilizes various API's, namely the Google Business Profile API, to generate real-time reviews from his customers. A custom, responsive menu compliments the many, wonderful culinary creations made by Chef Limon. ",
     link: "https://vimeo.com/695879205/c181dc0706",
     techStack:
       "JavaScript · Ruby on Rails · Bootstrap · SQLite · Google Maps API",
@@ -94,9 +99,12 @@ export const projectData = [
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/Brewery-Discovery",
+    isReversed: true,
   },
   {
     img: skiBum,
+    description:
+      "This site utilizes various API's, namely the Google Business Profile API, to generate real-time reviews from his customers. A custom, responsive menu compliments the many, wonderful culinary creations made by Chef Limon. ",
     link: "https://vimeo.com/695859712/81d9db0e0b",
     techStack: "JavaScript · React · Bootstrap · OpenWeatherMap API",
     title: "SkiBum",
@@ -107,6 +115,7 @@ export const projectData = [
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/SkiBum",
+    isReversed: false,
   },
   // {
   //   img: pokedex,

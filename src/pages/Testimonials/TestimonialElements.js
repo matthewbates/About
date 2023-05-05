@@ -9,12 +9,12 @@ export const TestimonialContainer = styled.div`
 
 export const TestimonialH2 = styled.h2`
   margin-top: 2rem;
-  line-height: 3rem !important;
-  font-weight: 400 !important;
+  line-height: 3rem;
+  font-weight: 400;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Lato" !important;
+  font-family: "Arial";
   text-transform: uppercase;
   color: ${CONSTANTS.colors.persephoneWhite};
 `;

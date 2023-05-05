@@ -37,6 +37,7 @@ export const ProjectImageContainer = styled.div`
     align-items: center;
     position: relative;
     color: white;
+
     a {
       padding: 10px;
       &.external {
@@ -48,7 +49,7 @@ export const ProjectImageContainer = styled.div`
 
         &:hover {
           color: #5cdb95;
-          transition: 200ms ease-in;
+          transition: 0.3s;
         }
       }
     }

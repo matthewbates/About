@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar";
 import Intro from "../Intro";
 import About from "../About";
 import Skills from "../Skills";
+import Project from "../../components/Project";
 import Projects from "../Projects";
 import Testimonials from "../Testimonials";
 import Contact from "../ContactForm";
@@ -16,7 +17,8 @@ export default function Home() {
       <Intro />
       <About />
       <Skills />
-      <Projects />
+      <Project />
+      {/* <Projects /> */}
       <Testimonials />
       <Contact />
       <Footer />

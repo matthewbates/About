@@ -29,6 +29,8 @@ const five = (
       fontFamily: "Space Mono",
       color: "#5cdb95",
       flexWrap: "wrap",
+      textDecoration: "none",
+      maxWidth: "300px",
     }}
     cursorColor="#fff"
     typeSpeed={80}
