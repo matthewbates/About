@@ -100,4 +100,9 @@ export const frontendDevelopment = [
     img: greensock,
     label: "Greensock",
   },
+  {
+    name: "Bulma",
+    img: "https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg",
+    label: "Bulma",
+  },
 ];

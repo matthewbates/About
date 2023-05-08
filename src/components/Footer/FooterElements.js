@@ -4,6 +4,7 @@ import CONSTANTS from "../../utils/constants";
 export const FooterContainer = styled.div`
   background: lightgray;
   width: 100%;
+  height: auto;
 `;
 
 export const FooterWrapper = styled.div`

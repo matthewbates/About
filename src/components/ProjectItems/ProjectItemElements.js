@@ -2,8 +2,13 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const ProjectContainer = styled.div`
-  padding: 1em;
-  background: #003b73;
+  padding: 1.5em;
+  background: #05386b;
+  border-top: 1px solid ${CONSTANTS.colors.persephoneWhite};
+
+  @media screen and (min-width: 768px) {
+    padding: 3em;
+  }
 `;
 
 export const H2 = styled.h2`
@@ -24,7 +29,7 @@ export const ProjectWrapper = styled.div`
   margin: 0 auto;
   position: relative;
   height: 400px;
-  margin: 1em;
+  margin: 2em;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -36,12 +41,15 @@ export const ProjectImg = styled.img`
   max-width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(25%);
+  filter: blur(2px) brightness(25%);
+  transition: 0.3s;
 
   @media screen and (min-width: 768px) {
-    padding: 3.5em;
-   margin-left: 20%;
-   margin-right: 10%
+    margin: auto;
+    width: 50%;
+    height: 80%;
+    max-width: 500px;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -49,7 +57,6 @@ export const TextWrapper = styled.div`
   top: 50%;
   transform: translateY(-50%);
   color: #fff;
-  text-align: center;
   max-width: 80%;
   align-self: center;
   transition: 0.3s;
@@ -57,8 +64,7 @@ export const TextWrapper = styled.div`
   p {
     &:first-child {
       font-size: 14px;
-      text-align: left;
-      font-family: "Arial";
+      width: auto;
 
       @media screen and (min-width: 768px) {
         text-align: ${({ isReversed }) => (isReversed ? "right" : "left")};
@@ -69,6 +75,7 @@ export const TextWrapper = styled.div`
       font-size: 20px;
       text-align: left;
       font-family: "Arial";
+      font-weight: bold;
 
       @media screen and (min-width: 768px) {
         text-align: ${({ isReversed }) => (isReversed ? "right" : "left")};
@@ -82,6 +89,8 @@ export const TextWrapper = styled.div`
 
       @media screen and (min-width: 768px) {
         text-align: ${({ isReversed }) => (isReversed ? "right" : "left")};
+        margin-left: ${({ isReversed }) => (isReversed ? "auto" : "null")};
+        max-width: 50%;
       }
     }
   }
@@ -90,42 +99,16 @@ export const TextWrapper = styled.div`
     text-align: left;
 
     @media screen and (min-width: 768px) {
-      max-width: 60%;
+      max-width: 50%;
       border: none;
       padding: 1.5em;
       border-radius: 6px;
       background: #112240;
       color: #a8b2d1;
       font-family: "Arial";
-      line-height: 1.5em;
+      letter-spacing: 1px;
       margin-left: ${({ isReversed }) => (isReversed ? "auto" : "none")};
-    }
-  }
-
-  a {
-    &:first-child {
-      display: flex;
-      width: 60px;
-    }
-
-    &:last-child {
-    }
-    width: 60px;
-    margin-right: auto;
-    color: ${CONSTANTS.colors.persephoneWhite};
-    transition: 0.3s;
-    cursor: pointer;
-
-    &:hover {
-      color: #5cdb95;
-    }
-
-    &:last-child {
-      color: ${CONSTANTS.colors.persephoneWhite};
-
-      &:hover {
-        color: #5cdb95;
-      }
+      text-align: ${({ isReversed }) => (isReversed ? "right" : "left")};
     }
   }
 `;
@@ -138,21 +121,15 @@ export const LinkWrapper = styled.div`
 
   a {
     width: 60px;
-    margin-right: auto;
-    color: ${CONSTANTS.colors.persephoneWhite};
     transition: 0.3s;
     cursor: pointer;
-
-    &:hover {
-      color: #5cdb95;
-    }
+    color: ${CONSTANTS.colors.persephoneWhite};
 
     &:last-child {
       color: ${CONSTANTS.colors.persephoneWhite};
-
-      &:hover {
-        color: #5cdb95;
-      }
+    }
+    &:hover {
+      color: #5cdb95;
     }
   }
   @media screen and (min-width: 768px) {

@@ -2,10 +2,10 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const UlStyle = styled.aside`
+  display: flex;
   position: fixed;
   justify-content: center;
   align-items: center;
-  z-index: ${({ open }) => (open ? "999" : "999")};
   width: 55%;
   height: 100vh;
   padding-top: 3.5rem;
@@ -16,6 +16,11 @@ export const UlStyle = styled.aside`
   background: #212427;
   right: ${({ open }) => (open ? "0" : "-100%")};
   opacity: ${({ open }) => (open ? 1 : 0)};
+`;
+
+export const RightNavContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const AuthorImg = styled.img`

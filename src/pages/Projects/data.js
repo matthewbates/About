@@ -56,9 +56,9 @@ export const projectData = [
   {
     img: youtube,
     description:
-      "This site utilizes various API's, namely the Google Business Profile API, to generate real-time reviews from his customers. A custom, responsive menu compliments the many, wonderful culinary creations made by Chef Limon. ",
-    link: "https://aesthetic-alpaca-04fc9c.netlify.app/",
-    techStack: "JavaScript · React · YouTube Data API · Semantic UI",
+      "To familiarize myself with legacy code written with React class components, I decided to generate a YouTube clone utilizing the YouTube Data API.",
+    techStack:
+      "JavaScript · React Class Components · YouTube Data API · Semantic UI",
     title: "YouTube Clone",
     style: {
       padding: "2.5px",
@@ -70,8 +70,7 @@ export const projectData = [
   {
     img: mountainBuddy,
     description:
-      "This site utilizes various API's, namely the Google Business Profile API, to generate real-time reviews from his customers. A custom, responsive menu compliments the many, wonderful culinary creations made by Chef Limon. ",
-    link: "https://vimeo.com/695889451/21156ef4dd",
+      "My capstone project for Flatiron School, this is a continuous work in progress aimed to be a hikers best friend to find trails, organize their pack list, etc.",
     techStack:
       "JavaScript · React · Ruby on Rails · PostgreSQL · Google Maps API · OpenWeatherMap API",
     title: "Mountain Buddy",
@@ -87,7 +86,7 @@ export const projectData = [
   {
     img: breweryDiscovery,
     description:
-      "This site utilizes various API's, namely the Google Business Profile API, to generate real-time reviews from his customers. A custom, responsive menu compliments the many, wonderful culinary creations made by Chef Limon. ",
+      "As a craft brewery aficionado, this application is aimed to help users locate breweries in a variety of states to see what's on tap near them.",
     link: "https://vimeo.com/695879205/c181dc0706",
     techStack:
       "JavaScript · Ruby on Rails · Bootstrap · SQLite · Google Maps API",
@@ -104,7 +103,7 @@ export const projectData = [
   {
     img: skiBum,
     description:
-      "This site utilizes various API's, namely the Google Business Profile API, to generate real-time reviews from his customers. A custom, responsive menu compliments the many, wonderful culinary creations made by Chef Limon. ",
+      "My first, sizable React project, I wanted to create a unique application that can help the user plan their next ski trip by viewing resort stats and ",
     link: "https://vimeo.com/695859712/81d9db0e0b",
     techStack: "JavaScript · React · Bootstrap · OpenWeatherMap API",
     title: "SkiBum",

@@ -1,120 +1,18 @@
 import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
-// export const Form = styled.form`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-
-//   .required::after {
-//     content: "*";
-//     color: red;
-//   }
-// `;
-
-// export const FormHeader = styled.h2`
-//   margin-top: 2rem;
-//   font-family: "Lato";
-//   text-transform: uppercase;
-//   color: ${CONSTANTS.colors.persephoneWhite};
-// `;
-
-// export const TextInput = styled.input`
-//   font-family: "Arial";
-//   display: flex;
-//   justify-content: center;
-//   color: ${CONSTANTS.colors.persephoneWhite};
-//   align-items: center;
-//   width: 40%;
-//   padding: 10px;
-//   margin-bottom: 15px;
-//   font-size: 16px;
-//   background: transparent;
-//   resize: none;
-//   border: 1px solid ${CONSTANTS.colors.persephoneWhite};
-//   border-radius: 6px;
-
-//   &:focus {
-//     outline: none;
-//   }
-
-//   @media screen and (max-width: 768px) {
-//     width: 70%;
-//   }
-// `;
-
-// export const EmailInput = styled.input`
-//   font-family: "Poppins";
-//   display: flex;
-//   justify-content: center;
-//   color: ${CONSTANTS.colors.persephoneWhite};
-//   align-items: center;
-//   width: 40%;
-//   padding: 10px;
-//   margin-bottom: 10px;
-//   font-size: 16px;
-//   background: transparent;
-//   resize: none;
-//   border: 1px solid ${CONSTANTS.colors.persephoneWhite};
-//   border-radius: 6px;
-
-//   &:focus {
-//     outline: none;
-//   }
-
-//   @media screen and (max-width: 768px) {
-//     width: 70%;
-//   }
-// `;
-
-// export const FormLabel = styled.label`
-//   line-height: 2rem;
-//   font-family: "Lato";
-//   color: ${CONSTANTS.colors.persephoneWhite};
-// `;
-
-// export const FormButton = styled.button`
-//   border: 1px solid ${CONSTANTS.colors.persephoneWhite};
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   width: 20%;
-//   cursor: pointer;
-//   text-transform: uppercase;
-//   padding: 15px;
-//   font-weight: 900;
-//   font-size: 14px;
-//   letter-spacing: 5px;
-//   transition: transform 0.25s;
-//   margin-top: 1rem;
-//   margin-bottom: 2rem;
-//   background: transparent;
-//   color: ${CONSTANTS.colors.persephoneWhite};
-
-//   @media screen and (max-width: 768px) {
-//     width: 40%;
-//   }
-
-//   &:hover {
-//     box-shadow: none;
-//     background: #fff;
-//     color: #05386b;
-//     transition: 200ms ease-in;
-//   }
-// `;
-
 export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const Form = styled.form`
   display: flex;
-  margin: 2em;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   justify-content: center;
   flex-direction: column;
   padding: 40px;
@@ -131,6 +29,7 @@ export const H2 = styled.h2`
   display: flex;
   font-family: "Arial";
   justify-content: center;
+  margin-top: 2rem;
 `;
 
 export const FormLabel = styled.label`
@@ -170,9 +69,12 @@ export const TextArea = styled.textarea`
 `;
 
 export const FormSubmitBtn = styled.button`
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 2em;
+  display: flex;
+  margin: auto;
+  margin-top: 1em;
+  width: 100%;
+  justify-content: center;
+  max-width: 200px;
   cursor: pointer;
   padding: 10px;
   border-radius: 8px;
