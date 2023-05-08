@@ -26,7 +26,7 @@ export const RightNavWrapper = styled.div`
   top: 0;
   right: 0;
   position: fixed;
-  /* z-index: ${({ open }) => (open ? 1 : -1)}; */
+  z-index: ${({ open }) => (open ? 1 : -1)};
 `;
 
 export const NavbarButton = styled.button`
