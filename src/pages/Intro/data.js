@@ -32,7 +32,7 @@ const five = (
       textDecoration: "none",
       maxWidth: "300px",
     }}
-    cursorColor="#fff"
+    cursorColor="#05386b"
     typeSpeed={80}
     deleteSpeed={4000}
     multiTextLoop
