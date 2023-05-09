@@ -43,7 +43,7 @@ export default function Forms() {
       errors.email = (
         <>
           <FaExclamationTriangle style={{ color: "yellow" }} /> Please enter
-          your full name
+          your email
         </>
       );
     }
@@ -52,7 +52,7 @@ export default function Forms() {
       errors.message = (
         <>
           <FaExclamationTriangle style={{ color: "yellow" }} /> Please enter
-          your full name
+          your message
         </>
       );
     }
