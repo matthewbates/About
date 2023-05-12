@@ -2,7 +2,6 @@ import styled from "styled-components";
 import CONSTANTS from "../../utils/constants";
 
 export const UlStyle = styled.aside`
-  display: flex;
   position: fixed;
   justify-content: center;
   align-items: center;
@@ -15,7 +14,7 @@ export const UlStyle = styled.aside`
   transition: 0.4s ease-in;
   background: #212427;
   right: ${({ open }) => (open ? "0" : "-100%")};
-  opacity: ${({ open }) => (open ? 1 : 0)};
+  /* opacity: ${({ open }) => (open ? 1 : 0)}; */
 `;
 
 export const RightNavContainer = styled.div`
