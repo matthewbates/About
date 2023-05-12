@@ -1,11 +1,24 @@
-import React from "react";
-import { UlStyle, RightNavContainer, AuthorImg, AuthorName } from "./RightNavElements";
+import { useState, useRef } from "react";
+import {
+  UlStyle,
+  RightNavContainer,
+  AuthorImg,
+  AuthorName,
+} from "./RightNavElements";
 import Author from "../../assets/author.png";
 import NavLinks from "../NavLinks";
 
-export default function RightNav({ open, closeDrawer }) {
+import { useClickOutside } from "../../utils/helpers";
+
+export default function RightNav({ open, setOpen, closeDrawer }) {
+  const rightNavRef = useRef(null);
+
+  useClickOutside(rightNavRef, () => {
+    setOpen(false);
+  });
+
   return (
-    <UlStyle open={open}>
+    <UlStyle open={open} ref={rightNavRef}>
       <RightNavContainer>
         <div style={{ textAlign: "center" }}>
           <AuthorImg src={Author} alt="image" />

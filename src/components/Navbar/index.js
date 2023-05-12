@@ -18,9 +18,12 @@ export default function Header() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
-  const handleOnClick = () => setOpen(!open);
+  const toggleRightNav = () => {
+    setOpen(!open);
+  };
   const closeDrawer = () => {
-    setTimeout(() => setOpen(false), 800);
+    // setTimeout(() => setOpen(false), 800);
+    setOpen(false);
   };
 
   const onResize = (e) => {
@@ -86,9 +89,9 @@ export default function Header() {
           />
         ))}
       </StyledWrapper>
-      <Burger open={open} handleOnClick={handleOnClick} visible={visible} />
+      <Burger open={open} toggle={toggleRightNav} visible={visible} />
       <RightNavWrapper>
-        <RightNav open={open} closeDrawer={closeDrawer} />
+        <RightNav open={open} setOpen={setOpen} closeDrawer={closeDrawer} />
       </RightNavWrapper>
       <NavLinksWrapper className="links">
         {navbarLinks.map((item, index) => (

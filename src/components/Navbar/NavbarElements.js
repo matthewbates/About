@@ -7,8 +7,8 @@ export const StyledContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  z-index: 80;
-  width: ${({ width }) => width || "90%"};
+  z-index: 998;
+  /* width: ${({ width }) => width || "90%"}; */
   position: fixed;
   width: 100%;
   top: ${({ visible }) => (visible ? "0" : "-80px")};

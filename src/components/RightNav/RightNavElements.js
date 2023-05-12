@@ -5,16 +5,20 @@ export const UlStyle = styled.aside`
   position: fixed;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  width: 40%;
   height: 100vh;
   padding-top: 3.5rem;
   flex-direction: column;
   flex-wrap: nowrap;
   z-index: 999;
   transition: 0.4s ease-in;
-  background: #212427;
+  background: #000000;
   right: ${({ open }) => (open ? "0" : "-100%")};
   /* opacity: ${({ open }) => (open ? 1 : 0)}; */
+
+  @media screen and (max-width: 768px) {
+    width: 60%;
+  }
 `;
 
 export const RightNavContainer = styled.div`
