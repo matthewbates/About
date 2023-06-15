@@ -65,6 +65,7 @@ export const projectData = [
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/youtube-clone",
+    link: "https://aesthetic-alpaca-04fc9c.netlify.app/",
     isReversed: true,
   },
   {
@@ -81,6 +82,7 @@ export const projectData = [
       fontFamily: "Space Mono",
     },
     github: "https://github.com/matthewbates/Mountain-Buddy",
+    link: "https://vimeo.com/695889451/21156ef4dd?share=copy",
     isReversed: false,
   },
   {

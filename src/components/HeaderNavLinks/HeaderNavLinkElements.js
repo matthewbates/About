@@ -10,6 +10,7 @@ export const HeaderLinkScroll = styled(Link)`
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.3em;
+  transition: 0.3s;
 
   &::after {
     content: "";
@@ -23,6 +24,10 @@ export const HeaderLinkScroll = styled(Link)`
     transition: transform 0.3s;
     transform: scaleX(0);
     transform-origin: bottom left;
+  }
+
+  &:hover {
+    filter: brightness(25%);
   }
 
   &:hover::after {

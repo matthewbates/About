@@ -15,15 +15,19 @@ export const IntroContainer = styled.section`
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 0 10px;
     color: ${CONSTANTS.colors.persephoneWhite};
     font-family: "Space Mono";
     transition: 0.3s;
-  font-weight: 400;
+    font-weight: 400;
 
     @media (max-width: 480px) {
       margin: 0 0 20px 2px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 18px;
     }
   }
 
@@ -31,7 +35,7 @@ export const IntroContainer = styled.section`
     font-family: "Arial";
     line-height: 1.1;
     color: ${CONSTANTS.colors.blueGrotto};
-    font-size: 60px;
+    font-size: 48px;
     font-weight: bold;
     transition: 0.3s;
 
@@ -49,8 +53,12 @@ export const IntroContainer = styled.section`
     color: ${CONSTANTS.colors.persephoneWhite};
     font-family: "Space Mono";
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.3s;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
   }
 `;
 
@@ -82,13 +90,18 @@ export const IntroButton = styled.button`
   border: 1.5px solid #5cdb95;
   color: ${CONSTANTS.colors.persephoneWhite};
   background-color: transparent;
-  padding: 0.8em;
+  padding: 0.6em;
   margin-top: 1rem;
   font-family: "Space Mono";
+  transition: 0.3s;
 
   &:hover {
     color: #05386b;
     background: ${CONSTANTS.colors.persephoneWhite};
     transition: all 300ms ease-in-out;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0.8em;
   }
 `;

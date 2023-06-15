@@ -27,8 +27,9 @@ export default function About({ isClicked }) {
         </Section>
         <Section>
           <AboutP>
-            I primarily utilize the MERN stack along with various databases and Saas's, such as Firebase. Although constantly
-            changing, my focus right now is React.
+            I primarily utilize the MERN stack along with various databases and
+            SaaS's, such as Firebase. Although constantly changing, my focus
+            right now is in React.
           </AboutP>
         </Section>
         <Section>
@@ -36,7 +37,7 @@ export default function About({ isClicked }) {
             I've been intrigued with web development for a long time, so much so
             that I decided to alter my profession to pursue a career in tech.
             It's a space of constant improvement and exciting & new technology.
-            I'm always using technology to solve my life's probems and
+            I'm always using technology to solve my life's problems and
             ambitions.
           </AboutP>
         </Section>

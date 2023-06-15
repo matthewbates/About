@@ -21,6 +21,7 @@ export const Form = styled.form`
   width: 550px;
   background: inherit;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 2px;
+  border: none;
 `;
 
 export const H2 = styled.h2`

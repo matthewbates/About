@@ -8,7 +8,6 @@ export const StyledContainer = styled.nav`
   align-items: center;
   height: 80px;
   z-index: 998;
-  /* width: ${({ width }) => width || "90%"}; */
   position: fixed;
   width: 100%;
   top: ${({ visible }) => (visible ? "0" : "-80px")};

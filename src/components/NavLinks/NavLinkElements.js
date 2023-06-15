@@ -13,6 +13,7 @@ export const LinkScroll = styled(Link)`
   color: ${CONSTANTS.colors.persephoneWhite};
   text-transform: uppercase;
   text-decoration: none;
+  transition: 0.3s;
 
   &:hover {
     color: darkgray;
