@@ -19,6 +19,7 @@ export const StyledWrapper = styled.div`
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.8);
   align-items: center;
+  z-index: -1;
 `;
 
 export const RightNavWrapper = styled.div`

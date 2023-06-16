@@ -12,9 +12,8 @@ export const UlStyle = styled.aside`
   flex-wrap: nowrap;
   z-index: 999;
   transition: 0.4s ease-in;
-  background: #000000;
+  background: #313638;
   right: ${({ open }) => (open ? "0" : "-100%")};
-  /* opacity: ${({ open }) => (open ? 1 : 0)}; */
 
   @media screen and (max-width: 768px) {
     width: 60%;

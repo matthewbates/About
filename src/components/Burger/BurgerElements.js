@@ -18,6 +18,7 @@ export const StyledBurger = styled.div`
   }
 
   div {
+    opacity: ${({ open }) => (open ? 0 : 1)};
     width: 1.5rem;
     height: 0.25rem;
     background-color: ${({ open }) => (open ? "#000000" : "#000000")};

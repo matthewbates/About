@@ -42,8 +42,8 @@ export const SkillsCard = styled.div`
   }
 
   &:hover {
-    transform: translate(4px, -4px);
-    box-shadow: -12px 12px #000;
+    transform: translate(2px, -2px);
+    box-shadow: -14px 14px #000;
   }
 `;
 
@@ -51,6 +51,7 @@ export const SkillsImage = styled.img`
   padding: 1rem;
   width: 100px;
   height: 100px;
+  transition: 0.3s;
 `;
 
 export const SkillsH3 = styled.h3`

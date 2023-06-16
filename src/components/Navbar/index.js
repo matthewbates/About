@@ -40,7 +40,7 @@ export default function Header() {
 
   useEffect(() => {
     gsap.timeline().from(".nav-icon", {
-      y: 100,
+      x: 100,
       delay: 2,
       opacity: 0,
       duration: 2,
@@ -73,13 +73,13 @@ export default function Header() {
   return (
     <StyledContainer visible={visible}>
       <StyledWrapper open={open}>
-        {navbarIconData.map((item, index) => (
+        {navbarIconData.map(({ url, img, style }, index) => (
           <HeaderIcon
             key={index}
             className="nav-icon"
-            url={item.url}
-            img={item.img}
-            style={item.style}
+            url={url}
+            img={img}
+            style={style}
           />
         ))}
       </StyledWrapper>
@@ -88,8 +88,8 @@ export default function Header() {
         <RightNav open={open} setOpen={setOpen} closeDrawer={closeDrawer} />
       </RightNavWrapper>
       <NavLinksWrapper className="links">
-        {navbarLinks.map((item, index) => (
-          <HeaderNavLinks key={index} title={item.to} />
+        {navbarLinks.map(({ to }, index) => (
+          <HeaderNavLinks className="links" key={index} title={to} />
         ))}
       </NavLinksWrapper>
     </StyledContainer>
