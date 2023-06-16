@@ -10,6 +10,8 @@ import Testimonials from "../Testimonials";
 import Contact from "../ContactForm";
 import Footer from "../../components/Footer";
 
+console.log(window);
+
 export default function Home() {
   return (
     <HomeContainer>

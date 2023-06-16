@@ -25,7 +25,7 @@ export default function Skills() {
             {languagesAndFrameworks.map((item, index) => (
               <Fragment key={index}>
                 <OverlayTrigger
-                  trigger="hover"
+                  // trigger="hover"
                   placement="top"
                   overlay={
                     <Popover>
@@ -45,7 +45,7 @@ export default function Skills() {
             {libraries.map((item, index) => (
               <Fragment key={index}>
                 <OverlayTrigger
-                  trigger="hover"
+                  // trigger="hover"
                   placement="top"
                   overlay={
                     <Popover>
@@ -65,7 +65,7 @@ export default function Skills() {
             {frontendDevelopment.map((item, index) => (
               <Fragment key={index}>
                 <OverlayTrigger
-                  trigger="hover"
+                  // trigger="hover"
                   placement="top"
                   overlay={
                     <Popover>

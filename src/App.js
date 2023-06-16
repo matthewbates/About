@@ -19,13 +19,13 @@ export default function App() {
       {isLoading ? (
         <Loader />
       ) : (
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/sterling" element={<Sterling />} />
-          <Route path="/backpacking" element={<Backpacking />} />
-        </Routes>
-      </Router>
+        <Router>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/sterling" element={<Sterling />} />
+            <Route path="/backpacking" element={<Backpacking />} />
+          </Routes>
+        </Router>
       )}
     </>
   );

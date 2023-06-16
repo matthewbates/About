@@ -22,8 +22,7 @@ export default function Header() {
     setOpen(!open);
   };
   const closeDrawer = () => {
-    // setTimeout(() => setOpen(false), 800);
-    setOpen(false);
+    setTimeout(() => setOpen(false), 800);
   };
 
   const onResize = (e) => {
@@ -58,23 +57,18 @@ export default function Header() {
     });
   }, []);
 
-  // sets scroll logic
-  const handleOnScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset;
-
-    setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 70) ||
-        currentScrollPos < 10
-    );
-    setPrevScrollPos(currentScrollPos);
-  }, 100);
-
-  // handles the scroll logic
   useEffect(() => {
-    window.addEventListener("scroll", handleOnScroll);
-    return () => window.removeEventListener("scroll", handleOnScroll);
-  }, [prevScrollPos, visible, handleOnScroll]);
+    let prevScrollPos = window.pageYOffset;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <StyledContainer visible={visible}>

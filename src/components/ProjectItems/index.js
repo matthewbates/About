@@ -20,29 +20,6 @@ import {
 import Section from "../Section/index.js";
 
 export default function ProjectItems() {
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-
-  //   const projectItems = document.querySelectorAll(".project-item");
-
-  //   projectItems.forEach((projectItem, index) => {
-  //     gsap.set(projectItem, { opacity: 0, y: 150 });
-
-  //     ScrollTrigger.create({
-  //       trigger: projectItem,
-  //       start: "top bottom-=100",
-  //       onEnter: () => {
-  //         gsap.to(projectItem, {
-  //           opacity: 1,
-  //           y: 0,
-  //           duration: 0.5,
-  //           delay: index * 0.1,
-  //         });
-  //       },
-  //     });
-  //   });
-  // }, []);
-
   return (
     <ProjectContainer id="Projects">
       <H2>Projects</H2>
@@ -51,9 +28,9 @@ export default function ProjectItems() {
           { img, description, link, techStack, title, github, isReversed },
           index
         ) => (
-          <Section>
+          <Section key={index}>
             <ProjectItem className="project-item">
-              <ProjectWrapper key={index}>
+              <ProjectWrapper>
                 <ProjectImg isReversed={isReversed} src={img} />
                 <TextWrapper isReversed={isReversed}>
                   <p style={{ marginBottom: "5px" }}>Featured Project</p>
