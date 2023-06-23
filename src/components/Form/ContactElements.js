@@ -17,11 +17,15 @@ export const Form = styled.form`
   flex-direction: column;
   padding: 40px;
   border-radius: 8px;
-  max-width: 90%;
+  max-width: 100%;
   width: 550px;
   background: inherit;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 2px;
   border: none;
+
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+  }
 `;
 
 export const H2 = styled.h2`
