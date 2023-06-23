@@ -9,8 +9,13 @@ export const HeaderLinkScroll = styled(Link)`
   color: #05386b;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0.3em;
+  margin: 0.5em;
+  padding: 2px;
   transition: 0.3s;
+
+  @media screen and (min-width: 1100px) {
+    margin: 1em;
+  }
 
   &::after {
     content: "";
