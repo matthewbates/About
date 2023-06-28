@@ -11,11 +11,9 @@ import Burger from "../Burger";
 import RightNav from "../RightNav";
 import gsap from "gsap";
 import HeaderNavLinks from "../HeaderNavLinks";
-import { debounce } from "../../utils/helpers";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
   const toggleRightNav = () => {
