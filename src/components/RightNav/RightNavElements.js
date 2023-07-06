@@ -5,7 +5,8 @@ export const RightNavContainer = styled.aside`
   position: fixed;
   width: 40%;
   height: 100vh;
-  transition: 0.4s ease-in;
+  /* transition: 0.4s ease-in; */
+  -webkit-transition: all 0.3s ease-in-out;
   background: rgba(0, 0, 0, 0.85);
   right: ${({ open }) => (open ? "0" : "-100%")};
 
