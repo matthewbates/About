@@ -41,23 +41,25 @@ export const navbarIconData = [
   // },
 ];
 
-export const navbarLinks = [
+export const links = [
   {
-    to: "Home",
+    id: 1,
+    name: "Home",
   },
   {
-    to: "About",
+    id: 2,
+    name: "About",
   },
   {
-    to: "Skills",
+    id: 3,
+    name: "Skills",
   },
   {
-    to: "Projects",
+    id: 4,
+    name: "Projects",
   },
   {
-    to: "Testimonials",
-  },
-  {
-    to: "Contact",
+    id: 5,
+    name: "Contact",
   },
 ];

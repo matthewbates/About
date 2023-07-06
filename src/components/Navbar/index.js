@@ -5,7 +5,7 @@ import {
   RightNavWrapper,
   NavLinksWrapper,
 } from "./NavbarElements";
-import { navbarIconData, navbarLinks } from "./data";
+import { navbarIconData, links } from "./data";
 import HeaderIcon from "../HeaderIcon";
 import Burger from "../Burger";
 import RightNav from "../RightNav";
@@ -86,8 +86,8 @@ export default function Header() {
         <RightNav open={open} setOpen={setOpen} closeDrawer={closeDrawer} />
       </RightNavWrapper>
       <NavLinksWrapper className="links">
-        {navbarLinks.map(({ to }, index) => (
-          <HeaderNavLinks className="links" key={index} title={to} />
+        {links.map(({ name }, index) => (
+          <HeaderNavLinks className="links" key={index} title={name} />
         ))}
       </NavLinksWrapper>
     </StyledContainer>

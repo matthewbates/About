@@ -1,12 +1,16 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import {
-  UlStyle,
   RightNavContainer,
+  RightNavItems,
+  AuthorWrapper,
   AuthorImg,
   AuthorName,
+  NavLinksWrapper,
 } from "./RightNavElements";
 import Author from "../../assets/author.png";
 import NavLinks from "../NavLinks";
+
+import { links } from "../Navbar/data";
 
 import { useClickOutside } from "../../utils/helpers";
 
@@ -18,31 +22,36 @@ export default function RightNav({ open, setOpen, closeDrawer }) {
   });
 
   return (
-    <UlStyle open={open} ref={rightNavRef}>
-      <RightNavContainer>
-        <div style={{ textAlign: "center" }}>
+    <RightNavContainer open={open} ref={rightNavRef}>
+      <RightNavItems>
+        <AuthorWrapper>
           <AuthorImg src={Author} alt="image" />
           <AuthorName>Matthew Bates</AuthorName>
-          <img
-            style={{ marginTop: "1rem" }}
-            src="https://www.codewars.com/users/matthewhcbates/badges/micro"
-            alt="author"
-          />
-        </div>
-        <div
-          style={{
-            marginTop: "2rem",
-            letterSpacing: "1px",
-          }}
-        >
-          <NavLinks closeDrawer={closeDrawer} title={"Home"} />
-          <NavLinks closeDrawer={closeDrawer} title={"About"} />
-          <NavLinks closeDrawer={closeDrawer} title={"Skills"} />
-          <NavLinks closeDrawer={closeDrawer} title={"Projects"} />
-          <NavLinks closeDrawer={closeDrawer} title={"Testimonials"} />
-          <NavLinks closeDrawer={closeDrawer} title={"Contact"} />
-        </div>
-      </RightNavContainer>
-    </UlStyle>
+        </AuthorWrapper>
+        <NavLinksWrapper>
+          {links.map(({ id, name }) => (
+            <NavLinks
+              key={id}
+              title={name}
+              id={name}
+              closeDrawer={closeDrawer}
+            />
+          ))}
+        </NavLinksWrapper>
+      </RightNavItems>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "2em",
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
+        <img
+          src="https://www.codewars.com/users/matthewhcbates/badges/micro"
+          alt="author"
+        />
+      </div>
+    </RightNavContainer>
   );
 }
