@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   StyledContainer,
   StyledWrapper,
-  RightNavWrapper,
   NavLinksWrapper,
 } from "./NavbarElements";
 import { navbarIconData, links } from "./data";
@@ -23,37 +22,35 @@ export default function Header() {
     setTimeout(() => setOpen(false), 800);
   };
 
-  const onResize = (e) => {
-    if (e.currentTarget.innerWidth > 768) {
+  const handleResize = (e) => {
+    if (e.target.innerWidth > 768) {
       setOpen(false);
     }
   };
 
   useEffect(() => {
-    window.addEventListener("resize", onResize);
-    return () => {
-      window.removeEventListener("resize", onResize);
-    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    gsap.timeline().from(".nav-icon", {
-      x: 100,
-      delay: 2,
-      opacity: 0,
-      duration: 2,
-      ease: "back",
-      stagger: 0.25,
-    });
-    gsap.timeline().from(".links", {
-      x: 100,
-      delay: 2.8,
-      opacity: 0,
-      duration: 1.5,
-      ease: "bounce",
-      stagger: 0.35,
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.timeline().from(".nav-icon", {
+  //     x: 100,
+  //     delay: 2,
+  //     opacity: 0,
+  //     duration: 2,
+  //     ease: "back",
+  //     stagger: 0.25,
+  //   });
+  //   gsap.timeline().from(".links", {
+  //     x: 100,
+  //     delay: 2.8,
+  //     opacity: 0,
+  //     duration: 1.5,
+  //     ease: "bounce",
+  //     stagger: 0.35,
+  //   });
+  // }, []);
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
@@ -82,9 +79,7 @@ export default function Header() {
         ))}
       </StyledWrapper>
       <Burger open={open} toggle={toggleRightNav} visible={visible} />
-      <RightNavWrapper>
-        <RightNav open={open} setOpen={setOpen} closeDrawer={closeDrawer} />
-      </RightNavWrapper>
+      <RightNav open={open} setOpen={setOpen} closeDrawer={closeDrawer} />
       <NavLinksWrapper className="links">
         {links.map(({ name }, index) => (
           <HeaderNavLinks className="links" key={index} title={name} />

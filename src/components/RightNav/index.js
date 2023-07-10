@@ -24,10 +24,8 @@ export default function RightNav({ open, setOpen, closeDrawer }) {
   return (
     <RightNavContainer open={open} ref={rightNavRef}>
       <RightNavItems>
-        <AuthorWrapper>
-          <AuthorImg src={Author} alt="image" />
-          <AuthorName>Matthew Bates</AuthorName>
-        </AuthorWrapper>
+        <AuthorImg src={Author} alt="image" />
+        <AuthorName>Matthew Bates</AuthorName>
         <NavLinksWrapper>
           {links.map(({ id, name }) => (
             <NavLinks
@@ -39,7 +37,7 @@ export default function RightNav({ open, setOpen, closeDrawer }) {
           ))}
         </NavLinksWrapper>
       </RightNavItems>
-      <div
+      {/* <div
         style={{
           position: "absolute",
           bottom: "2em",
@@ -51,7 +49,7 @@ export default function RightNav({ open, setOpen, closeDrawer }) {
           src="https://www.codewars.com/users/matthewhcbates/badges/micro"
           alt="author"
         />
-      </div>
+      </div> */}
     </RightNavContainer>
   );
 }

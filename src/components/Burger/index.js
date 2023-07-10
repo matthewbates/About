@@ -1,4 +1,4 @@
-import { Cross as Hamburger } from "hamburger-react";
+import { Squash as Hamburger } from "hamburger-react";
 
 import { StyledBurger } from "./BurgerElements";
 
@@ -8,10 +8,9 @@ export default function Burger({ open, toggle, visible }) {
       <Hamburger
         toggled={open}
         toggle={toggle}
-        distance="sm"
-        duration={0.3}
+        hideOutline={false}
+        size={28}
         direction="left"
-        size={32}
       />
     </StyledBurger>
   );

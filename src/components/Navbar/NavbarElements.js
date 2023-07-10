@@ -7,11 +7,11 @@ export const StyledContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  z-index: 998;
   position: fixed;
   width: 100%;
   top: ${({ visible }) => (visible ? "0" : "-80px")};
   transition: top 0.4s;
+  z-index: 997;
 `;
 
 export const StyledWrapper = styled.div`
@@ -20,13 +20,6 @@ export const StyledWrapper = styled.div`
   box-shadow: rgba(0, 0, 0, 0.8);
   align-items: center;
   z-index: -1;
-`;
-
-export const RightNavWrapper = styled.div`
-  top: 0;
-  right: 0;
-  position: fixed;
-  z-index: ${({ open }) => (open ? 1 : -1)};
 `;
 
 export const NavbarButton = styled.button`

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
-import HomePage from "./pages/Home";
+import Home from "./pages/Home";
 import Sterling from "./pages/Sterling";
 import Backpacking from "./pages/Backpacking";
 
@@ -21,7 +21,7 @@ export default function App() {
       ) : (
         <Router>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<Home />} />
             <Route path="/sterling" element={<Sterling />} />
             <Route path="/backpacking" element={<Backpacking />} />
           </Routes>

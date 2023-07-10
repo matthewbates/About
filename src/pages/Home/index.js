@@ -5,7 +5,7 @@ import Intro from "../Intro";
 import About from "../About";
 import Skills from "../Skills";
 import Project from "../../components/Project";
-import Projects from "../Projects";
+// import Projects from "../Projects";
 import Testimonials from "../Testimonials";
 import Contact from "../ContactForm";
 import Footer from "../../components/Footer";

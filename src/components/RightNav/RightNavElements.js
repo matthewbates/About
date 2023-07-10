@@ -3,12 +3,12 @@ import CONSTANTS from "../../utils/constants";
 
 export const RightNavContainer = styled.aside`
   position: fixed;
+  top: 0;
   width: 40%;
-  height: 100vh;
-  /* transition: 0.4s ease-in; */
-  -webkit-transition: all 0.3s ease-in-out;
-  background: rgba(0, 0, 0, 0.85);
   right: ${({ open }) => (open ? "0" : "-100%")};
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
 
   @media screen and (max-width: 768px) {
     width: 60%;
@@ -17,8 +17,12 @@ export const RightNavContainer = styled.aside`
 
 export const RightNavItems = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  font-size: 16px;
   font-family: "Arial";
+  width: 100%;
 `;
 
 export const AuthorWrapper = styled.div`
@@ -35,18 +39,15 @@ export const AuthorWrapper = styled.div`
 
 export const AuthorImg = styled.img`
   margin: auto;
+  margin-top: 3em;
   width: 175px;
   height: 175px;
   border-radius: 50%;
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    width: 225px;
-    height: 225px;
-  }
 `;
 
 export const AuthorName = styled.h2`
   color: ${CONSTANTS.colors.persephoneWhite};
+  margin-top: 1em;
 `;
 
 export const NavLinksWrapper = styled.div`
@@ -57,7 +58,7 @@ export const NavLinksWrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    gap: 3.5em;
+    gap: 1em;
     
   img {
     bottom: 0,

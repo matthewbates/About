@@ -54,6 +54,7 @@ export const ProjectImg = styled.img`
 
 export const TextWrapper = styled.div`
   position: absolute;
+  max-width: 30%;
   top: 50%;
   transform: translateY(-50%);
   color: #fff;

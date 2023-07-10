@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Github from "../Icons/github.js";
 import Site from "../Icons/external.js";
 
-import { projectData } from "../../pages/Projects/data";
+import { projectData } from "../Project/data";
 
 import {
   ProjectContainer,
